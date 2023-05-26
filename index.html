@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Boekestijn Transport</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="icon" href="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a8b5548d38c14e21062b9_boekestijn%20transport%20logo%20arrows.svg" type="image/x-icon">
+    <script  src="/script.js"></script>
+  </head>
+  <body>
+    <header class="container">
+      <h1>
+          <img src="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a7763ba21953681b7d7d0_boekestijn%20transport%20logo.svg" alt="Boekestijn Transport">
+      </h1>      
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li class="dropdown">
+          <a href="#">Language <i class="fa fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <a href="/index.html">Русский</a>
+            <a href="/ro.html">Română</a>
+            <a href="/en.html">English</a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <div class="container">
+    <h1 class="slogan">Your Destination <br>is our <span class="hard-ru">Journey</span></h1>
+    <p class="intro">At Boekestijn Transport Service, we pride ourselves on providing a safe and supportive work environment that fosters teamwork and encourages professional growth. Our commitment to quality service has made us a trusted partner for businesses across Europe, and we're looking for drivers who share our values and dedication to excellence. Whether you're a seasoned professional or just starting out, we have opportunities that fit your skills and experience. Join us today and start your journey towards a fulfilling career with Boekestijn Transport Service.</p>
+    </div>
+
+    <div class="video-wrapper">
+        <video src="/Videos/intro.mp4" loop autoplay muted></video>
+        <div class="overlay"></div>
+       </div>
+       <div class="blank" style="height: 100px; z-index: 99; background-color: black;">
+        <br>
+       </div>
+       <h2 class="flights-title" id="locations">Location</h2>
+       <p class="flights-desc">Find our offices around the country</p>
+       <div style="text-align: center;" class="map">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.7092454644503!2d28.766888048535005!3d47.04593591990461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d94db5014bb%3A0xcbf78c12874ddbf4!2sBOEKESTIJN%20TRANSPORT%20SERVICE%20Moldova!5e0!3m2!1sen!2s!4v1683567576513!5m2!1sro!2s" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+       <br><br>
+       <div id="map" class="branded-map leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" style="position: relative; outline: none;" tabindex="0"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(-162px, -50px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152018/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(782px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152018/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(782px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152017/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(526px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152019/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1038px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152018/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(782px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152017/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(526px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152019/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1038px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152017/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(526px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152019/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1038px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152016/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(270px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152020/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1294px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152016/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(270px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152020/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1294px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152016/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(270px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152020/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1294px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152015/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(14px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152021/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1550px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152015/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(14px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152021/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1550px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152015/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(14px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152021/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1550px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152014/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-242px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152022/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1806px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152014/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-242px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152022/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1806px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152014/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-242px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152022/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1806px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152023/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(2062px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152023/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(2062px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152023/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(2062px, 260px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"><img src="https://www.rabota.md/js/leaflet/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(960px, 200px, 0px);" alt=""></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"><img src="https://www.rabota.md/js/leaflet/images/marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(960px, 200px, 0px); z-index: 200;" alt="" tabindex="0"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"><div class="leaflet-popup  leaflet-zoom-animated" style="opacity: 1; transform: translate3d(961px, 166px, 0px); bottom: -7px; left: -102px;"><div class="leaflet-popup-content-wrapper"><div class="leaflet-popup-content" style="width: 163px;">str. Liviu Deleanu 13, Chisinau</div></div><div class="leaflet-popup-tip-container"><div class="leaflet-popup-tip"></div></div><a class="leaflet-popup-close-button" href="#close">×</a></div></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(38916900px, 23591200px, 0px) scale(131072);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in leaflet-disabled" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</div></div></div></div>
+    <br><br><br><br>
+            <footer id="footer">
+              <p class="call-footer">Call Us</p>
+            <div class="footer-links">
+  </body>
+              <a href="tel:+373788830132">Chisinau: +373 78 830 142</a>
+              <a href="tel:+37378848000">Balti: +373 78 848 000</a>
+              <a href="tel:+37377799783">Varnița: +373 77 799 783</a>
+              <a href="tel:+37378717306">Comrat: +373 78 717 306</a>
+            </div>
+            <p class="made-by">Made with ❤️ by <a href="https://gabsedits.github.io" class="owner-link">Gabs</a></p>
+          </footer>          
+  </body>
+</html>
