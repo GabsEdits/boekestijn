@@ -128,7 +128,7 @@ footer {
     left: 0;
     height: 100%;
     background-color: #000;
-    z-index: -1;
+    z-index: 1;
     margin: 0%;
   }
 
