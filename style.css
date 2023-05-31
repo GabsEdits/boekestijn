@@ -57,12 +57,14 @@ header {
   
   .video-wrapper {
     position: right;
-    width: 400px;
+    width: 100%;
     height: 400px;
     margin: 0 auto;
+    margin-bottom: -600px !important;
     overflow: hidden;
   }
-  video {
+  .video-wrapper video {
+    object-fit: cover;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -71,7 +73,7 @@ header {
     max-width: 100%;
     min-height: 10%;
     width: auto;
-    height: auto;
+    height: 100% !important;
     z-index: -2;
     clear: both;
   }
@@ -207,6 +209,7 @@ footer {
 
 .owner-link {
   color: #000 !important;
+  margin-left: 0px !important;
   text-decoration: none;
   font-weight: 800;
 }
@@ -280,6 +283,7 @@ padding: 0;
   max-width: 600px;
   padding-bottom: 190%;
   margin-top: -27%;
+  margin-bottom: 30px !important;
 }
 
 .video-wrapper video {
@@ -342,6 +346,9 @@ padding: 0;
   margin-top: 450px !important;
   left: 40%;
   transform: translate(-50%, -50%);
+}
+#external-links li a {
+  min-width: 320px
 }
 }
 
@@ -435,7 +442,7 @@ margin-top: .5%;
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 39px);
+  height: calc(100% - 99px);
   background-color: rgba(0, 15, 14, 0.6299);
   z-index: -2;
 }
@@ -546,25 +553,24 @@ margin-top: .5%;
   font-size: 35px;
 }
 
-@media screen and (min-width: 767px) and (max-width: 990px) {
+@media screen and (min-width: 768px) and (max-width: 1643px) {
   .md {
     display: none;
   }
 
-  /* .hide-on-mobile {
-    display: none;
-  }
-
-  video {
-    height: auto;
+  .video-wrapper video {
+    object-fit: cover;
     width: 100%;
-    margin-top: -30px;
+    height: 120% !important;
+    margin-top: -70px;
   }
   .video-wrapper .overlay {
     display: none;
   }
   .video-wrapper {
-    height: 5000px;
+    height: 1px !important;
+    margin: -300px !important;
+    overflow: hidden;
   }
   .intro {
     max-width: calc(65% - 65px);
@@ -573,7 +579,7 @@ margin-top: .5%;
     font-size: 15px;
     border-radius: 9px;
   }
-  */
+
   .join-us {
     margin-left: 220px !important;
   }
@@ -769,11 +775,26 @@ margin-top: .5%;
       }
       
 .quick-call {
+  margin-top: 500px;
   font-size: 16px;
   font-weight: 600;
   color: white;
 }
-
+@media screen and (min-width: 770px){
+  .quick-call {
+    margin-top: 50rem !important;
+  }
+.video-wrapper {
+  height: 800px !important;
+}
+video {
+  height: calc(1000% - 1000px) !important;
+  width: 100%;
+}
+.intro {
+  width: 100% !important;
+}
+}
 .quick-call a {
   color: rgb(218, 218, 218) !important;
 }
