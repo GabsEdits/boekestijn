@@ -35,7 +35,7 @@ header {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    color: #777;
+    color: #555;
     text-decoration: none;
     transition: color 0.2s;
   }
@@ -443,7 +443,7 @@ margin-top: .5%;
   left: 0;
   width: 100%;
   height: calc(100% - 99px);
-  background-color: rgba(0, 15, 14, 0.6299);
+  background-color: rgba(0, 15, 14, 0.486);
   z-index: -2;
 }
 
@@ -554,10 +554,6 @@ margin-top: .5%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1643px) {
-  .md {
-    display: none;
-  }
-
   .video-wrapper video {
     object-fit: cover;
     width: 100%;
@@ -573,18 +569,30 @@ margin-top: .5%;
     overflow: hidden;
   }
   .intro {
-    max-width: calc(65% - 65px);
+    max-width: calc(60% - 60px);
     background-color: #000000cc;
     padding: 13px;
     font-size: 15px;
     border-radius: 9px;
   }
-
+  .slogan {
+    max-width: calc(70% - 70px);
+  }
   .join-us {
-    margin-left: 220px !important;
+    margin-left: 300px !important;
+  }
+}
+@media screen and (min-width: 772px) and (max-width: 1274px){
+  .quick-office {
+    display: none;
   }
 }
 
+@media screen and (min-width: 1275px) and (max-width: 1330px){
+  .md {
+    display: none;
+  }
+}
 #partners {
   max-width: 100% !important;
   align-items: center;
