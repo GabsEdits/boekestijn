@@ -65,3 +65,6 @@ for (var i = 0; i < elements.length; i++) {
           });
         }
     
+
+// For performance
+document.addEventListener('touchstart', onTouchStart, {passive: true});
