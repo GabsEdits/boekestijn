@@ -123,18 +123,6 @@ footer {
   color: #007bff;
 }
 
-.newsletter-signup {
-  color: #333;
-  font-weight: 600;
-  text-decoration: none;
-  margin: 0.5rem;
-  transition: color 0.3s;
-}
-
-.newsletter-signup:hover {
-  color: #007bff;
-}
-
 .footer-additional {
   margin-top: 1rem;
 }
@@ -443,7 +431,7 @@ margin-top: .5%;
   left: 0;
   width: 100%;
   height: calc(100% - 99px);
-  background-color: rgba(0, 15, 14, 0.486);
+  background-color: rgba(0, 15, 14, 0.603);
   z-index: -2;
 }
 
@@ -806,3 +794,19 @@ video {
 .quick-call a {
   color: rgb(218, 218, 218) !important;
 }
+
+#footer-special-link {
+  color: #333;
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-size: 17px;
+}
+
+#footer-special-link:hover {
+  text-decoration: underline;
+}
+/*
+.instagram-link i:hover {
+  background: linear-gradient(45deg, #fd5d87, #f9a03f, #f8e05e, #5bbf9d, #64a3f8, #c97ff7, #fd5d87) !important;
+}
+*/
