@@ -9,12 +9,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="icon" href="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a8b5548d38c14e21062b9_boekestijn%20transport%20logo%20arrows.svg" type="image/x-icon">
     <script  src="/script.js"></script>
   </head>
-  <body>
+  <style>
+    body {
+      text-align: center;
+    }
+    .under-construction {
+    height: 650px;
+    width: 100%;
+    overflow: hidden;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      #000,
+      #000 30px,
+      #ff0 30px,
+      #ff0 50px
+    );
+    }
+    .dev {
+      position: relative;
+      font-weight: 900;
+      top: -10px;
+      font-size: 10px;
+    }
+    .en-go {
+  display: inline-block;
+  background-color: #000000;
+  margin-top: 20px;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.en-go:hover {
+  background-color: #ff0;
+  color: #000;
+}
+
+  </style>
+<body>
+    <header class="container">
+      <h1>
+          <img src="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a7763ba21953681b7d7d0_boekestijn%20transport%20logo.svg" alt="Boekestijn Transport">
+          <sup class="dev">DEV</sup>
+      </h1>      
+      <ul>
+        <li><a href="/en.html">English Website</a></li>
+        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+        <li class="dropdown">
+          <a href="#">Language <i class="fa fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <a href="/index.html">Русский</a>
+            <a href="/ro.html">Română</a>
+            <a href="/en.html">English</a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <h1 style="margin-top: 130px;">Under Development</h1>
+    <p style="margin-top: 15px;">The Russian page is still under Development, broken and not ready for preview, insted you can <a href="/en.html">click here to visit the working English preview</a></p>
+    <a href="en.html" class="en-go">English</a>
+    <br><br><br><br><br><br><br><br>
+    <div class="under-construction"></div>
+    <!--
     <header class="container">
       <h1>
           <img src="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a7763ba21953681b7d7d0_boekestijn%20transport%20logo.svg" alt="Boekestijn Transport">
@@ -55,12 +118,12 @@
             <footer id="footer">
               <p class="call-footer">Call Us</p>
             <div class="footer-links">
-  </body>
               <a href="tel:+373788830132">Chisinau: +373 78 830 142</a>
               <a href="tel:+37378848000">Balti: +373 78 848 000</a>
               <a href="tel:+37377799783">Varnița: +373 77 799 783</a>
             </div>
             <p class="made-by">Made with ❤️ by <a href="https://gabsedits.github.io" class="owner-link">Gabs</a></p>
-          </footer>          
+          </footer>   
+          -->       
   </body>
 </html>

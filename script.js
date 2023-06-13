@@ -68,3 +68,33 @@ for (var i = 0; i < elements.length; i++) {
 
 // For performance
 document.addEventListener('touchstart', onTouchStart, {passive: true});
+
+let slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+let slideInterval;
+
+function showSlide(index) {
+  slides[currentSlide].classList.remove('active');
+  slides[index].classList.add('active');
+  currentSlide = index;
+}
+
+function startSlideInterval() {
+  slideInterval = setInterval(() => {
+    let nextSlide = (currentSlide + 1) % slides.length;
+    showSlide(nextSlide);
+  }, 10000); // 10 seconds interval
+}
+
+function resetSlideInterval() {
+  clearInterval(slideInterval);
+  startSlideInterval();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  startSlideInterval();
+});
+
+document.addEventListener('mousemove', resetSlideInterval);
+document.addEventListener('touchstart', resetSlideInterval);
+document.addEventListener('touchmove', resetSlideInterval);

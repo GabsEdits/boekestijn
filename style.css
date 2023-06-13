@@ -618,6 +618,7 @@ margin-top: .5%;
   height: auto;
 }
 
+
 #external-links {
   max-width: 100% !important;
   padding: 50px 0;
@@ -654,121 +655,122 @@ margin-top: .5%;
   transition: background-color 0.3s, color 0.3s;
 }
 
-      #benefits {
-        color: white;
-        background-color: #42414b;
-        padding: 50px 0;
-        margin-top: -180px !important;
-        text-align: center;
-      }
+      /* Benefits Section */
+#benefits {
+  color: white;
+  background-color: #42414b;
+  padding: 50px 0;
+  margin-top: -180px !important;
+  text-align: center;
+}
 
-      #benefits h2 {
-        font-size: 32px;
-        margin-bottom: 20px;
-      }
+#benefits h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+ }
 
-      #benefits ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
+#benefits ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-      #benefits li {
-        flex: 0 0 33.33%;
-        padding: 20px;
-      }
+#benefits li {
+  flex: 0 0 33.33%;
+  padding: 20px;
+}
 
-      #benefits li p {
-        font-size: 20px;
-        margin-bottom: 10px;
-      }
+#benefits li p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 
-      #benefits li i {
-        font-size: 50px;
-        margin-bottom: 20px;
-        color: white;
-      }
+#benefits li i {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: white;
+}
 
-      #facebook {
-        max-width: 100% !important;
-        background-color: #f5f5f5;
-        padding: 60px 0;
-        text-align: center;
-      }
+ #facebook {
+   max-width: 100% !important;
+   background-color: #f5f5f5;
+   padding: 60px 0;
+   text-align: center;
+}
 
-      #facebook h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
-      }
+ #facebook h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
 
-      #facebook p {
-        font-size: 16px;
-        margin-bottom: 40px;
-      }
+ #facebook p {
+   font-size: 16px;
+   margin-bottom: 40px;
+}
 
-      .facebook-link {
-        display: inline-block;
-        padding: 12px 30px;
-        font-size: 18px;
-        font-weight: bold;
-        text-decoration: none;
-        color: #fff;
-        background-color: #4267B2;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-      }
+.facebook-link {
+   display: inline-block;
+   padding: 12px 30px;
+   font-size: 18px;
+   font-weight: bold;
+   text-decoration: none;
+   color: #fff;
+   background-color: #4267B2;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
 
-      .facebook-link i {
-        margin-right: 10px;
-      }
+ .facebook-link i {
+   margin-right: 10px;
+ }
 
-      .facebook-link:hover {
-        color: white;
-        background-color: #39579a;
-      }
+ .facebook-link:hover {
+   color: white;
+   background-color: #39579a;
+}
 
       /* Vacancies Section */
-      #vacancies {
-        background-color: #00ad9a;
-        color: white;
-        max-width: 100% !important;
-        padding: 60px 0;
-        text-align: center;
-      }
+ #vacancies {
+  background-color: #00ad9a;
+  color: white;
+  max-width: 100% !important;
+  padding: 60px 0;
+  text-align: center;
+}
 
-      #vacancies h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
-      }
+ #vacancies h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
 
-      #vacancies p {
-        font-size: 16px;
-        margin-bottom: 40px;
-      }
+  #vacancies p {
+   font-size: 16px;
+   margin-bottom: 40px;
+}
 
-      .vacancies-link {
-        display: inline-block;
-        padding: 12px 30px;
-        font-size: 18px;
-        font-weight: bold;
-        text-decoration: none;
-        color: #fff;
-        background-color: #007bff;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-      }
+ .vacancies-link {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
-      .vacancies-link i {
-        margin-right: 10px;
-      }
+  .vacancies-link i {
+    margin-right: 10px;
+}
 
-      .vacancies-link:hover {
-        color: white;
-        background-color: #0069d9;
-      }
+  .vacancies-link:hover {
+   color: white;
+   background-color: #0069d9;
+}
       
 .quick-call {
   margin-top: 500px;
@@ -805,8 +807,131 @@ video {
 #footer-special-link:hover {
   text-decoration: underline;
 }
-/*
-.instagram-link i:hover {
-  background: linear-gradient(45deg, #fd5d87, #f9a03f, #f8e05e, #5bbf9d, #64a3f8, #c97ff7, #fd5d87) !important;
+
+.slider {
+  display: flex;
+  margin-right: 1 !important;
+  top: 0;
+  justify-content: center;
+  align-items: center;
 }
-*/
+
+.slide {
+  text-align: center;
+  position: relative;
+  width: 191px;
+  height: 280px;
+  background: #080F0B;
+  border: 0.5px solid #00AD9A;
+  border-radius: 26px;
+  padding: 20px;
+}
+
+.test-drive {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: #00EAD0;
+  margin: 0;
+}
+
+.varnita {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin: 10px 0;
+}
+
+.line {
+  width: 175px;
+  height: 0;
+  border: 1px solid #00AD9A;
+  margin-bottom: 10px;
+}
+
+.days,
+.time,
+.address {
+  font-family: 'Inter';
+  text-align: left;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.cta-box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 240px !important;
+  height: 40px;
+}
+
+.cta {
+  background: #00AD9A;
+  border-radius: 77.5px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px !important;
+  height: 40px;
+}
+
+.call-now {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-top: 0;
+}
+
+.phone {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 8px;
+  color: #D2D2D2;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.calendar-icon,
+.clock-icon,
+.call-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.calendar-icon {
+  background-image: url('path_to_calendar_icon');
+}
+
+.clock-icon {
+  background-image: url('path_to_clock_icon');
+}
+
+.call-icon {
+  background-image: url('path_to_call_icon');
+}

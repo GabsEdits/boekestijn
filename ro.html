@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="icon" href="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a8b5548d38c14e21062b9_boekestijn%20transport%20logo%20arrows.svg" type="image/x-icon">
     <script  src="/script.js"></script>
   </head>
@@ -18,10 +16,11 @@
     <header class="container">
       <h1>
           <img src="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a7763ba21953681b7d7d0_boekestijn%20transport%20logo.svg" alt="Boekestijn Transport">
+          <sup class="dev">DEV</sup>
       </h1>      
       <ul>
-        <li><a href="#about">Despre Noi</a></li>
-        <li><a href="#locations">Locații</a></li>
+        <li><a href="/en.html"><!-- Despre Noi --> Pagina Engleză</a></li>
+        <li><a href="/privacy-policy.html"><!-- Locații --> Privacy Policy</a></li>
         <li class="dropdown">
           <a href="#">Limba <i class="fa fa-angle-down"></i></a>
           <div class="dropdown-content">
@@ -31,7 +30,54 @@
         </li>
       </ul>
     </header>
-    <div class="container">
+    <style>
+      body {
+        text-align: center;
+      }
+      .under-construction {
+      height: 650px;
+      width: 100%;
+      overflow: hidden;
+      background-image: repeating-linear-gradient(
+        -45deg,
+        #000,
+        #000 30px,
+        #ff0 30px,
+        #ff0 50px
+      );
+      }
+      .dev {
+        position: relative;
+        font-weight: 900;
+        top: -10px;
+        font-size: 10px;
+      }
+      .en-go {
+    display: inline-block;
+    background-color: #000000;
+    margin-top: 20px;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .en-go:hover {
+    background-color: #ff0;
+    color: #000;
+  }
+
+    </style>
+     <h1 style="margin-top: 130px;">Sub Construcție</h1>
+     <p style="margin-top: 15px;">Această pagină încă este sub construcție, stricată și nu gata de previzualizare, dar poți să dai <a href="/en.html">click aici ca să vizitezi pagina care lucrează în Engleză</a></p>
+     <a href="en.html" class="en-go">English / Engleză</a>
+     <br><br><br><br><br><br><br><br>
+     <div class="under-construction"></div>
+    <!--
+      <div class="container">
     <h1 class="slogan">Destinația ta <br>este <span class="hard-ro">Călătoria</span><br>noastră</h1>
     <p class="intro">La Boekestijn Transport Service, ne mândrim să oferim un mediu de lucru sigur și de sprijin, care încurajează munca în echipă și încurajează creșterea profesională. Angajamentul nostru față de servicii de calitate ne-a făcut un partener de încredere pentru companiile din toată Europa și căutăm șoferi care să împărtășească valorile și dedicarea noastră față de excelență. Indiferent dacă ești un profesionist experimentat sau abia la început, avem oportunități care se potrivesc abilităților și experienței tale. Alăturați-vă nouă astăzi și începeți călătoria către o carieră plină de satisfacții cu Boekestijn Transport Service.</p>
     </div>
@@ -42,20 +88,21 @@
        </div>
        <h2 class="flights-title" id="locations">Locații</h2>
        <p class="flights-desc">Găsește oficile din jurul țării</p>
-       <div style="text-align: center;" class="map">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.7092454644503!2d28.766888048535005!3d47.04593591990461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d94db5014bb%3A0xcbf78c12874ddbf4!2sBOEKESTIJN%20TRANSPORT%20SERVICE%20Moldova!5e0!3m2!1sen!2s!4v1683567576513!5m2!1sro!2s" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+       <br><br>
+       <div class="map-container">
+        <iframe title="A google map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.940638663738!2d28.763401176815638!3d47.046966726454635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d94db5014bb%3A0xcbf78c12874ddbf4!2sBOEKESTIJN%20TRANSPORT%20SERVICE%20Moldova!5e1!3m2!1sro!2s!4v1685292931019!5m2!1sro!2s" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
        <br><br>
     <br><br><br><br>
             <footer id="footer">
               <p class="call-footer">Sună-ne</p>
             <div class="footer-links">
-  </body>
               <a href="tel:+373788830132">Chișinau: +373 78; 830 142</a>
               <a href="tel:+37378848000">Balți: +373 78 848 000</a>
               <a href="tel:+37377799783">Varnița: +373 77 799 783</a>
             </div>
             <p class="made-by">Făcut cu ❤️ de <a href="https://gabsedits.github.io" class="owner-link">Gabs</a></p>
-          </footer>          
+          </footer>       
+        -->   
   </body>
 </html>
