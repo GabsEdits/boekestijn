@@ -65,36 +65,26 @@ for (var i = 0; i < elements.length; i++) {
           });
         }
     
-
-// For performance
-document.addEventListener('touchstart', onTouchStart, {passive: true});
-
-let slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
-let slideInterval;
-
-function showSlide(index) {
-  slides[currentSlide].classList.remove('active');
-  slides[index].classList.add('active');
-  currentSlide = index;
-}
-
-function startSlideInterval() {
-  slideInterval = setInterval(() => {
-    let nextSlide = (currentSlide + 1) % slides.length;
-    showSlide(nextSlide);
-  }, 10000); // 10 seconds interval
-}
-
-function resetSlideInterval() {
-  clearInterval(slideInterval);
-  startSlideInterval();
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  startSlideInterval();
-});
-
-document.addEventListener('mousemove', resetSlideInterval);
-document.addEventListener('touchstart', resetSlideInterval);
-document.addEventListener('touchmove', resetSlideInterval);
+          $(document).ready(function() {
+            var slideIds = ['#slide-1', '#slide-2', '#slide-3'];
+            var currentSlide = 0;
+        
+            function showSlide(index) {
+              $(slideIds[index]).fadeIn();
+            }
+        
+            function hideSlide(index) {
+              $(slideIds[index]).fadeOut();
+            }
+        
+            function nextSlide() {
+              hideSlide(currentSlide);
+              currentSlide = (currentSlide + 1) % slideIds.length;
+              showSlide(currentSlide);
+            }
+        
+            $(slideIds.join(', ')).hide(); // Hide all slides initially
+            showSlide(currentSlide); // Show the first slide
+        
+            setInterval(nextSlide, 10000); // Change slide every 10 seconds
+          });

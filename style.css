@@ -338,6 +338,10 @@ padding: 0;
 #external-links li a {
   min-width: 320px
 }
+
+.mobile-only {
+  display: flex !important;
+}
 }
 
 .dropdown {
@@ -660,7 +664,6 @@ margin-top: .5%;
   color: white;
   background-color: #42414b;
   padding: 50px 0;
-  margin-top: -180px !important;
   text-align: center;
 }
 
@@ -810,21 +813,25 @@ video {
 
 .slider {
   display: flex;
-  margin-right: 1 !important;
-  top: 0;
   justify-content: center;
   align-items: center;
 }
 
 .slide {
+  top: 12rem !important;
+  right: 6rem;
   text-align: center;
-  position: relative;
+  position: absolute;
   width: 191px;
   height: 280px;
   background: #080F0B;
   border: 0.5px solid #00AD9A;
   border-radius: 26px;
   padding: 20px;
+}
+
+.slide:not(:first-child) {
+  display: none;
 }
 
 .test-drive {
@@ -848,7 +855,7 @@ video {
 }
 
 .line {
-  width: 175px;
+  width: 15S5px;
   height: 0;
   border: 1px solid #00AD9A;
   margin-bottom: 10px;
@@ -870,7 +877,7 @@ video {
 .cta-box {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 20px;
   width: 240px !important;
   height: 40px;
@@ -878,60 +885,115 @@ video {
 
 .cta {
   background: #00AD9A;
+  margin-left: -2px;
   border-radius: 77.5px;
   padding: 8px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100px !important;
+  width: 110px !important;
   height: 40px;
+  transition: background-color 200ms;
 }
-
+.cta:hover {
+  background-color: #003a33;
+}
 .call-now {
   font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 16px;
+  font-weight: 900;
+  font-size: 10px;
   color: #FFFFFF;
   margin-top: 0;
 }
 
 .phone {
   font-family: 'Inter';
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 8px;
   color: #D2D2D2;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-right: 10px;
 }
 
-.icons {
-  display: flex;
-  align-items: center;
+.smaller-icon {
+  text-align: center;
+  font-size: 14px;
 }
 
-.calendar-icon,
-.clock-icon,
-.call-icon {
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+@media screen and (min-width: 768px) and (max-width: 880px){
+  .hide-on-880 {
+    display: none;
+  }
 }
 
-.calendar-icon {
-  background-image: url('path_to_calendar_icon');
+.mobile-only {
+  display: none;
 }
 
-.clock-icon {
-  background-image: url('path_to_clock_icon');
+#test-drive-mobile {
+  text-align: center;
+  margin-top: -100px !important;
+  background-color: #262e58;
+  color: #FFFFFF;
 }
 
-.call-icon {
-  background-image: url('path_to_call_icon');
+.test-drive-mobile-title {
+  font-size: 1.7rem;
+  color: #46ffe9;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.test-drive-mobile-city {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.test-drive-mobile-section {
+  background-color: #3b3b52bb;
+  display: block !important;
+  clear: both !important;
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 340px;
+  height: 220px;
+}
+
+.font-bigger {
+  font-size: 17px;
+}
+
+.days-mobile,
+.time-mobile,
+.phone-mobile,
+.address-mobile {
+  font-family: 'Inter';
+  text-align: left;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin-left: 110px;
+  margin-right: 20px;
+}
+
+.test-drive-call-us-mobile {
+  padding: 8px;
+  background-color: #00AD9A;
+  position: absolute;
+  font-weight: 800;
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-left: -25px;
+  transition: background-color 150ms;
+}
+
+.test-drive-call-us-mobile:hover {
+  background-color: #003a33;
+  color: white;
 }
