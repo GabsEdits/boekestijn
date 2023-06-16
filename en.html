@@ -9,9 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="icon" href="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a8b5548d38c14e21062b9_boekestijn%20transport%20logo%20arrows.svg" type="image/x-icon">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/script.js"></script>
   </head>  
   <body>
@@ -22,14 +23,17 @@
       </h1>
       <p style="margin-right: 20%;" class="hide-on-mobile quick-office">Our Main <br>Office: <i><a href="https://goo.gl/maps/Ydmkt3j1Z1PnpCM1A?coh=178571&entry=tt">Strada Liviu Deleanu 13 (Et. 4), Chișinău, Republica Moldova</a></i></p>      
       <ul>
-        <li><a onclick="scrollToCall()" href="#scrollToCall" style="cursor: pointer">Call Us</a></li>
-        <li><a onclick="scrollToLocation()" href="#scrollToLocation" style="cursor: pointer">Locations <i class="fa fa-angle-down"></i></a></li>
+        <li>
+          <a onclick="scrollToCall()" href="#scrollToCall" style="cursor: pointer">Call Us</a>
+          <br><sup class="quick-number">14114</sup>
+        </li>
+        <li><a onclick="scrollToLocation()" onclick="scrollToLocationMobile()" href="#scrollToLocation" style="cursor: pointer" class="locationmobile">Locations <i class="fa fa-map-marker-alt smaller-icon"></i></a></li>
         <li class="dropdown">
           <a href="#dropdown" style="cursor: pointer">Language <i class="fa fa-angle-down"></i></a>
           <div class="dropdown-content">
             <a href="/">Русский</a>
             <a href="/ro.html">Română</a>
-            <a href="/en.html">English (This page)</a>
+            <a href="/en.html">English</a>
           </div>
         </li>
       </ul>
@@ -39,7 +43,37 @@
     <p class="intro">At Boekestijn Transport Service, we pride ourselves on providing a safe and supportive work environment that fosters teamwork and encourages professional growth. Our commitment to quality service has made us a trusted partner for businesses across Europe, and we're looking for drivers who share our values and dedication to excellence. Whether you're a seasoned professional or just starting out, we have opportunities that fit your skills and experience. Join us today and start your journey towards a fulfilling career with Boekestijn Transport Service.</p>
     <a class="join-us" href="form">Join Us</a>
     <div class="slider hide-on-mobile">
-      <div class="slide hide-on-mobile hide-on-880" id="slide-1">
+      <div class="slide-var hide-on-mobile hide-on-880" id="slide-1">
+        <div class="rectangle"></div>
+        <h2 class="test-drive"><i class="fa fa-truck-moving"></i> Test Drive</h2>
+        <p class="varnita">Chişinău</p>
+        <div class="line"></div>
+        <p class="days"><i class="fa fa-calendar-day"></i> Luni-Marți</p>
+        <p class="time"><i class="fa fa-clock smaller-icon"></i> 14:00</p>
+        <p class="address"><i class="fa fa-location-arrow smaller-icon"></i> Str. Pietrăriei, 19</p>
+        <p class="phone">22 815827</p>
+        <div class="cta-box">
+          <div class="cta">
+            <p class="call-now"><a href="tel:+37377799783" style="color: #ffffff;">CALL NOW!</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-bal hide-on-mobile hide-on-880" id="slide-1">
+        <div class="rectangle"></div>
+        <h2 class="test-drive"><i class="fa fa-truck-moving"></i> Test Drive</h2>
+        <p class="varnita">Bălți</p>
+        <div class="line"></div>
+        <p class="days"><i class="fa fa-calendar-day"></i> Sâmbătă</p>
+        <p class="time"><i class="fa fa-clock smaller-icon"></i> 09:00 - 10:00</p>
+        <p class="address"><i class="fa fa-location-arrow smaller-icon"></i> Str. Ștefan cel Mare, 195</p>
+        <p class="phone">0788 30 116</p>
+        <div class="cta-box">
+          <div class="cta">
+            <p class="call-now"><a href="tel:+37377799783" style="color: #ffffff;">CALL NOW!</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-kiv hide-on-mobile hide-on-880" id="slide-1">
         <div class="rectangle"></div>
         <h2 class="test-drive"><i class="fa fa-truck-moving"></i> Test Drive</h2>
         <p class="varnita">Varnița</p>
@@ -52,49 +86,9 @@
           <div class="cta">
             <p class="call-now"><a href="tel:+37377799783" style="color: #ffffff;">CALL NOW!</a></p>
           </div>
-          <div class="icons">
-            <div class="calendar-icon"></div>
-            <div class="clock-icon"></div>
-            <div class="call-icon"></div>
-          </div>
         </div>
       </div>
-      <div class="slide" id="slide-2">
-        <div class="rectangle"></div>
-        <h2 class="test-drive"><i class="fa fa-truck-moving"></i> Test Drive</h2>
-        <p class="varnita">Bălți</p>
-        <div class="line"></div>
-        <p class="days"><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i> Sâmbătă</p>
-        <p class="time"><i class="fa fa-clock smaller-icon"></i> 09:00 - 10:00</p>
-        <p class="address"><i class="fa fa-location-arrow smaller-icon"></i> Str. Ștefan cel Mare, 195</p>
-        <p class="phone">0788 48 000</p>
-        <div class="cta-box">
-          <div class="cta">
-            <p class="call-now"><a href="tel:+37378848000" style="color: #ffffff;">CALL NOW!</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="slide" id="slide-3">
-        <div class="rectangle"></div>
-        <h2 class="test-drive">Test Drive 3</h2>
-        <p class="varnita">Varnița</p>
-        <div class="line"></div>
-        <p class="days"><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i> Marți și Joi</p>
-        <p class="time">09:00 - 12:00</p>
-        <p class="address">Str. Tighina, 66</p>
-        <p class="phone">0788 30 116</p>
-        <div class="cta-box">
-          <div class="cta">
-            <p class="call-now">CALL NOW!</p>
-          </div>
-          <div class="icons">
-            <div class="calendar-icon"></div>
-            <div class="clock-icon"></div>
-            <div class="call-icon"></div>
-          </div>
-        </div>
-      </div>
-    </div>      
+    </div>  
     </div>
     </div>
     <div class="video-wrapper">
@@ -103,71 +97,103 @@
         </video>
         <div class="overlay"></div>
        </div>
-       <section class="mobile-only" id="test-drive-mobile">
-        <div class="container w-container test-drive-mobile-section">
-          <h3 class="test-drive-mobile-title"><i class="fa fa-truck-moving"></i> Test Drive</h3>
-          <sup class="test-drive-mobile-city">Varnița</sup>
-          <div class="line"></div>
-          <p class="days-mobile font-bigger"><i class="fa fa-calendar-day"></i> Marți și Joi</p>
-          <p class="time-mobile font-bigger"><i class="fa fa-clock smaller-icon"></i> 09:00 - 12:00</p>
-          <p class="address-mobile font-bigger"><i class="fa fa-location-arrow smaller-icon"></i> Str. Tighina, 66</p>
-          <p class="phone-mobile"><i class="fa fa-phone smaller-icon"></i> 0788 30 116</p>
-          <a href="tel:+37377799783" class="test-drive-call-us-mobile">Call Us!</a>
+       <section class="mobile-only swipable-container" id="test-drive-mobile">
+        <div class="swipable-item">
+          <div class="container w-container test-drive-mobile-section">
+            <h3 class="test-drive-mobile-title"><i class="fa fa-truck-moving"></i> Test Drive</h3>
+            <sup class="test-drive-mobile-city">Varnița</sup>
+            <div class="line"></div>
+            <p class="days-mobile-varnita font-bigger"><i class="fa fa-calendar-day"></i> Marți și Joi</p>
+            <p class="time-mobile-varnita font-bigger"><i class="fa fa-clock smaller-icon"></i> 09:00 - 12:00</p>
+            <p class="address-mobile-varnita font-bigger"><i class="fa fa-location-arrow smaller-icon"></i> Str. Tighina, 66</p>
+            <p class="phone-mobile-varnita"><i class="fa fa-phone smaller-icon"></i> 0788 30 116</p>
+            <a href="tel:+37377799783" class="test-drive-call-us-mobile">Call Us!</a>
+          </div>
+      
+          <div class="container w-container test-drive-mobile-section">
+            <h3 class="test-drive-mobile-title"><i class="fa fa-truck-moving"></i> Test Drive</h3>
+            <sup class="test-drive-mobile-city">Bălți</sup>
+            <div class="line"></div>
+            <p class="days-mobile font-bigger"><i class="fa fa-calendar-day"></i> Sâmbătă</p>
+            <p class="time-mobile font-bigger"><i class="fa fa-clock smaller-icon"></i> 09:00 - 10:00</p>
+            <p class="address-mobile font-bigger"><i class="fa fa-location-arrow smaller-icon"></i> Str. Ștefan cel Mare, 195</p>
+            <p class="phone-mobile"><i class="fa fa-phone smaller-icon"></i> 0788 48 000</p>
+            <a href="tel:+373078848000" class="test-drive-call-us-mobile">Call Us!</a>
+          </div>
+      
+          <div class="container w-container test-drive-mobile-section">
+            <h3 class="test-drive-mobile-title"><i class="fa fa-truck-moving"></i> Test Drive</h3>
+            <sup class="test-drive-mobile-city">Chişinău</sup>
+            <div class="line"></div>
+            <p class="days-mobile font-bigger"><i class="fa fa-calendar-day"></i> Luni-Marți</p>
+            <p class="time-mobile font-bigger"><i class="fa fa-clock smaller-icon"></i> 14:00</p>
+            <p class="address-mobile font-bigger"><i class="fa fa-location-arrow smaller-icon"></i> Str. Pietrăriei, 19</p>
+            <p class="phone-mobile"><i class="fa fa-phone smaller-icon"></i> 22 815827</p>
+            <a href="tel:+37322815827" class="test-drive-call-us-mobile">Call Us!</a>
+          </div>
         </div>
-        <div class="container w-container test-drive-mobile-section">
-          <h3 class="test-drive-mobile-title"><i class="fa fa-truck-moving"></i> Test Drive</h3>
-          <sup class="test-drive-mobile-city">Varnița</sup>
-          <div class="line"></div>
-          <p class="days-mobile font-bigger"><i class="fa fa-calendar-day"></i> Marți și Joi</p>
-          <p class="time-mobile font-bigger"><i class="fa fa-clock smaller-icon"></i> 09:00 - 12:00</p>
-          <p class="address-mobile font-bigger"><i class="fa fa-location-arrow smaller-icon"></i> Str. Tighina, 66</p>
-          <p class="phone-mobile"><i class="fa fa-phone smaller-icon"></i> 0788 30 116</p>
-          <a href="tel:+37377799783" class="test-drive-call-us-mobile">Call Us!</a>
+      
+        <div class="dots-container">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
       </section>
+      
        <section id="benefits">
         <div class="container">
           <h2>Benefits</h2>
           <ul>
             <li>
-              <i class="fas fa-users"></i>
-              <p>Team buildinguri</p>
-            </li>
-            <li>
-              <i class="fas fa-mobile-alt"></i>
-              <p>Telefonie mobila</p>
-            </li>
-            <li>
-              <i class="fas fa-car"></i>
-              <p>Loc de parcare</p>
+              <i class="fas fa-file-contract"></i>
+              <p>Oficial contract in Poland</p>
             </li>
             <li>
               <i class="fas fa-money-bill-wave"></i>
-              <p>Rambursarea cheltuielilor de transport</p>
+              <p>Attractive Official Salary Calculated daily</p>
             </li>
             <li>
-              <i class="fas fa-medkit"></i>
-              <p>Asigurare medicala privata</p>
+              <i class="fa-solid fa-truck-front"></i>
+              <p>New Auto Park Euro 6: DAF-IVECO-VOLVO-MERCEDES 2020-2023</p>
             </li>
             <li>
-              <i class="fas fa-clock"></i>
-              <p>Program de lucru flexibil</p>
+              <i class="fas fa-cogs"></i>
+              <p>Working conditions 12 weeks, 3-4 weeks leave</p>
             </li>
             <li>
-              <i class="fas fa-suitcase"></i>
-              <p>Zile suplimentare de concediu</p>
+              <i class="fa-solid fa-van-shuttle"></i>
+              <p>Two-way transport on company account</p>
             </li>
             <li>
-              <i class="fas fa-chart-line"></i>
-              <p>Crestere profesionala</p>
+              <i class="fas fa-globe"></i>
+              <p>Work under the contract and work visa directly with employer</p>
+            </li>
+            <li>
+              <i class="fas fa-language"></i>
+              <p>Flexible training for new drivers with average experience, provided that they know English or German of conversational level</p>
+            </li>
+            <li>
+              <i class="fas fa-book"></i>
+              <p>Company provides English courses to enable drivers communication with clients and administration. English language courses are free.</p>
             </li>
             <li>
               <i class="fas fa-graduation-cap"></i>
-              <p>Traininguri, cursuri</p>
+              <p>Trainings, courses</p>
             </li>
             <li>
               <i class="fas fa-gift"></i>
-              <p>Bonus la aniversarea datei de angajare</p>
+              <p>Internal bonuses</p>
+            </li>
+            <li>
+              <i class="fas fa-map"></i>
+              <p>Track & Trace <br><br>Our entire fleet are monitored and managed by our own TMS. Developed with the main priority to be user friendly for the customer</p>
+            </li>
+            <li>
+              <i class="fas fa-briefcase-medical"></i>
+              <p>Insurance <br><br>We provide insurance for all drivers</p>
             </li>
           </ul>
         </div>
@@ -250,6 +276,7 @@
     </div>
   </section>
   <section id="external-links" class="container">
+    <i class="fa-solid fa-link external-links-icon"></i>
     <h2>External Links</h2>
     <ul>
       <li><a href="https://www.boekestijntransport.com" target="_blank">Visit the International Website</a></li>
@@ -276,5 +303,20 @@
       </p>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.dots-container',
+        clickable: true,
+      },
+    });
+  </script>
   </body>
 </html>
