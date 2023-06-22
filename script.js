@@ -64,6 +64,13 @@ for (var i = 0; i < elements.length; i++) {
             behavior: 'smooth'
           });
         }
+
+        function scrollDown() {
+          window.scrollTo({
+            top: 700,
+            behavior: 'smooth'
+          });
+        }
     
           $(document).ready(function() {
             var slideIds = ['#slide-1', '#slide-2', '#slide-3'];

@@ -41,7 +41,8 @@
     <div class="container">
     <h1 class="slogan">Your Destination <br>is our <span class="hard"></span>.</h1>
     <p class="intro">At Boekestijn Transport Service, we pride ourselves on providing a safe and supportive work environment that fosters teamwork and encourages professional growth. Our commitment to quality service has made us a trusted partner for businesses across Europe, and we're looking for drivers who share our values and dedication to excellence. Whether you're a seasoned professional or just starting out, we have opportunities that fit your skills and experience. Join us today and start your journey towards a fulfilling career with Boekestijn Transport Service.</p>
-    <a class="join-us" href="form">Join Us</a>
+    <a class="join-us" href="https://forms.gle/KSifgQQuFDhyYb1c8">Join Us</a>
+    <br><a class="scroll-down" onclick="scrollDown()">Please Scroll Down</a>
     <div class="slider hide-on-mobile">
       <div class="slide-var hide-on-mobile hide-on-880" id="slide-1">
         <div class="rectangle"></div>
@@ -93,7 +94,7 @@
     </div>
     </div>
     <div class="video-wrapper">
-        <video src="https://prod-streaming-video-msn-com.akamaized.net/a8c412fa-f696-4ff2-9c76-e8ed9cdffe0f/604a87fc-e7bc-463e-8d56-cde7e661d690.mp4" loop autoplay muted>
+        <video src="/Videos/intro.mp4" loop autoplay muted>
           <track src="captions_en.vtt" kind="captions" srclang="en" label="A lot of cars driving really fast in a loop">
         </video>
         <div class="overlay"></div>
@@ -135,6 +136,7 @@
         </div>
       
         <div class="dots-container">
+    </div>
           <span class="dot active"></span>
           <span class="dot"></span>
           <span class="dot"></span>
@@ -143,7 +145,32 @@
         <div class="swiper-pagination"></div>
       </div>
       </section>
-      
+      <section id="live-trucks">
+        <div class="container">
+          <div class="content-trucks">
+          <h2>24/7 Monitoring of trucks</h2>
+          <p>See below how many trucks we have on the road in the current moment</p>
+          <div id="counter_up">
+            <div id="myData"></div>
+            <script>
+                fetch('https://api.boekestijntransport.com:50125/api/get_trucks')
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (data) {
+                        appendData(data);
+                                        console.log('data: ' + data['data']);
+                    })
+                function appendData(data) {
+                    var mainContainer = document.getElementById("myData");
+                    var div = document.createElement("div");
+                    div.innerHTML = data['data'];
+                    mainContainer.appendChild(div);
+                }
+            </script>
+          </div>
+          </div>
+      </section>
        <section id="benefits">
         <div class="container">
           <h2>Benefits</h2>
@@ -197,10 +224,6 @@
               <p>Insurance <br><br>We provide insurance for all drivers</p>
             </li>
           </ul>
-        </div>
-      </section>
-      <section id="live-trucks">
-        <div class="container">
         </div>
       </section>
       <section id="vacancies">
@@ -284,6 +307,8 @@
     </ul>
   </section>
   <footer id="footer">
+    <img src="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/600ffe60786f669079b341a1_certifications.png" class="badges">
+    <img src="https://global-uploads.webflow.com/601be0f0f62d8b9d4192b81b/639870060dce6753c5c235fe_POLAND_DEC2022-DEC2023.png" class="badges-add">
     <p class="call-footer">Call Us</p>
     <a href="tel: 14114" id="footer-special-link" class="footer-links">Main: 14114</a>
     <div class="footer-links">
