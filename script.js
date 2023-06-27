@@ -52,15 +52,19 @@ for (var i = 0; i < elements.length; i++) {
         }
     
         function scrollToLocation() {
-          window.scrollTo({
-            top: 2000,
-            behavior: 'smooth'
-          });
+          const element = document.getElementById('above-location');
+          if (element) {
+            element.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
         }
+        
     
         function scrollToCall() {
           window.scrollTo({
-            top: 6000,
+            top: 9000,
             behavior: 'smooth'
           });
         }

@@ -10,15 +10,13 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="icon" href="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a8b5548d38c14e21062b9_boekestijn%20transport%20logo%20arrows.svg" type="image/x-icon">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/script.js"></script>
   </head>  
   <body>
     <header class="container">
       <h1>
-          <a onclick="scrollToTop()" href="#scrollToTop"><img src="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a7763ba21953681b7d7d0_boekestijn%20transport%20logo.svg" alt="Boekestijn Transport"></a>
+          <a onclick="scrollToTop()" href="#scrollToTop"><img src="/images/boekestijn-transport.svg" alt="Boekestijn Transport"></a>
           <sup class="md">🅫</sup>
       </h1>
       <p style="margin-right: 20%;" class="hide-on-mobile quick-office">Our Main <br>Office: <i><a href="https://goo.gl/maps/Ydmkt3j1Z1PnpCM1A?coh=178571&entry=tt">Strada Liviu Deleanu 13 (Et. 4), Chișinău, Republica Moldova</a></i></p>      
@@ -32,17 +30,17 @@
           <a href="#dropdown" style="cursor: pointer">Language <i class="fa fa-angle-down"></i></a>
           <div class="dropdown-content">
             <a href="/">Русский</a>
-            <a href="/ro.html">Română</a>
-            <a href="/en.html">English</a>
+            <a href="/ro/">Română</a>
+            <a href="/en/">English</a>
           </div>
         </li>
       </ul>
     </header>
     <div class="container">
-    <h1 class="slogan">Your Destination <br>is our <span class="hard"></span>.</h1>
+    <h1 class="slogan">Your Destination <br>is our <span class="hard"></span>J</h1>
     <p class="intro">At Boekestijn Transport Service, we pride ourselves on providing a safe and supportive work environment that fosters teamwork and encourages professional growth. Our commitment to quality service has made us a trusted partner for businesses across Europe, and we're looking for drivers who share our values and dedication to excellence. Whether you're a seasoned professional or just starting out, we have opportunities that fit your skills and experience. Join us today and start your journey towards a fulfilling career with Boekestijn Transport Service.</p>
     <a class="join-us" href="https://forms.gle/KSifgQQuFDhyYb1c8">Join Us</a>
-    <br><a class="scroll-down" onclick="scrollDown()">Please Scroll Down</a>
+    <br><a class="scroll-down" onclick="scrollDown()" href="#scroll">Please Scroll Down</a>
     <div class="slider hide-on-mobile">
       <div class="slide-var hide-on-mobile hide-on-880" id="slide-1">
         <div class="rectangle"></div>
@@ -177,7 +175,7 @@
           <ul>
             <li>
               <i class="fas fa-file-contract"></i>
-              <p>Oficial contract in Poland</p>
+              <p>Official contract in Poland</p>
             </li>
             <li>
               <i class="fas fa-money-bill-wave"></i>
@@ -231,7 +229,7 @@
           <h2>Check out our vacancies</h2>
           <p>We have exciting career opportunities for you</p>
           <a class="vacancies-link" href="https://www.rabota.md/ro/companies/boekestijn-transport-service" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-briefcase"></i>
+            <i class="fas fa-briefcase" id="above-location"></i>
             View vacancies on Rabota.md
           </a>
         </div>
@@ -307,19 +305,19 @@
     </ul>
   </section>
   <footer id="footer">
-    <img src="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/600ffe60786f669079b341a1_certifications.png" class="badges">
-    <img src="https://global-uploads.webflow.com/601be0f0f62d8b9d4192b81b/639870060dce6753c5c235fe_POLAND_DEC2022-DEC2023.png" class="badges-add">
+    <img src="/images/badges-3x.png" class="badges" alt="our awards">
     <p class="call-footer">Call Us</p>
     <a href="tel: 14114" id="footer-special-link" class="footer-links">Main: 14114</a>
     <div class="footer-links">
-      <a href="tel:+37378830142">Chisinau: +373 78 830 142</a>
-      <a href="tel:+37378848000">Balți: +373 78 848 000</a>
-      <a href="tel:+37377799783">Varnița: +373 77 799 783</a>
+      <a href="tel:+37378830142" class="touch-space">Chisinau: +373 78 830 142</a>
+      <a href="tel:+37378848000" class="touch-space">Balți: +373 78 848 000</a>
+      <a href="tel:+37377799783" class="touch-space">Varnița: +373 77 799 783</a>
     </div>
     <div class="footer-additional">
       <a href="https://www.facebook.com/BoekestijnTransportMD" class="footer-social-link" aria-label="Check out the Facebook Page"><i class="fab fa-facebook"></i></a>
       <a href="https://md.linkedin.com/company/boekestijn-transport-service" class="footer-social-link" aria-label="Check out our LinkedIn Page"><i class="fab fa-linkedin"></i></a>
-      <a href="#" class="footer-social-link" aria-label="Check out our Instagram Page"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/GabsEdits/boekestijn" class="footer-social-link" aria-label="Check out the source code"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/boekestijn_transport/" class="footer-social-link" aria-label="Check out our Instagram Page"><i class="fab fa-instagram"></i></a>
       <a href="/privacy-policy.html">Privacy Policy</a>
       <p class="made-by">
         Made with ❤️ by <a href="https://gabs.eu.org" class="owner-link">Gabs</a>
@@ -329,20 +327,5 @@
       </p>
     </div>
   </footer>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.dots-container',
-        clickable: true,
-      },
-    });
-  </script>
   </body>
 </html>

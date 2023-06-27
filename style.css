@@ -343,9 +343,13 @@ padding: 0;
   display: flex !important;
 }
 
-.badges {
-  width: 170px !important;
-  right: 20px !important;
+footer .badges {
+  width: 250px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .content-trucks {
@@ -354,12 +358,6 @@ padding: 0;
 
 #live-trucks {
     background-position: 45% !important;
-}
-
-.badges-add {
-  margin-bottom: 10px !important;
-  right: 0 !important;
-  width: 12.1px !important;
 }
 
 .scroll-down {
@@ -1135,13 +1133,6 @@ video {
 
 }
 
-.badges-add {
-  position: absolute;
-  margin-top: 32px;
-  right: 130px;
-  width: 21px;
-}
-
 
 @media screen and (min-width: 974px){
   #test-drive-mobile {
@@ -1169,7 +1160,7 @@ video {
   padding: 60px 0;
   padding-top: 40px;
   text-align: center;
-  background-image: url("https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/60226ead649c99ff0df3feca_nieuw-trace-banner.jpg");
+  background-image: url("/images/live-trucks.jpg");
   background-position: 50%;
   background-size: cover;
 }
@@ -1225,7 +1216,7 @@ video {
   background-color: #00AD9A;
 }
 
-@media screen  and (min-width: 974px) and (max-width: 1632px){
+@media screen  and (min-width: 767px) and (max-width: 1632px){
   .test-drive-mobile-section {
     flex: 0 0 auto;
     width: 90%;
@@ -1246,4 +1237,14 @@ video {
   .scroll-down {
     margin-left: 260px;
   }
+}
+
+@media screen and (min-width:775px) and (max-width: 1055px){
+  .badges {
+    right: 0;
+  }
+}
+
+.touch-space {
+  padding: 100px;
 }
