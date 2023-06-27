@@ -1,6 +1,6 @@
 // JavaScript code to toggle the dropdown on click
-var languageToggle = document.getElementById("language-toggle");
-var languageDropdown = document.getElementById("language-dropdown");
+var languageToggle = document.getElementById("dropdown");
+var languageDropdown = document.getElementById("dropdown");
 
 languageToggle.addEventListener("click", function(event) {
   event.preventDefault();
