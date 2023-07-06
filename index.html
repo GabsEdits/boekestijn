@@ -1,129 +1,341 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Boekestijn Transport</title>
-    <link rel="preconnect" href="https://rsms.me/">
+    <title>Boekestijn Transport Moldova</title>
+    <meta name="description" content="At Boekestijn Transport Service, we pride ourselves on providing a safe and supportive work environment that fosters teamwork and encourages professional growth.">
+    <meta name="keywords" content="moldova, boekestijn, job, transport, chisinau, ofici, lucru">
+    <meta name="author" content="Boekestijn Transport Moldova">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Boekestijn Transport Moldova">
+    <meta property="og:description" content="At Boekestijn Transport Service, we pride ourselves on providing a safe and supportive work environment that fosters teamwork and encourages professional growth.">
+    <meta property="og:image" content="https://boekestijn.gabs.eu.org/images/live-trucks.webp">
+    <meta property="og:url" content="https://boekestijn.gabs.eu.org">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Boekestijn Transport Moldova">
+    <meta name="twitter:description" content="At Boekestijn Transport Service, we pride ourselves on providing a safe and supportive work environment that fosters teamwork and encourages professional growth.">
+    <meta name="twitter:image" content="s://boekestijn.gabs.eu.org/images/live-trucks.webp">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="icon" href="/images/icon-boek.png" type="image/x-icon">
-    <script  src="/script.js"></script>
-  </head>
-  <style>
-    body {
-      text-align: center;
-    }
-    .under-construction {
-    height: 650px;
-    width: 100%;
-    overflow: hidden;
-    background-image: repeating-linear-gradient(
-      -45deg,
-      #000,
-      #000 30px,
-      #ff0 30px,
-      #ff0 50px
-    );
-    }
-    .dev {
-      position: relative;
-      font-weight: 900;
-      top: -10px;
-      font-size: 10px;
-    }
-    .en-go {
-  display: inline-block;
-  background-color: #000000;
-  margin-top: 20px;
-  color: white;
-  padding: 12px 24px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.en-go:hover {
-  background-color: #ff0;
-  color: #000;
-}
-
-  </style>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a8b5548d38c14e21062b9_boekestijn%20transport%20logo%20arrows.svg" type="image/x-icon">
+    <script src="/script.js"></script>
+  </head>  
+  <body>
     <header class="container">
       <h1>
-          <img src="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a7763ba21953681b7d7d0_boekestijn%20transport%20logo.svg" alt="Boekestijn Transport">
-          <sup class="dev">DEV</sup>
-      </h1>      
+          <a onclick="scrollToTop()" href="#scrollToTop"><img src="/images/boekestijn-transport.svg" alt="Boekestijn Transport"></a>
+          <sup class="md">🅫</sup>
+      </h1>
+      <p style="margin-right: 20%;" class="hide-on-mobile quick-office">Наш главный <br>офис: <i><a href="https://goo.gl/maps/Ydmkt3j1Z1PnpCM1A?coh=178571&entry=tt">ул. Ливиу Деляну 13 (4-й этаж), Кишинев, Республика Молдова</a></i></p>      
       <ul>
-        <li><a href="/en/">English Website</a></li>
-        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-        <li class="dropdown">
-          <a href="#">Language <i class="fa fa-angle-down"></i></a>
-          <div class="dropdown-content">
-            <a href="/index.html">Русский</a>
-            <a href="/ro.html">Română</a>
-            <a href="/en/">English</a>
-          </div>
+        <li>
+          <a onclick="scrollToCall()" href="#scrollToCall" style="cursor: pointer">Позвоните нам</a>
+          <br><sup class="quick-number-ru">14114</sup>
         </li>
-      </ul>
-    </header>
-    <h1 style="margin-top: 130px;">Under Development</h1>
-    <p style="margin-top: 15px;">The Russian page is still under Development, broken and not ready for preview, insted you can <a href="/en.html">click here to visit the working English preview</a></p>
-    <a href="/en/" class="en-go">English</a>
-    <br><br><br><br><br><br><br><br>
-    <div class="under-construction"></div>
-    <!--
-    <header class="container">
-      <h1>
-          <img src="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a7763ba21953681b7d7d0_boekestijn%20transport%20logo.svg" alt="Boekestijn Transport">
-      </h1>      
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#locations">Locations</a></li>
+        <li><a onclick="scrollToLocation()" onclick="scrollToLocationMobile()" href="#scrollToLocation" style="cursor: pointer" class="locationmobile">Местонахождение <i class="fa fa-map-marker-alt smaller-icon"></i></a></li>
         <li class="dropdown">
-          <a href="#">Language <i class="fa fa-angle-down"></i></a>
+          <a href="#dropdown" style="cursor: pointer">Язык <i class="fa fa-angle-down"></i></a>
           <div class="dropdown-content">
-            <a href="/index.html">Русский</a>
-            <a href="/ro.html">Română</a>
-            <a href="/en.html">English</a>
+            <a href="/ro">Română</a>
+            <a href="/en">English</a>
           </div>
         </li>
       </ul>
     </header>
     <div class="container">
-    <h1 class="slogan">Your Destination <br>is our <span class="hard-ru">Journey</span></h1>
-    <p class="intro">At <b>Boekestijn Transport Service</b>, we pride ourselves on providing a safe and supportive work environment that fosters teamwork and encourages professional growth. Our commitment to quality service has made us a trusted partner for businesses across Europe, and we're looking for drivers who share our values and dedication to excellence. Whether you're a seasoned professional or just starting out, we have opportunities that fit your skills and experience. Join us today and start your journey towards a fulfilling career with Boekestijn Transport Service.</p>
+    <h1 class="slogan">Your Destination <br>is our <span class="hard"></span>J</h1>
+    <p class="intro">Транспортная компания Boekestijn была основана в 1994 году в Милле, Нидерланды. В то время на дороге было три грузовика Boekestijn, а на данный момент компания выросла на маршруте более чем на 700 грузовиков. Мы - компания с более чем 25-летней историей на рынке международных перевозок и логистики в Европе, базирующаяся в 8 странах и имеющая команду из более чем 300 сотрудников.
+      <br><br><br>
+    </p>
+    <a class="join-us" href="https://forms.gle/KSifgQQuFDhyYb1c8">Присоединяйтесь к нам</a>
+    <br><a class="scroll-down-ru" onclick="scrollDown()" href="#scroll">Пожалуйста, прокрутите вниз</a>
+    <div class="slider hide-on-mobile">
+      <div class="slide-var hide-on-mobile hide-on-880" id="slide-1">
+        <div class="rectangle"></div>
+        <h2 class="test-drive"><i class="fa fa-truck-moving"></i> Test Drive</h2>
+        <p class="varnita">Кишинэу</p>
+        <div class="line"></div>
+        <p class="days"><i class="fa fa-calendar-day"></i> Понедельник-Вторник</p>
+        <p class="time"><i class="fa fa-clock smaller-icon"></i> 14:00</p>
+        <p class="address"><i class="fa fa-location-arrow smaller-icon"></i> ул. Петрэрией 19</p>
+        <p class="phone">22 815827</p>
+        <div class="cta-box">
+          <div class="cta">
+            <p class="call-now"><a href="tel:+37377799783" style="color: #ffffff;">Позвоните нам!</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-bal hide-on-mobile hide-on-880" id="slide-1">
+        <div class="rectangle"></div>
+        <h2 class="test-drive"><i class="fa fa-truck-moving"></i> Test Drive</h2>
+        <p class="varnita">Варница</p>
+        <div class="line"></div>
+        <p class="days"><i class="fa fa-calendar-day"></i>Вторник и Четверг</p>
+        <p class="time"><i class="fa fa-clock smaller-icon"></i> 09:00 - 12:00</p>
+        <p class="address"><i class="fa fa-location-arrow smaller-icon"></i> ул. Тигина 66</p>
+        <p class="phone">0788 30 116</p>
+        <p class="phone">0777 99 783</p>
+        <div class="cta-box">
+          <div class="cta">
+            <p class="call-now"><a href="tel:+37377799783" style="color: #ffffff;">Позвоните нам!</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-kiv hide-on-mobile hide-on-880" id="slide-1">
+        <div class="rectangle"></div>
+        <h2 class="test-drive"><i class="fa fa-truck-moving"></i> Test Drive</h2>
+        <p class="varnita">Бэлць</p>
+        <div class="line"></div>
+        <p class="days"><i class="fa fa-calendar-day"></i> Суббота</p>
+        <p class="time"><i class="fa fa-clock smaller-icon"></i> 09:00 - 10:00</p>
+        <p class="address"><i class="fa fa-location-arrow smaller-icon"></i> ул. Штефан чел Маре 195</p>
+        <p class="phone">78 848 000</p>
+        <div class="cta-box">
+          <div class="cta">
+            <p class="call-now"><a href="tel:+78848000" style="color: #ffffff;">Позвоните нам!</a></p>
+          </div>
+        </div>
+      </div>
+    </div>  
     </div>
-
+    </div>
     <div class="video-wrapper">
-        <video src="/Videos/intro.mp4" loop autoplay muted></video>
+        <video src="/Videos/intro.mp4" loop autoplay muted>
+          <track src="captions_en.vtt" kind="captions" srclang="en" label="A lot of cars driving really fast in a loop">
+        </video>
         <div class="overlay"></div>
        </div>
-       <div class="blank" style="height: 100px; z-index: 99; background-color: black;">
-        <br>
-       </div>
-       <h2 class="flights-title" id="locations">Location</h2>
-       <p class="flights-desc">Find our offices around the country</p>
-       <div style="text-align: center;" class="map">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.7092454644503!2d28.766888048535005!3d47.04593591990461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d94db5014bb%3A0xcbf78c12874ddbf4!2sBOEKESTIJN%20TRANSPORT%20SERVICE%20Moldova!5e0!3m2!1sen!2s!4v1683567576513!5m2!1sro!2s" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <section class="mobile-only swipable-container grid-container" id="test-drive-mobile">
+        <div class="swipable-item">
+          <div class="container w-container test-drive-mobile-section">
+            <h3 class="test-drive-mobile-title"><i class="fa fa-truck-moving"></i> Test Drive</h3>
+            <sup class="test-drive-mobile-city">Варница</sup>
+            <div class="line"></div>
+            <p class="days-mobile-varnita font-bigger"><i class="fa fa-calendar-day"></i> Вторник и Четверг</p>
+            <p class="time-mobile-varnita font-bigger"><i class="fa fa-clock smaller-icon"></i> 09:00 - 12:00</p>
+            <p class="address-mobile-varnita font-bigger"><i class="fa fa-location-arrow smaller-icon"></i> ул. Тигина 66s</p>
+            <p class="phone-mobile-varnita"><i class="fa fa-phone smaller-icon"></i> 0788 30 116</p>
+            <a href="tel:+37377799783" class="test-drive-call-us-mobile">Позвоните нам!</a>
+          </div>
+      
+          <div class="container w-container test-drive-mobile-section">
+            <h3 class="test-drive-mobile-title"><i class="fa fa-truck-moving"></i> Test Drive</h3>
+            <sup class="test-drive-mobile-city">Бэлць</sup>
+            <div class="line"></div>
+            <p class="days-mobile font-bigger"><i class="fa fa-calendar-day"></i> Суббота</p>
+            <p class="time-mobile font-bigger"><i class="fa fa-clock smaller-icon"></i> 09:00 - 10:00</p>
+            <p class="address-mobile font-bigger"><i class="fa fa-location-arrow smaller-icon"></i> ул. Штефан чел Маре 195</p>
+            <p class="phone-mobile"><i class="fa fa-phone smaller-icon"></i> 0788 48 000</p>
+            <a href="tel:+373078848000" class="test-drive-call-us-mobile">Позвоните нам!</a>
+          </div>
+      
+          <div class="container w-container test-drive-mobile-section">
+            <h3 class="test-drive-mobile-title"><i class="fa fa-truck-moving"></i> Test Drive</h3>
+            <sup class="test-drive-mobile-city">Кишинэу</sup>
+            <div class="line"></div>
+            <p class="days-mobile font-bigger"><i class="fa fa-calendar-day"></i> Понедельник-Вторник</p>
+            <p class="time-mobile font-bigger"><i class="fa fa-clock smaller-icon"></i> 14:00</p>
+            <p class="address-mobile font-bigger"><i class="fa fa-location-arrow smaller-icon"></i> ул. Петрэрией 19</p>
+            <p class="phone-mobile"><i class="fa fa-phone smaller-icon"></i> 22 815827</p>
+            <a href="tel:+37322815827" class="test-drive-call-us-mobile">Позвоните нам!</a>
+          </div>
+        </div>
+      
+        <div class="dots-container">
+    </div>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <div class="swiper-pagination"></div>
       </div>
+      </section>
+      <section id="live-trucks">
+        <div class="container">
+          <div class="content-trucks">
+          <h2>24/7 Онлайн отслеживание грузовиков</h2>
+          <p>Смотрите ниже, сколько грузовиков работают в данный момент</p>
+          <div id="counter_up">
+            <div id="myData"></div>
+            <script>
+                fetch('https://api.boekestijntransport.com:50125/api/get_trucks')
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (data) {
+                        appendData(data);
+                                        console.log('data: ' + data['data']);
+                    })
+                function appendData(data) {
+                    var mainContainer = document.getElementById("myData");
+                    var div = document.createElement("div");
+                    div.innerHTML = data['data'];
+                    mainContainer.appendChild(div);
+                }
+            </script>
+          </div>
+          </div>
+      </section>
+       <section id="benefits">
+        <div class="container">
+          <h2>Преимущества</h2>
+          <ul>
+            <li>
+              <i class="fas fa-file-contract"></i>
+              <p>Официальный контракт из Польши</p>
+            </li>
+            <li>
+              <i class="fas fa-money-bill-wave"></i>
+              <p>Привлекательная официальная заработная плата, рассчитанная за день</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-truck-front"></i>
+              <p> Новый авто парк Euro: MERCEDES-DAF-IVECO-VOLVO 2020-2023</p>
+            </li>
+            <li>
+              <i class="fas fa-cogs"></i>
+              <p>Условия работы: 12 недель на работе, 3-4 недели в отпуске.</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-van-shuttle"></i>
+              <p>Транспорт в обе стороны за счет компании</p>
+            </li>
+            <li>
+              <i class="fas fa-globe"></i>
+              <p>Работа по контракту и рабочая виза напрямую от работодателя</p>
+            </li>
+            <li>
+              <i class="fas fa-language"></i>
+              <p>Обучение для новых водителей со средним стажем
+              </p>
+            </li>
+            <li>
+              <i class="fas fa-book"></i>
+              <p>Компания предлагает курсы английского языка, которые позволят водителям общаться с клиентами и администрацией. Курсы английского языка бесплатны.</p>
+            <li>
+              <i class="fas fa-graduation-cap"></i>
+              <p>Обучение и курсы</p>
+            </li>
+            <li>
+              <i class="fas fa-gift"></i>
+              <p>Внутренние бонусы</p>
+            </li>
+            <li>
+              <i class="fas fa-map"></i>
+              <p>Track & Trace <br><br>Вся наша команда контролируется и управляется нашей собственной системой TMS, разработана для удобства использования заказчиком.
+              </p>
+            </li>
+            <li>
+              <i class="fas fa-briefcase-medical"></i>
+              <p>Asigurare <br><br>Мы предлагаем страховку для всех водителей</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="vacancies">
+        <div class="container">
+          <h2>Ознакомьтесь с нашими вакансиями</h2>
+          <p>У нас есть интересные возможности для вашей карьеры</p>
+          <a class="vacancies-link" href="https://www.rabota.md/ro/companies/boekestijn-transport-service" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-briefcase" id="above-location"></i>
+            Смотрите вакансии на Rabota.md
+          </a>
+        </div>
+      </section>
+       <h2 class="flights-title" id="locations">Расположение</h2>
+       <p class="flights-desc">Найдите наши офисы на территории Республики Молдова</p>
        <br><br>
-       <div id="map" class="branded-map leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" style="position: relative; outline: none;" tabindex="0"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(-162px, -50px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152018/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(782px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152018/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(782px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152017/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(526px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152019/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1038px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152018/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(782px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152017/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(526px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152019/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1038px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152017/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(526px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152019/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1038px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152016/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(270px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152020/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1294px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152016/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(270px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152020/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1294px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152016/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(270px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152020/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1294px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152015/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(14px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152021/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1550px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152015/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(14px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152021/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1550px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152015/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(14px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152021/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1550px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152014/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-242px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152022/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1806px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152014/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-242px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152022/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1806px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152014/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-242px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152022/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1806px, 260px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/152023/92152.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(2062px, 4px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/152023/92151.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(2062px, -252px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/152023/92153.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(2062px, 260px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"><img src="https://www.rabota.md/js/leaflet/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(960px, 200px, 0px);" alt=""></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"><img src="https://www.rabota.md/js/leaflet/images/marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(960px, 200px, 0px); z-index: 200;" alt="" tabindex="0"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"><div class="leaflet-popup  leaflet-zoom-animated" style="opacity: 1; transform: translate3d(961px, 166px, 0px); bottom: -7px; left: -102px;"><div class="leaflet-popup-content-wrapper"><div class="leaflet-popup-content" style="width: 163px;">str. Liviu Deleanu 13, Chisinau</div></div><div class="leaflet-popup-tip-container"><div class="leaflet-popup-tip"></div></div><a class="leaflet-popup-close-button" href="#close">×</a></div></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(38916900px, 23591200px, 0px) scale(131072);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in leaflet-disabled" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</div></div></div></div>
-    <br><br><br><br>
-            <footer id="footer">
-              <p class="call-footer">Call Us</p>
-            <div class="footer-links">
-              <a href="tel:+373788830132">Chisinau: +373 78 830 142</a>
-              <a href="tel:+37378848000">Balti: +373 78 848 000</a>
-              <a href="tel:+37377799783">Varnița: +373 77 799 783</a>
+       <div class="map-container">
+        <iframe title="A google map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.940638663738!2d28.763401176815638!3d47.046966726454635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d94db5014bb%3A0xcbf78c12874ddbf4!2sBOEKESTIJN%20TRANSPORT%20SERVICE%20Moldova!5e1!3m2!1sro!2s!4v1685292931019!5m2!1sro!2s" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="flights-desc" style="padding-bottom: 10px; padding-top: 10px;">&bull; Бэлць: ул. Николае Йорга, 30, Республика Молдова
+      <br>&bull; Варница: ул. Тигина, 66, Республика Молдова</p>
+    <div class="faq-section wf-section">
+      <div class="container w-container">
+          <div class="grid-title-div">
+              <h2 class="faq-title">Вопросы и ответы</h2>
+          </div>
+          <div class="w-layout-grid grid-3">
+              <div class="container-faq-question">
+                  <h3 class="title-faq-question">Question 1</h3>
+                  <p class="paragraph-faq-question">Test</p>
+              </div>
+              <div class="container-faq-question">
+                  <h3 class="title-faq-question">Question 2</h3>
+                  <p class="paragraph-faq-question">Test</p>
+              </div>
+              <div class="container-faq-question">
+                  <h3 class="title-faq-question">Question 3</h3>
+                  <p class="paragraph-faq-question">Test</p>
+              </div>
+              <div class="container-faq-question">
+                  <h3 class="title-faq-question">Question 4</h3>
+                  <p class="paragraph-faq-question">Test</p>
+              </div>
+              <div class="container-faq-question">
+                  <h3 class="title-faq-question">Question 5</h3>
+                  <p class="paragraph-faq-question">Test</p>
+              </div>
+              <div class="container-faq-question">
+                  <h3 class="title-faq-question">Question 6</h3>
+                  <p class="paragraph-faq-question">Test</p>
+              </div>
+              <div class="container-faq-question">
+                <h3 class="title-faq-question">Question 7</h3>
+                <p class="paragraph-faq-question">Test</p>
             </div>
-            <p class="made-by">Made with ❤️ by <a href="https://gabsedits.github.io" class="owner-link">Gabs</a></p>
-          </footer>   
-          -->       
+            <div class="container-faq-question">
+                <h3 class="title-faq-question">Question 8</h3>
+                <p class="paragraph-faq-question">Test</p>
+            </div>
+            <div class="container-faq-question">
+                <h3 class="title-faq-question">Question 9</h3>
+                <p class="paragraph-faq-question">Test</p>
+            </div>
+          </div>
+      </div>
+  </div>
+  <section id="facebook">
+    <div class="container">
+      <h2>Следите за нами на Фейсбуке</h2>
+      <p>Оставайтесь в курсе последних новостей и обновлений</p>
+      <a class="facebook-link" href="https://www.facebook.com/boekestijntransportmoldova" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i>
+        Посетите нашу страницу на Facebook
+      </a>
+    </div>
+  </section>
+  <section id="external-links" class="container">
+    <i class="fa-solid fa-link external-links-icon"></i>
+    <h2>Внешние ссылки</h2>
+    <ul>
+      <li><a href="https://www.boekestijntransport.com" target="_blank">Посетите международный сайт</a></li>
+    </ul>
+  </section>
+  <footer id="footer">
+    <img src="/images/badges-3x.webp" class="badges" alt="our awards">
+    <p class="call-footer">Позвоните нам</p>
+    <a href="tel: 14114" id="footer-special-link" class="footer-links">Основной: 14114</a>
+    <div class="footer-links">
+      <a href="tel:+37378830142" class="touch-space">Кишинэу: +373 78 830 142</a>
+      <a href="tel:+37378848000" class="touch-space">Бэлць: +373 78 848 000</a>
+      <a href="tel:+37377799783" class="touch-space">Варница: +373 77 799 783</a>
+    </div>
+    <div class="footer-additional">
+      <a href="https://www.facebook.com/boekestijntransportmoldova" class="footer-social-link" aria-label="Check out the Facebook Page"><i class="fab fa-facebook"></i></a>
+      <a href="https://md.linkedin.com/company/boekestijn-transport-service" class="footer-social-link" aria-label="Check out our LinkedIn Page"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/GabsEdits/boekestijn" class="footer-social-link" aria-label="Check out the source code"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/boekestijn_transport/" class="footer-social-link" aria-label="Check out our Instagram Page"><i class="fab fa-instagram"></i></a>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <p class="made-by">
+        Made with ❤️ by <a href="https://gabs.eu.org" class="owner-link">Gabs</a>
+      </p>
+      <p class="footer-copyright">
+        &copy; 2023 Boekestijn Transport Moldova. All rights reserved.
+      </p>
+    </div>
+  </footer>
   </body>
 </html>

@@ -363,6 +363,10 @@ footer .badges {
 .scroll-down {
   display: none;
 }
+
+.scroll-down-ro {
+  display: none;
+}
 }
 
 .dropdown {
@@ -595,6 +599,10 @@ margin-top: .5%;
     margin-left: 300px !important;
   }
   .scroll-down {
+    background-color: #3f363638;
+  }
+
+  .scroll-down-ro {
     background-color: #3f363638;
   }
 }
@@ -1107,6 +1115,12 @@ video {
   font-size: 10px;
 }
 
+.quick-number-ru {
+  margin: 11px 0 0 50px !important;
+  text-align: center;
+  font-size: 10px;
+}
+
 @media screen and (max-width: 1644px) and (min-width: 880px){
   .slider {
     display: none;
@@ -1239,6 +1253,10 @@ video {
   .scroll-down {
     margin-left: 260px;
   }
+
+  .scroll-down-ro {
+    margin-left: 260px !important;
+  }
 }
 
 @media screen and (min-width:775px) and (max-width: 1055px){
@@ -1255,6 +1273,10 @@ video {
   .scroll-down {
     display: none;
   }
+
+  .scroll-down-ro {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 658px)and (max-width: 770px){
@@ -1262,4 +1284,44 @@ video {
     max-width: 80%;
     margin-left: 10%;
   }
+}
+
+.scroll-down-ro {
+  padding: 15px;
+  border-radius: 70px;
+  background-color: #00000000;
+  color: #fff;
+  border: solid 2px #00AD9A;
+  margin-left: 160px;
+  position: absolute;
+  margin-top: 30px;
+  transition: background-color .5s;
+  cursor: pointer;
+  width: 250px;
+  text-align: center;
+}
+
+.scroll-down-ro:hover {
+  color: #FFFFFF;
+  background-color: #00AD9A;
+}
+
+.scroll-down-ru {
+  padding: 15px;
+  border-radius: 70px;
+  background-color: #00000000;
+  color: #fff;
+  border: solid 2px #00AD9A;
+  margin-left: 170px;
+  position: absolute;
+  margin-top: 30px;
+  transition: background-color .5s;
+  cursor: pointer;
+  width: 300px;
+  text-align: center;
+}
+
+.scroll-down-ru:hover {
+  color: #FFFFFF;
+  background-color: #00AD9A;
 }
