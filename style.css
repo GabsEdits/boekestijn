@@ -367,6 +367,14 @@ footer .badges {
 .scroll-down-ro {
   display: none;
 }
+
+.scroll-down-ru {
+  display: none;
+}
+
+.quick-number-ru {
+  margin-left: 200px !important;
+}
 }
 
 .dropdown {
