@@ -373,7 +373,7 @@ footer .badges {
 }
 
 .quick-number-ru {
-  margin-left: 200px !important;
+  display: none !important;
 }
 }
 
@@ -1332,4 +1332,21 @@ video {
 .scroll-down-ru:hover {
   color: #FFFFFF;
   background-color: #00AD9A;
+}
+
+.test-drive-call-us-mobile-ru {
+  padding: 8px;
+  background-color: #00AD9A;
+  position: absolute;
+  font-weight: 800;
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 15px;
+  left: 100px;
+  transition: background-color 150ms;
+}
+
+.test-drive-call-us-mobile-ru:hover {
+  background-color: #003a33;
+  color: white;
 }
