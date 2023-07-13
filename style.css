@@ -159,7 +159,7 @@ footer {
   }
 
 .hard::before {
-    content: "Journey";
+    content: "Dream";
     position: absolute;
     top: 0;
     left: 0;
@@ -437,7 +437,7 @@ margin-top: .5%;
 }
 
 .hard-ru::before {
-  content: "";
+  content: "мечте";
   position: absolute;
   top: 0;
   left: 0;
@@ -452,7 +452,7 @@ margin-top: .5%;
 }
 
 .hard-ro::before {
-  content: "Călătoria";
+  content: "visul";
   position: absolute;
   top: 0;
   left: 0;
@@ -1349,4 +1349,10 @@ video {
 .test-drive-call-us-mobile-ru:hover {
   background-color: #003a33;
   color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 934px){
+  .slogan {
+    width: 900px;
+  }
 }
