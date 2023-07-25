@@ -789,7 +789,7 @@ margin-top: .5%;
       /* Vacancies Section */
  #vacancies {
   background-color: #00ad9a;
-  color: white;
+  color: black;
   max-width: 100% !important;
   padding: 60px 0;
   text-align: center;
@@ -855,6 +855,7 @@ video {
   color: #333;
   margin-top: 25px;
   margin-bottom: 0;
+  padding: 14px;
   font-size: 17px;
 }
 
@@ -1077,7 +1078,7 @@ video {
   background-color: #00AD9A;
   position: absolute;
   font-weight: 800;
-  color: #fff;
+  color: #000;
   border-radius: 8px;
   margin-top: 15px;
   left: 0;
