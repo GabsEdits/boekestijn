@@ -20,6 +20,7 @@ header {
   
   h1 img {
     height: 30px;
+    width: 169.05px;
     width: auto;
   }
 
@@ -352,6 +353,7 @@ body {
 
 footer .badges {
   width: 250px;
+  height: 28.1167px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -1184,8 +1186,9 @@ video {
 .badges {
   position: absolute;
   margin-top: 30px;
-  right: 170px;
-  width: 500px;  
+  right: 10px;
+  width: 500px;
+  height: 56.25px;  
   margin-top: 30px;
 }
 
@@ -1386,5 +1389,19 @@ video {
 @media screen and (min-width: 768px) and (max-width: 934px){
   .slogan {
     min-width: 100%;
+  }
+}
+
+@media screen and (min-height: 1844px) {
+  .scroll-down {
+    display: none;
+  }
+
+  .scroll-down-ru {
+    display: none;
+  }
+
+  .scroll-down-ro {
+    display: none;
   }
 }
