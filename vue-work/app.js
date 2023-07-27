@@ -336,7 +336,7 @@ app.component('header-section', {
     <div class="container">
       <h2>Follow Us on Facebook</h2>
       <p>Stay updated with our latest news and updates</p>
-      <a class="facebook-link" href="https://www.facebook.com/boekestijntransportmoldova" target="_blank" rel="noopener noreferrer" data-aos="fade-right" data-aos-duration='10000'>
+      <a class="facebook-link" href="https://www.facebook.com/boekestijntransportmoldova" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-facebook"></i>
         Visit our Facebook page
       </a>
