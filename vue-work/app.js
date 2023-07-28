@@ -18,9 +18,9 @@ app.component('header-section', {
       <li class="dropdown">
         <a href="#dropdown" style="cursor: pointer">Language <i class="fa fa-angle-down"></i></a>
         <div class="dropdown-content">
-          <a href="/">Русский</a>
-          <a href="/ro/">Română</a>
-          <a href="/en/">English</a>
+          <a @click="changeLanguage('ru')" href="#ru">Русский</a>
+          <a @click="changeLanguage('ro')" href="#ro">Română</a>
+          <a @click="changeLanguage('en')" href="#en">English</a>
         </div>
       </li>
     </ul>
@@ -223,6 +223,7 @@ app.component('header-section', {
         <li>
           <i class="fas fa-book"></i>
           <p>Company provides English courses to enable drivers communication with clients and administration. English or German language courses to conversational levels</p>
+        </li>
         <li>
           <i class="fas fa-graduation-cap"></i>
           <p>Trainings, courses</p>
@@ -390,5 +391,4 @@ app.component('header-section', {
   
   // Mount the app to the #app element
   app.mount('#app');
-  
   
