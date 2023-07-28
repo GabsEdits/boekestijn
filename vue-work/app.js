@@ -8,7 +8,7 @@ app.component('header-section', {
         <a onclick="scrollToTop()" href="#scrollToTop"><img src="/images/boekestijn-transport.svg" alt="Boekestijn Transport"></a>
         <sup class="md">🅫</sup>
     </h1>
-    <p style="margin-right: 20%;" class="hide-on-mobile quick-office">Our Main <br>Office: <i><a href="https://goo.gl/maps/Ydmkt3j1Z1PnpCM1A?coh=178571&entry=tt">Strada Liviu Deleanu 13 (Et. 4), Chișinău, Republica Moldova</a></i></p>      
+    <p style="margin-right: 20%;" class="hide-on-mobile quick-office" >Our Main <br>Office: <i><a href="https://goo.gl/maps/Ydmkt3j1Z1PnpCM1A?coh=178571&entry=tt">Strada Liviu Deleanu 13 (Et. 4), Chișinău, Republica Moldova</a></i></p>      
     <ul>
       <li>
         <a onclick="scrollToCall()" href="#scrollToCall" style="cursor: pointer">Call Us</a>
@@ -388,7 +388,7 @@ app.component('header-section', {
   </footer>
     `,
   });
-  
+
   // Mount the app to the #app element
   app.mount('#app');
   
