@@ -1407,3 +1407,13 @@ video {
     display: none;
   }
 }
+
+@media screen and (min-width: 1280px) and (max-width: 1456px) {
+  .md {
+    display: none;
+  }
+
+  .quick-office {
+    display: none;
+  }
+}
