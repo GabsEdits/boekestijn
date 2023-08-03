@@ -147,3 +147,25 @@ for (var i = 0; i < elements.length; i++) {
       });
     }
   }
+
+  const mapContainer = document.querySelector('.map-container');
+
+  // Intersection Observer to lazy load the Google Maps iframe
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const mapPlaceholder = entry.target.querySelector('.map-placeholder');
+        const iframe = document.createElement('iframe');
+        iframe.src = "https://maps.googleapis.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.940638663738!2d28.763401176815638!3d47.046966726454635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d94db5014bb%3A0xcbf78c12874ddbf4!2sBOEKESTIJN%20TRANSPORT%20SERVICE%20Moldova!5e1!3m2!1sro!2s!4v1685292931019!5m2!1sro!2s";
+        iframe.title = "A Google map";
+        iframe.className = "map";
+        iframe.allowfullscreen = "";
+        iframe.loading = "lazy";
+        iframe.referrerpolicy = "no-referrer-when-downgrade";
+        entry.target.appendChild(iframe);
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  observer.observe(mapContainer);
