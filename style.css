@@ -8,6 +8,7 @@ header {
     height: 80px;
     padding: 0 30px;
     background-color: #fff;
+    border-bottom: 1px solid #0000001f;
     box-shadow: 0 1px 4px #0000001a;
     border-radius: 0% 0% 1% 1%;
     z-index: 1;
@@ -30,10 +31,15 @@ header {
     margin: 0;
     padding: 0;
   }
-  li {
+
+  li:not(:first-child) {
     margin-left: 20px;
   }
 
+  li:first-child {
+    margin-left: 0;
+  }
+  
   a {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -374,16 +380,12 @@ footer .badges {
   display: none;
 }
 
-.scroll-down-ro {
-  display: none;
-}
-
-.scroll-down-ru {
-  display: none;
-}
-
-.quick-number-ru {
+html[lang="ru"] .quick-number {
   display: none !important;
+}
+
+html[lang="ru"] li a{
+  font-size: 13px;
 }
 }
 
@@ -443,11 +445,11 @@ margin-top: .5%;
   padding-top: 50px;
 }
 
-.hard-ru {
+.slogan .hard {
   position: relative;
 }
 
-.hard-ru::before {
+html[lang="ru"] .slogan .hard::before {
   content: "мечте";
   position: absolute;
   top: 0;
@@ -458,11 +460,7 @@ margin-top: .5%;
   margin: 0%;
 }
 
-.hard-ro {
-  position: relative;
-}
-
-.hard-ro::before {
+html[lang="ro"] .slogan .hard::before {
   content: "visul";
   position: absolute;
   top: 0;
@@ -618,10 +616,6 @@ margin-top: .5%;
     margin-left: 300px !important;
   }
   .scroll-down {
-    background-color: #3f363638;
-  }
-
-  .scroll-down-ro {
     background-color: #3f363638;
   }
 }
@@ -1075,9 +1069,9 @@ video {
 .test-drive-call-us-mobile {
   padding: 8px;
   display: inline-block;
-  max-width: 50%;
+  max-width: 170.35px;
   background-color: #00AD9A;
-  position: absolute;
+  position: relative;
   font-weight: 800;
   color: #000;
   border-radius: 8px;
@@ -1090,24 +1084,6 @@ video {
 }
 
 .test-drive-call-us-mobile:hover {
-  background-color: #003a33;
-  color: white;
-}
-
-
-.test-drive-call-us-mobile-ru {
-  padding: 8px;
-  background-color: #00AD9A;
-  position: absolute;
-  font-weight: 800;
-  color: #fff;
-  border-radius: 8px;
-  margin-top: 15px;
-  margin-left: -40px;
-  transition: background-color 150ms;
-}
-
-.test-drive-call-us-mobil-ru:hover {
   background-color: #003a33;
   color: white;
 }
@@ -1154,12 +1130,6 @@ video {
 
 .quick-number {
   margin: 11px;
-  text-align: center;
-  font-size: 10px;
-}
-
-.quick-number-ru {
-  margin: 11px 0 0 50px !important;
   text-align: center;
   font-size: 10px;
 }
@@ -1298,10 +1268,6 @@ video {
   .scroll-down {
     margin-left: 260px;
   }
-
-  .scroll-down-ro {
-    margin-left: 260px !important;
-  }
 }
 
 @media screen and (min-width:775px) and (max-width: 1055px){
@@ -1318,10 +1284,6 @@ video {
   .scroll-down {
     display: none;
   }
-
-  .scroll-down-ro {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 658px)and (max-width: 770px){
@@ -1331,62 +1293,16 @@ video {
   }
 }
 
-.scroll-down-ro {
-  padding: 15px;
-  border-radius: 70px;
-  background-color: #00000000;
-  color: #fff;
-  border: solid 2px #00AD9A;
+html[lang="ro"] .scroll-down{
   margin-left: 160px;
-  position: absolute;
-  margin-top: 30px;
-  transition: background-color .5s;
-  cursor: pointer;
   width: 250px;
-  text-align: center;
 }
 
-.scroll-down-ro:hover {
-  color: #FFFFFF;
-  background-color: #00AD9A;
-}
-
-.scroll-down-ru {
-  padding: 15px;
-  border-radius: 70px;
-  background-color: #00000000;
-  color: #fff;
-  border: solid 2px #00AD9A;
+html[lang="ru"] .scroll-down {
   margin-left: 170px;
-  position: absolute;
-  margin-top: 30px;
-  transition: background-color .5s;
-  cursor: pointer;
   width: 300px;
-  text-align: center;
 }
 
-.scroll-down-ru:hover {
-  color: #FFFFFF;
-  background-color: #00AD9A;
-}
-
-.test-drive-call-us-mobile-ru {
-  padding: 8px;
-  background-color: #00AD9A;
-  position: absolute;
-  font-weight: 800;
-  color: #fff;
-  border-radius: 8px;
-  margin-top: 15px;
-  left: 100px;
-  transition: background-color 150ms;
-}
-
-.test-drive-call-us-mobile-ru:hover {
-  background-color: #003a33;
-  color: white;
-}
 
 @media screen and (min-width: 768px) and (max-width: 934px){
   .slogan {
@@ -1396,14 +1312,6 @@ video {
 
 @media screen and (min-height: 1844px) {
   .scroll-down {
-    display: none;
-  }
-
-  .scroll-down-ru {
-    display: none;
-  }
-
-  .scroll-down-ro {
     display: none;
   }
 }
