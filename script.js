@@ -75,44 +75,6 @@ for (var i = 0; i < elements.length; i++) {
             behavior: 'smooth'
           });
         }
-
-          function swipeToNextItem() {
-            var swipeableContainer = document.querySelector('.swipable-container');
-            var currentItem = swipeableContainer.querySelector('.swipable-item.active');
-            var nextItem = currentItem.nextElementSibling;
-            var currentIgPage = currentItem.querySelector('.swipeable-dot.active').textContent;
-            var dots = swipeableContainer.querySelectorAll('.swipeable-dot');
-          
-            if (nextItem && currentIgPage !== nextItem.querySelector('.swipeable-dot.active').textContent) {
-              swipeableContainer.classList.add('swiping');
-              nextItem.classList.add('active');
-              dots.forEach(dot => {
-                if (dot.textContent === currentIgPage) {
-                  dot.classList.remove('active');
-                } else {
-                  dot.classList.add('active');
-                }
-              });
-              setTimeout(function() {
-                swipeableContainer.classList.remove('swiping');
-              }, 300);
-            }
-          }
-          
-          document.addEventListener('touchstart', function(event) {
-            if (event.target.classList.contains('swipable-item')) {
-              event.preventDefault();
-            }
-          });
-          
-          document.addEventListener('touchmove', function(event) {
-            if (event.target.classList.contains('swipable-item')) {
-              event.preventDefault();
-            }
-          });
-          
-          document.addEventListener('touchend', swipeToNextItem);
-
           
           // Check if the device is mobile
   if (window.matchMedia('(max-width: 768px)').matches) {
