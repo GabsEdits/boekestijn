@@ -75,30 +75,6 @@ for (var i = 0; i < elements.length; i++) {
             behavior: 'smooth'
           });
         }
-    
-          $(document).ready(function() {
-            var slideIds = ['#slide-1', '#slide-2', '#slide-3'];
-            var currentSlide = 0;
-        
-            function showSlide(index) {
-              $(slideIds[index]).fadeIn();
-            }
-        
-            function hideSlide(index) {
-              $(slideIds[index]).fadeOut();
-            }
-        
-            function nextSlide() {
-              hideSlide(currentSlide);
-              currentSlide = (currentSlide + 1) % slideIds.length;
-              showSlide(currentSlide);
-            }
-        
-            $(slideIds.join(', ')).hide(); // Hide all slides initially
-            showSlide(currentSlide); // Show the first slide
-        
-            setInterval(nextSlide, 10000); // Change slide every 10 seconds
-          });
 
           function swipeToNextItem() {
             var swipeableContainer = document.querySelector('.swipable-container');
