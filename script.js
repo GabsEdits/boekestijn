@@ -26,24 +26,6 @@ for (var i = 0; i < elements.length; i++) {
   twemoji.parse(elements[i]);
 }
 
-        fetch('https://api.boekestijntransport.com:50125/api/get_trucks')
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                appendData(data);
-                                console.log('data: ' + data['data']);
-            })
-            .catch(function (err) {
-                console.log('error: ' + err);
-            });
-        function appendData(data) {
-            var mainContainer = document.getElementById("myData");
-            var div = document.createElement("div");
-            div.innerHTML = data['data'];
-            mainContainer.appendChild(div);
-        }
-
         function scrollToTop() {
           window.scrollTo({
             top: 0,

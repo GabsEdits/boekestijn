@@ -1,5 +1,10 @@
-const app = Vue.createApp({});
-
+const app = Vue.createApp({
+  data() {
+    return {
+      englishText: 'English',
+    };
+  },
+});
 // header.js (Vue 3)
 app.component('header-section', {
     template: `
@@ -389,6 +394,7 @@ app.component('header-section', {
     `,
   });
 
+  
   // Mount the app to the #app element
   app.mount('#app');
   

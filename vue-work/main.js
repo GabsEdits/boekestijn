@@ -50,25 +50,21 @@
 //   },
 // });
 
-// main.js
+import Vue from 'vue';
+import App from './App.vue';
 
-import { createApp } from 'vue';
-import App from './app.js'; // Correct the path to your app.js file
-import { createI18n } from 'vue-i18n';
+Vue.config.productionTip = false;
 
-const app = createApp(App);
-
-// Step 2: Create the VueI18n instance and set the messages
-const i18n = createI18n({
-  locale: 'ru',
-  messages: {
-    ro: require('./ro.json'),
-    en: require('./en.json'),
-    ru: require('./ru.json')
-  }
+const app = new Vue({
+  data() {
+    return {
+      headerText: 'Welcome to My Website',
+      aboutText: 'About Us',
+      contactText: 'Contact Us',
+      englishText: 'English',
+    };
+  },
+  render: (h) => h(App),
 });
 
-// Step 3: Use the i18n instance in your app
-app.use(i18n);
-
-app.mount('#app');
+app.$mount('#app');

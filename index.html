@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="fonts/inter/inter.css">
     <link rel="stylesheet" href="/style.css">
     <link rel="preload" href="https://cdnjs.cloudflare.com" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" async>
     <link rel="icon" href="https://uploads-ssl.webflow.com/600ff788eda09e5214cdd5b0/601a8b5548d38c14e21062b9_boekestijn%20transport%20logo%20arrows.svg" type="image/x-icon">
-    <script src="/script.js"></script>
+    <script src="/script.js" async></script>
   </head>  
   <body>
     <header class="container">
@@ -37,9 +37,9 @@
         <li><a onclick="scrollToLocation()" onclick="scrollToLocationMobile()" href="#scrollToLocation" style="cursor: pointer" class="locationmobile">Местонахождение <i class="fa fa-map-marker-alt smaller-icon"></i></a></li>
         <li class="dropdown">
           <a href="#dropdown" style="cursor: pointer;">Язык <i class="fa fa-angle-down"></i></a>
-          <div class="dropdown-content" id="dropdown">
-            <a href="/ro">Română</a>
-            <a href="/en">English</a>
+          <div class="dropdown-content">
+            <a href="/ro/">Română</a>
+            <a href="/en/">English</a>
           </div>
         </li>
       </ul>
@@ -102,7 +102,7 @@
     </div>
     </div>
     <div class="video-wrapper">
-        <video src="/Videos/intro.mp4" loop autoplay muted>
+        <video src="/Videos/intro.mp4" loop autoplay muted poster="/images/poster.jpg">
           <track kind="captions" srclang="en" label="A lot of cars driving really fast in a loop">
         </video>
         <div class="overlay"></div>
