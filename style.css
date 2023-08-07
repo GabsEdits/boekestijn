@@ -209,13 +209,14 @@ footer {
 .owner-link {
   color: #000 !important;
   margin-left: 0px !important;
-  text-decoration: none;
+  text-decoration: underline 1.5px !important;
+  transition: text-decoration .5s !important;
   font-weight: 800;
 }
 
 .owner-link:hover {
+  text-decoration: underline green 1.5px !important;
   color: #000;
-  text-decoration: underline;
 }
 
 .flights-title {
