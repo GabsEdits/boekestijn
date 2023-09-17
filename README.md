@@ -1,5 +1,5 @@
 <div align="center">
-<img src="/public/images/icon-boek.png" />
+<img src="/public/images/icon-boek.png" width="140"/>
 
 # Boekestijn Transport Moldova Website
 The Source Code to [soferii.md](https:/soferii.md/) & [boekestijn.md](https://boekestijn.md) domains
