@@ -2,9 +2,12 @@
 <img src="/public/images/icon-boek.png" width="140"/>
 
 # Boekestijn Transport Moldova Website
-The Source Code to [soferii.md](https:/soferii.md/) & [boekestijn.md](https://boekestijn.md) domains
+The Source Code to [soferii.md](https://soferii.md/) & [boekestijn.md](https://boekestijn.md) domains
 
 </div>
+
+>**Note**
+> Even thought the main stable website on the soferii.md & boekestijn.md domains  have they're own servers. This reposotory is connected to [boekestijn.gabs.eu.org](https://boekestijn.gabs.eu.org/), that is used for development,so you can see the next version of the website that normally gets updated when something needs to be changed. The Testing Domain uses GitHub Pages, that is using GitHub Actions, the website gets updated everytime when there is a new commit. So all the issues that you find on the stable version should be made here.
 
 ## Project Overview
 ### Introduction: The Idea behind it
@@ -35,15 +38,9 @@ npm install
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Compile and Minify for the Stable Production
+As said above, for the testing page it gets compile and Minified using GitHub Actions, but for the Stable Site you should manually run the following: 
 
 ```sh
 npm run build
-```
-
-### Publishing to GitHub Pages
-Even thought the main stable website on soferii.md & boekestijn.md is with they're own servers, the one at boekestijn.gabs.eu.org that exists as development preview uses GitHub Pages, for that you will need the following command that is made possible with the npm package `gh-pages`:
-
-```sh
-npm run deploy
 ```
