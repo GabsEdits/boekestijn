@@ -72,7 +72,7 @@
         <p class="phone">78 848 000</p>
         <p class="call-to-action"><a href="tel:+37377799783" style="color: #ffffff;">{{ $t("testdrive.callnow") }}</a></p>
       </div>
-    </div>  
+    </div>
     </div>
     <div class="video-wrapper">
         <video src="/Videos/intro.mp4" loop autoplay muted poster="/images/poster.webp">
