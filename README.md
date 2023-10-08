@@ -7,7 +7,7 @@ The Source Code to [soferii.md](https://soferii.md/) & [boekestijn.md](https://b
 </div>
 
 >**Note**
-> Even thought the main stable website on the soferii.md & boekestijn.md domains  have they're own servers. This reposotory is connected to [boekestijn.gabs.eu.org](https://boekestijn.gabs.eu.org/), that is used for development,so you can see the next version of the website that normally gets updated when something needs to be changed. The Testing Domain uses GitHub Pages, that is using GitHub Actions, the website gets updated everytime when there is a new commit. So all the issues that you find on the stable version should be made here.
+> Even though the main stable websites hosted on the soferii.md and boekestijn.md domains each have their dedicated servers, this repository is specifically linked to boekestijn.gabs.eu.org, which serves as our development environment. Here, you can preview the forthcoming version of the website, which is updated whenever there are necessary changes in progress.
 
 ## Project Overview
 ### Introduction: The Idea behind it

@@ -195,6 +195,10 @@ color: var(--copyright);
 margin-top: 1rem;
 }
 
+.footer-copyright a {
+  color: var(--copyright);
+}
+
 .made-by {
 font-family: 'Inter', sans-serif;
 margin-top: 20px;
@@ -441,6 +445,15 @@ font-size: 13px;
 
 .language-icon::before {
   left: 0;
+}
+
+.dependencies {
+  margin-left: 130% !important;
+}
+
+.aeolus-card {
+  margin-top: 201px !important;
+  margin-left: 125% !important;
 }
 }
 
@@ -1635,7 +1648,7 @@ width: 300px;
    background-color: #e9e9e9;
    margin-left: 68%;
    border-radius: 5%;
-   margin-top: 27%;
+   margin-top: 29%;
    padding: 20px;
    text-align: center;
    align-items: center;

@@ -54,8 +54,8 @@
     <!-- Website Information -->
     <div class="info-title">Website Information</div>
     <div class="info-description">
-        This website is built with Vue.js and Vite, and it’s a part of the <a href="https://gabs.eu.org/aeolus"><b>Aeolus</b></a> family. It's structured in a way so each thing has its own place, so it follows <a href="https://semantichtml.github.io">Semantic HTML Convention</a> and a Component-Based Architecture.
-        <br><br>This website is also <b>open source</b>. You can find its source code <a href="https://github.com/GabsEdits/boekestijn">here</a>.
+      This website has been developed using Vue.js and Vite and is an integral part of the <a href="https://gabs.eu.org/aeolus"><b>Aeolus</b></a> project. The Framework's structure follows the <a href="https://semantichtml.github.io">Semantic HTML Convention</a> and an Component-Based Architecture.
+      <br><br>Furthermore, this website is fully <b>open source</b>. You can access it's source code <a href="https://github.com/GabsEdits/boekestijn">here</a>.
 
         <br><br>
     </div>
@@ -66,7 +66,8 @@
     <div class="build-number">
       <h1>Build Number</h1>
       <p>This information is here in case there is an issue, or to see when was this build was made.
-        <br><br>Build from: <code>07/10/2023</code></p>
+        <br><br>Build from: <code>08/10/2023</code>
+        <br>Build type: <code>Next (Development Environment)</code></p>
     </div>
 
     <!-- Dependencies -->
