@@ -73,11 +73,12 @@
     <!-- Dependencies -->
     <div class="dependencies">
         <h1>Dependencies</h1>
-        <div class="dependency-item"><b>vue</b> - 3.3.4</div>
-        <div class="dependency-item"><b>vite</b> - 4.5.11</div>
+        <div class="dependency-item"><b>vue</b> - 3.3.8</div>
+        <div class="dependency-item"><b>vite</b> - 5.0.0</div>
         <div class="divider"></div>
-        <div class="dependency-item"><b>axios</b> - 1.5.1</div>
-        <div class="dependency-item"><b>vue-i18n</b> - 9.5.0</div>
+        <div class="dependency-item"><b>inter-ui</b> - 3.19.3</div>
+        <div class="dependency-item"><b>axios</b> - 1.6.1</div>
+        <div class="dependency-item"><b>vue-i18n</b> - 9.7.0</div>
         <div class="dependency-item"><b>vue-router</b> - 4.2.5</div>
     </div>
     <!-- Aeolus Card -->

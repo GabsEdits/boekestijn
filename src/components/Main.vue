@@ -114,7 +114,7 @@ export default {
   methods: {
     async sendMessageToTelegram() {
       try {
-        const TOKEN = import.meta.env.TELEGRAM_TOKEN;
+        const TOKEN = import.meta.env.VITE_TELEGRAM_TOKEN;
         const CHAT_ID = '-1001627354708';
         const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
