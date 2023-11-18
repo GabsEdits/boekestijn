@@ -26,7 +26,7 @@ Designed exclusively for driver recruitment, this new website boasts a range of 
 - Fully build on top of open source
 
 ## Development: The Power behind it
-This website is build with Vue.js and Vite, it's structured in a way so each thing has it's own place, it follows [Semantic HTML Convention](https://semantichtml.github.io/) and Component-Based Architecture. If you want to contribute to it and clone it to your local mashine, then just run the following:
+This website has been developed using Vue.js and Vite and is an integral part of the <a href="https://gabs.eu.org/aeolus"><b>Aeolus</b></a> project. The Framework's structure follows the <a href="https://semantichtml.github.io">Semantic HTML Convention</a> and an Component-Based Architecture. If you want to contribute to it and clone it to your local mashine, then just run the following:
 
 ```sh
 npm install
