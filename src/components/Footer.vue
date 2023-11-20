@@ -66,8 +66,8 @@
     <div class="build-number">
       <h1>Build Number</h1>
       <p>This information is here in case there is an issue, or to see when was this build was made.
-        <br><br>Build from: <code>08/10/2023</code>
-        <br>Build type: <code>Next (Development Environment)</code></p>
+        <br><br>Build from: <code class="GeistMono">20/11/2023</code>
+        <br>Build type: <code>Stable</code></p>
     </div>
 
     <!-- Dependencies -->
@@ -76,7 +76,8 @@
         <div class="dependency-item"><b>vue</b> - 3.3.8</div>
         <div class="dependency-item"><b>vite</b> - 5.0.0</div>
         <div class="divider"></div>
-        <div class="dependency-item"><b>inter-ui</b> - 3.19.3</div>
+        <div class="dependency-item"><b>inter-font</b> - 4.0.0</div>
+        <div class="dependency-item"><b>geist-font</b> - 1.0.0</div>
         <div class="dependency-item"><b>axios</b> - 1.6.1</div>
         <div class="dependency-item"><b>vue-i18n</b> - 9.7.0</div>
         <div class="dependency-item"><b>vue-router</b> - 4.2.5</div>

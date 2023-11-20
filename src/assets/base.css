@@ -1,5 +1,14 @@
-@import "inter-ui/inter.css";
+@import "/fonts/inter/inter.css";
+@import url("/fonts/geist-mono/geist-mono.css");
+@import url("/fonts/geist-mono-variable/geist-mono-variable.css");
 
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
 
 body {
   font-family: 'Inter', sans-serif;
@@ -15,4 +24,9 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+code {
+  font-family: "Geist Mono";
+  font-weight: 500;
 }
