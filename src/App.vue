@@ -24,6 +24,7 @@ import Footer from './components/Footer.vue'
     <ExternalLinks />
     <Footer />
   </div>
+  <router-view></router-view>
 </template>
 
 <script>
