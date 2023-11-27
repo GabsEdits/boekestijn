@@ -4,20 +4,29 @@
       <section id="facebook">
         <div class="container">
           <i class="fab fa-facebook external-links-icon"></i>
-      <h2>{{ $t("facebook.title") }}</h2>
-      <p>{{ $t("facebook.desc") }}</p>
-      <a class="facebook-link" href="https://www.facebook.com/boekestijntransportmoldova" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-facebook"></i>
-        {{ $t("facebook.link") }}
-      </a>
-    </div>
+          <h2>{{ $t("facebook.title") }}</h2>
+          <p>{{ $t("facebook.desc") }}</p>
+          <a
+            class="facebook-link"
+            href="https://www.facebook.com/boekestijntransportmoldova"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-facebook"></i>
+            {{ $t("facebook.link") }}
+          </a>
+        </div>
       </section>
       <section id="external-links">
         <i class="fa-solid fa-link external-links-icon"></i>
-    <h2>{{ $t("externallinks.title") }}</h2>
-    <ul>
-      <li><a href="https://www.boekestijntransport.com" target="_blank">{{ $t("externallinks.link") }}</a></li>
-    </ul>
+        <h2>{{ $t("externallinks.title") }}</h2>
+        <ul>
+          <li>
+            <a href="https://www.boekestijntransport.com" target="_blank">{{
+              $t("externallinks.link")
+            }}</a>
+          </li>
+        </ul>
       </section>
     </div>
   </div>
@@ -96,7 +105,7 @@
     width: auto !important;
   }
 
-  #external-links a{
+  #external-links a {
     width: auto !important;
   }
 }

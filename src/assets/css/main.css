@@ -26,7 +26,10 @@ h1 {
 h1 img {
   height: 28px;
   width: 157.783px;
-  transition: padding 0.3s, border-radius 0.3s, background-color 0.3s;
+  transition:
+    padding 0.3s,
+    border-radius 0.3s,
+    background-color 0.3s;
 }
 
 header h1 img:hover {
@@ -518,10 +521,10 @@ footer {
 }
 
 .dropdown-content h4 {
- margin: 8px;
- text-align: center;
- font-size: 15px;
- font-weight: 800;
+  margin: 8px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
 }
 
 .call-footer {
@@ -623,7 +626,9 @@ video {
   margin-top: 30px;
   margin-left: 10%;
   border-radius: 10px;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
   cursor: pointer;
 }
 
@@ -818,7 +823,9 @@ video {
   border-radius: 4px;
   font-size: 18px;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 #external-links li a:hover {
@@ -1579,7 +1586,9 @@ html[lang="ru"] .scroll-down {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: color 0.2s, background-color 0.2s ease-in-out;
+  transition:
+    color 0.2s,
+    background-color 0.2s ease-in-out;
 }
 
 .btn-primary:hover {

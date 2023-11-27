@@ -14,10 +14,10 @@
 
 <script>
 export default {
-  name: 'LiveTrucks',
+  name: "LiveTrucks",
   data() {
     return {
-      truckData: '',
+      truckData: "",
     };
   },
   mounted() {
@@ -25,19 +25,19 @@ export default {
   },
   methods: {
     fetchTruckData() {
-      fetch('https://api.boekestijntransport.com:50125/api/get_trucks')
-        .then(response => response.json())
-        .then(data => {
+      fetch("https://api.boekestijntransport.com:50125/api/get_trucks")
+        .then((response) => response.json())
+        .then((data) => {
           if (data && data.data) {
             this.truckData = data.data;
           } else {
-            this.truckData = '900';
+            this.truckData = "900";
           }
-          console.log('data: ' + this.truckData);
+          console.log("data: " + this.truckData);
         })
-        .catch(error => {
-          console.error('Error fetching truck data:', error);
-          this.truckData = '900';
+        .catch((error) => {
+          console.error("Error fetching truck data:", error);
+          this.truckData = "900";
         });
     },
   },

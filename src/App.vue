@@ -1,14 +1,14 @@
 <script setup>
-import Header from './components/Header.vue'
-import Main from './components/Main.vue'
-import TestDriveMobile from './components/TestDriveMobile.vue'
-import LiveTrucks from './components/LiveTrucks.vue'
-import Benefits from './components/Benefits.vue'
-import Vacancies from './components/Vacancies.vue'
-import Locations from './components/Locations.vue'
-import Faq from './components/Faq.vue'
-import ExternalLinks from './components/ExternalLinks.vue'
-import Footer from './components/Footer.vue'
+import Header from "./components/Header.vue";
+import Main from "./components/Main.vue";
+import TestDriveMobile from "./components/TestDriveMobile.vue";
+import LiveTrucks from "./components/LiveTrucks.vue";
+import Benefits from "./components/Benefits.vue";
+import Vacancies from "./components/Vacancies.vue";
+import Locations from "./components/Locations.vue";
+import Faq from "./components/Faq.vue";
+import ExternalLinks from "./components/ExternalLinks.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
@@ -29,7 +29,7 @@ import Footer from './components/Footer.vue'
 
 <script>
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     Main,
@@ -41,6 +41,6 @@ export default {
     Faq,
     ExternalLinks,
     Footer,
-  }
-}
+  },
+};
 </script>
