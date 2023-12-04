@@ -25,7 +25,7 @@
           <p>
             This information is here in case there is an issue, or to see when
             was this build was made. <br /><br />Build from:
-            <code>27/11/2023</code> <br />Build type: <code>Stable</code>
+            <code>{{ formattedTimestamp }}</code> <br />Build type: <code>Stable</code>
           </p>
         </div>
 
@@ -33,12 +33,12 @@
         <div class="dependencies">
           <h1>Dependencies</h1>
           <div class="dependency-item"><b>vue</b> - 3.3.9</div>
-          <div class="dependency-item"><b>vite</b> - 5.0.2</div>
+          <div class="dependency-item"><b>vite</b> - 5.0.4</div>
           <div class="divider"></div>
           <div class="dependency-item"><b>inter-font</b> - 4.0.0</div>
           <div class="dependency-item"><b>geist-font</b> - 1.0.1</div>
           <div class="dependency-item"><b>axios</b> - 1.6.1</div>
-          <div class="dependency-item"><b>vue-i18n</b> - 9.7.1</div>
+          <div class="dependency-item"><b>vue-i18n</b> - 9.8.0</div>
           <div class="dependency-item"><b>vue-router</b> - 4.2.5</div>
         </div>
         <!-- Aeolus Card -->
@@ -58,8 +58,15 @@
 
 <script>
 export default {
+  data() {
+    return {
+      formattedTimestamp: '',
+    };
+  },
   mounted() {
     document.addEventListener("keydown", this.handleEscKeyInfo);
+    const lastUpdatedTimestamp = document.lastModified;
+    this.formattedTimestamp = new Date(lastUpdatedTimestamp).toLocaleDateString();
   },
 
   beforeDestroy() {

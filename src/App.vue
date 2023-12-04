@@ -14,6 +14,7 @@ import Footer from "./components/Footer.vue";
 <template>
   <div>
     <Header />
+    <div id="main">
     <Main />
     <TestDriveMobile />
     <LiveTrucks />
@@ -22,6 +23,7 @@ import Footer from "./components/Footer.vue";
     <Locations />
     <Faq />
     <ExternalLinks />
+    </div>
     <Footer />
   </div>
   <router-view></router-view>
