@@ -24,22 +24,24 @@
           <h1>Build Number</h1>
           <p>
             This information is here in case there is an issue, or to see when
-            was this build was made. <br /><br />Build from:
-            <code>{{ formattedTimestamp }}</code> <br />Build type: <code>Stable</code>
+            was this build was made. <br />
+            <br />Build from: <code>{{ formattedTimestamp }}</code> <!-- For Updating Document Time: 101 -->
+            <br />Build type: <code>Next</code>
           </p>
         </div>
 
         <!-- Dependencies -->
         <div class="dependencies">
           <h1>Dependencies</h1>
-          <div class="dependency-item"><b>vue</b> - 3.3.9</div>
-          <div class="dependency-item"><b>vite</b> - 5.0.4</div>
+          <div class="dependency-item"><b>vue</b> - <code>3.3.10</code></div>
+          <div class="dependency-item"><b>vite</b> - <code>5.0.5</code></div>
           <div class="divider"></div>
-          <div class="dependency-item"><b>inter-font</b> - 4.0.0</div>
-          <div class="dependency-item"><b>geist-font</b> - 1.0.1</div>
-          <div class="dependency-item"><b>axios</b> - 1.6.1</div>
-          <div class="dependency-item"><b>vue-i18n</b> - 9.8.0</div>
-          <div class="dependency-item"><b>vue-router</b> - 4.2.5</div>
+          <div class="dependency-item"><b>inter-font</b> - <code>4.0.0</code></div>
+          <div class="dependency-item"><b>geist-font</b> - <code>1.0.1</code></div>
+          <div class="dependency-item"><b>leaflet</b> - <code>1.9.4</code></div>
+          <div class="dependency-item"><b>axios</b> - <code>1.6.1</code></div>
+          <div class="dependency-item"><b>vue-i18n</b> - <code>9.8.0</code></div>
+          <div class="dependency-item"><b>vue-router</b> - <code>4.2.5</code></div>
         </div>
         <!-- Aeolus Card -->
         <a class="aeolus-card" href="https://gabs.eu.org/aeolus">
@@ -56,6 +58,13 @@
   </div>
 </template>
 
+
+<style>
+.dependency-item code {
+  font-weight: 450;
+  font-size: 13px;
+}
+</style>
 <script>
 export default {
   data() {

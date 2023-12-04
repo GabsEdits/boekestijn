@@ -64,7 +64,7 @@
 export default {
   data() {
     return {
-      aboutBuild: "Website Build From: 25/11/2023 (Vue)",
+      aboutBuild: "Click here for Website Information",
     };
   },
 };

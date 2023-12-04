@@ -665,9 +665,9 @@ video {
 
 .faq-title {
   font-size: 2rem;
-  font-weight: bold;
   text-align: center;
   margin-bottom: 40px;
+  color: #fff;;
 }
 
 .w-layout-grid {
@@ -684,16 +684,8 @@ video {
 
 .map-container {
   position: relative;
-  height: 500px;
-}
-
-.map-container .map {
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 700px;
   width: 100%;
-  height: 100%;
-  border: none;
 }
 
 .md {
@@ -842,6 +834,7 @@ video {
 #benefits h2 {
   font-size: 32px;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 #benefits ul {
@@ -1367,8 +1360,8 @@ video {
 
 #live-trucks h2 {
   font-size: 36px;
-  font-weight: 800;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 #live-trucks p {
