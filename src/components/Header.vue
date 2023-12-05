@@ -9,8 +9,7 @@
     <p
       style="margin-right: 20%"
       class="hide-on-mobile quick-office"
-      v-html="$t('header.quickoffice')"
-    ></p>
+    > {{ $t("header.quickoffice") }} <br> {{ $t("header.quickofficebr") }}: <i><a href="https://goo.gl/maps/Ydmkt3j1Z1PnpCM1A?coh=178571&amp;entry=tt">{{ $t("locations.main") }}</a></i></p>
     <ul>
       <li class="dropdown" @mouseleave="hideLanguageDropdown">
         <a @click="togglePhoneDropdown" id="ignore-link"

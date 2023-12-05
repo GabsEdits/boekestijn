@@ -4,11 +4,11 @@
     <p class="flights-desc">{{ $t("locations.desc") }}</p>
     <br /><br />
     <div class="map-container">
-      <l-map :zoom="8.4" :center="[47.04696756913603, 28.765961248669072]" :use-global-leaflet="false">
+      <l-map :zoom="9" :center="[47.315441144806144, 28.553086193216622]" :use-global-leaflet="false">
       <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"></l-tile-layer>
       <l-marker ref="marker" :lat-lng="[47.04696756913603, 28.765961248669072]">
         <l-popup>
-          <b>BOEKESTIJN TRANSPORT SERVICE Moldova</b><br>Strada Liviu Deleanu 13, Chișinău, Republica Moldova
+          <b>BOEKESTIJN TRANSPORT SERVICE Moldova</b><br>{{ $t("locations.main") }}
         </l-popup>
       </l-marker>
       <l-marker ref="marker" :lat-lng="[47.75758927432151, 27.94043471231699]">

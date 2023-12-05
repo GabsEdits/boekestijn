@@ -49,7 +49,7 @@
         </li>
         <li>
           <i class="fas fa-briefcase-medical"></i>
-          <p v-html="$t('benefits.benefitbriefcase')"></p>
+          <p>{{ $t("benefits.benefitbriefcasetitle") }} <br><br> {{ $t('benefits.benefitbriefcase') }}</p>
         </li>
       </ul>
     </div>

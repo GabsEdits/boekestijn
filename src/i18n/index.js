@@ -5,12 +5,17 @@ const messages = {
     header: {
       callus: "Call Us",
       quickoffice:
-        'Our Main <br>Office: <i><a href="https://goo.gl/maps/Ydmkt3j1Z1PnpCM1A?coh=178571&amp;entry=tt">Strada Liviu Deleanu 13 (Et. 4), Chișinău, Republica Moldova</a></i>',
+        'Our Main',
+      quickofficebr: "Office",
       locations: "Locations",
       language: "Language",
     },
     mainarea: {
-      slogan: 'Follow your <br><span class="hard">dream</span> with us',
+      slogan: {
+        before: 'Follow your',
+        hard: 'dream',
+        after: 'with us'
+      },
       intro:
         "The transport company Boekestijn was established in 1994 in Mill, the Netherlands. Initially, the company operated with a fleet of three trucks, but over time, it has experienced remarkable growth, expanding to over 900 trucks currently in operation. With a rich history spanning over 27 years, we have firmly established ourselves as a prominent player in the international transport and logistics market in Europe. Our extensive presence includes headquarters located in eight countries, supported by a dedicated team of over 1500 highly skilled professionals.",
       joinus: "Join Us",
@@ -50,7 +55,8 @@ const messages = {
       benefitmap:
         "Our entire fleet are monitored and managed by our own TMS. Developed with the main priority to be user friendly for the customer",
       benefitbriefcase:
-        "Insurance <br><br>We provide insurance for all drivers",
+        "We provide insurance for all drivers",
+      benefitbriefcasetitle: "Insurance"
     },
     vacancies: {
       title: "Check out our vacancies",
@@ -60,8 +66,9 @@ const messages = {
     locations: {
       title: "Location",
       desc: "Find our offices around the country",
-      otherone: "Bălți: Strada Nicolae Iorga 30, Republica Moldova",
-      othertwo: "Varnița: Strada Tighina, 66, Republica Moldova",
+      otherone: "Bălți: Str. Nicolae Iorga 30, Republic of Moldova",
+      othertwo: "Varnița: Str. Tighina, 66, Republic of Moldova",
+      main: "Str. Liviu Deleanu 13 (Floor 4), Chișinău, Republic of Moldova",
     },
     faq: {
       title: "Questions and Answers",
@@ -121,14 +128,19 @@ const messages = {
     header: {
       callus: "Sună-ne",
       quickoffice:
-        'Oficiul nostru <br>Central: <i><a href="https://goo.gl/maps/Ydmkt3j1Z1PnpCM1A?coh=178571&entry=tt">Strada Liviu Deleanu 13 (Et. 4), Chișinău, Republica Moldova</a></i>',
+        'Oficiul nostru',
+      quickofficebr: 'Central',
       locations: "Locații",
       language: "Limbă",
     },
     mainarea: {
-      slogan: 'Urmează-ți <br> <span class="hard">visul</span> alături de noi',
+      slogan: {
+        before: 'Urmează-ți',
+        hard: 'visul',
+        after: 'alături de noi',
+      },
       intro:
-        "Compania de transport Boekestijn a fost lansat în 1994 în Mill, Olanda. În acele zile erau trei camioane Boekestijn pe drum și la moment compania a crescut cu peste 900 de camioane pe traseu. Suntem o companie cu o istorie de peste 27 de ani pe piata Internaționala de transport si logistică în Europa, cu sediul în 8 țări și cu echipă de peste 1500 de angajați. <br><br><br></br>",
+        "Compania de transport Boekestijn a fost lansat în 1994 în Mill, Olanda. În acele zile erau trei camioane Boekestijn pe drum și la moment compania a crescut cu peste 900 de camioane pe traseu. Suntem o companie cu o istorie de peste 27 de ani pe piata Internaționala de transport si logistică în Europa, cu sediul în 8 țări și cu echipă de peste 1500 de angajați.",
       joinus: "Alătură-te nouă",
       scrolldown: "Vă rugăm derulați în jos",
     },
@@ -167,7 +179,8 @@ const messages = {
       benefitmap:
         "Întreaga noastră echipă este monitorizată și gestionată de propriul nostru sistem TMS, dezvoltat astfel încât să fie ușor de utilizat de către client",
       benefitbriefcase:
-        "Asigurare <br><br>Oferim asigurare pentru toți șoferii",
+        "Oferim asigurare pentru toți șoferii",
+      benefitbriefcasetitle: 'Asigurare',
     },
     vacancies: {
       title: "Consultați pozițiile noastre vacante",
@@ -179,6 +192,7 @@ const messages = {
       desc: "Găsiți birourile noastre pe teritoriul Republicii Moldova",
       otherone: "Bălți: Strada Nicolae Iorga 30, Republica Moldova",
       othertwo: "Varnița: Strada Tighina, 66, Republica Moldova",
+      main: "Strada Liviu Deleanu 13 (Et. 4), Chișinău, Republica Moldova",
     },
     faq: {
       title: "Întrebări și răspunsuri",
@@ -238,14 +252,19 @@ const messages = {
     header: {
       callus: "Позвоните нам",
       quickoffice:
-        'Наш главный <br>офис: <i><a href="https://goo.gl/maps/Ydmkt3j1Z1PnpCM1A?coh=178571&entry=tt">ул. Ливиу Деляну 13 (4-й этаж), Кишинев, Республика Молдова</a></i>',
+        'Наш главный',
+      quickofficebr: 'офис',
       locations: "Местонахождение",
       language: "Язык",
     },
     mainarea: {
-      slogan: 'Следуй своей <br><span class="hard">мечте</span> вместе с нами',
+      slogan: {
+        before: 'Следуй своей',
+        hard: 'мечте',
+        after: 'вместе с нами',
+      },
       intro:
-        "Транспортная компания Boekestijn была основана в 1994 году в Милле, Нидерланды. В то время на дороге было три грузовика Boekestijn, а на данный момент компания выросла на маршруте более чем на 900 грузовиков. Мы - компания с более чем 25-летней историей на рынке международных перевозок и логистики в Европе, базирующаяся в 8 странах и имеющая команду из более чем 1500 сотрудников. <br><br><br>",
+        "Транспортная компания Boekestijn была основана в 1994 году в Милле, Нидерланды. В то время на дороге было три грузовика Boekestijn, а на данный момент компания выросла на маршруте более чем на 900 грузовиков. Мы - компания с более чем 25-летней историей на рынке международных перевозок и логистики в Европе, базирующаяся в 8 странах и имеющая команду из более чем 1500 сотрудников.",
       joinus: "Присоединяйтесь к нам",
       scrolldown: "Пожалуйста, прокрутите вниз",
     },
@@ -283,7 +302,8 @@ const messages = {
       benefitmap:
         "Вся наша команда контролируется и управляется нашей собственной системой TMS, разработана для удобства использования заказчиком.",
       benefitbriefcase:
-        "Страховку <br><br>Мы предлагаем страховку для всех водителей",
+        "Мы предлагаем страховку для всех водителей",
+      benefitbriefcasetitle: "Страховку",
     },
     vacancies: {
       title: "Ознакомьтесь с нашими вакансиями",
@@ -295,6 +315,7 @@ const messages = {
       desc: "Найдите наши офисы на территории Республики Молдова",
       otherone: "Бэлць: ул. Николае Йорга, 30, Республика Молдова",
       othertwo: "Варница: ул. Тигина, 66, Республика Молдова",
+      main: "ул. Ливиу Деляну 13 (4-й этаж), Кишинев, Республика Молдова",
     },
     faq: {
       title: "Вопросы и ответы",

@@ -2,9 +2,8 @@
   <div class="container">
     <h1
       class="slogan animating anim--fadeIn"
-      v-html="$t('mainarea.slogan')"
-    ></h1>
-    <p class="intro animating anim--fadeIn" v-html="$t('mainarea.intro')"></p>
+    >{{  $t('mainarea.slogan.before') }} <br><span class="hard">{{  $t('mainarea.slogan.hard') }}</span> {{  $t('mainarea.slogan.after') }}</h1>
+    <p class="intro animating anim--fadeIn">{{ $t('mainarea.intro') }} <div class="br-ru"><br><br></div></p>
     <router-link to="/join-us" class="join-us">{{
       $t("mainarea.joinus")
     }}</router-link>

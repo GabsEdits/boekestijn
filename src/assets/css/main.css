@@ -10,7 +10,7 @@ header.container {
   background-color: #ffffffed;
   backdrop-filter: blur(10px);
   border-bottom: 1.2px solid #E7E7E7; 
-  z-index: 1000;
+  z-index: 2000;
   animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -310,7 +310,7 @@ footer {
     width: 100% !important;
     top: 0 !important;
     position: fixed !important;
-    z-index: 999 !important;
+    z-index: 2000 !important;
   }
 
   header h1 {
@@ -1724,4 +1724,16 @@ html[lang="ru"] .scroll-down {
 .dropdown-content .divider {
   border-top: 1px solid #ccc;
   margin: 4px 20%;
+}
+
+.br-ru {
+  display: none;
+}
+
+html[lang="ro"] .br-ru {
+  display: block;
+}
+
+html[lang="ru"] .br-ru {
+  display: block;
 }

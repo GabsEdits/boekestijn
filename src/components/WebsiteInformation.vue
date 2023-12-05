@@ -69,13 +69,17 @@
 export default {
   data() {
     return {
-      formattedTimestamp: '',
+      formattedTimestamp: '05/12/2023',
     };
   },
   mounted() {
     document.addEventListener("keydown", this.handleEscKeyInfo);
+    /*
     const lastUpdatedTimestamp = document.lastModified;
     this.formattedTimestamp = new Date(lastUpdatedTimestamp).toLocaleDateString();
+
+    Why doesn't this work? C'mon
+    */
   },
 
   beforeDestroy() {
