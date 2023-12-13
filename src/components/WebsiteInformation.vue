@@ -25,7 +25,7 @@
           <p>
             This information is here in case there is an issue, or to see when
             was this build was made. <br />
-            <br />Build from: <code>{{ formattedTimestamp }}</code> <!-- For Updating Document Time: 101 -->
+            <br />Build from: <code>{{ formattedDate }}</code>
             <br />Build type: <code>Next</code>
           </p>
         </div>
@@ -33,8 +33,8 @@
         <!-- Dependencies -->
         <div class="dependencies">
           <h1>Dependencies</h1>
-          <div class="dependency-item"><b>vue</b> - <code>3.3.10</code></div>
-          <div class="dependency-item"><b>vite</b> - <code>5.0.5</code></div>
+          <div class="dependency-item"><b>vue</b> - <code>3.3.11</code></div>
+          <div class="dependency-item"><b>vite</b> - <code>5.0.8</code></div>
           <div class="divider"></div>
           <div class="dependency-item"><b>inter-font</b> - <code>4.0.0</code></div>
           <div class="dependency-item"><b>geist-font</b> - <code>1.0.1</code></div>
@@ -69,17 +69,11 @@
 export default {
   data() {
     return {
-      formattedTimestamp: '05/12/2023',
+      lastUpdated: new Date('2023-12-13T19:06:00'),
     };
   },
   mounted() {
     document.addEventListener("keydown", this.handleEscKeyInfo);
-    /*
-    const lastUpdatedTimestamp = document.lastModified;
-    this.formattedTimestamp = new Date(lastUpdatedTimestamp).toLocaleDateString();
-
-    Why doesn't this work? C'mon
-    */
   },
 
   beforeDestroy() {
@@ -93,6 +87,17 @@ export default {
       if (event.key === "Escape") {
         this.closeInfoPopup();
       }
+    },
+  },
+  computed: {
+    formattedDate() {
+      return this.lastUpdated.toLocaleString('int', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+        hour12: false,
+        timeZoneName: 'short',
+      });
     },
   },
 };

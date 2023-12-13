@@ -57,7 +57,6 @@ header .li {
 }
 
 a {
-  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: var(--link-gray);
@@ -117,7 +116,6 @@ header .dropdown-content a:hover {
 }
 
 body {
-  font-family: "Inter", sans-serif;
   background-color: var(--background-color);
   max-width: 100% !important;
 }
@@ -154,7 +152,6 @@ body {
 
 .intro {
   margin-top: 1%;
-  font-family: "Inter", sans-serif;
   text-align: justify;
   color: var(--white);
   margin-left: 2%;
@@ -213,8 +210,7 @@ footer {
 }
 
 .footer-copyright {
-  font-family: "Inter", sans-serif;
-  font-size: 0.9rem;
+  font-size: medium;
   margin-top: 1rem;
 }
 
@@ -223,7 +219,6 @@ footer {
 }
 
 .made-by {
-  font-family: "Inter", sans-serif;
   margin-top: 20px;
   text-align: center;
   color: var(--black);
@@ -276,22 +271,17 @@ footer {
 }
 
 .flights-title {
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
   text-align: center;
   font-size: 200%;
 }
 
 .flights-desc {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 90%;
+  font-size: medium;
   text-align: center;
   margin-top: 0.5%;
 }
 
 #other-address {
-  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 90%;
   text-align: center;
@@ -527,7 +517,6 @@ footer {
 }
 
 .call-footer {
-  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 120%;
   text-align: center;
@@ -1499,7 +1488,7 @@ html[lang="ru"] .scroll-down {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 2000;
 }
 
 .popup-content {
@@ -1596,7 +1585,7 @@ html[lang="ru"] .scroll-down {
 
 .privacy-title {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 1.5rem;
 }
 

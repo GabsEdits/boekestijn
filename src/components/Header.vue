@@ -50,6 +50,7 @@
           style="cursor: pointer"
           class="language-icon"
           @click="toggleLanguageDropdown"
+          href="#"
           >{{ $t("header.language") }} <i class="fa fa-angle-down"></i
         ></a>
         <div class="dropdown-content" v-if="showLanguageDropdown">
