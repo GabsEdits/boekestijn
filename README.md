@@ -7,7 +7,7 @@ The Source Code to [soferii.md](https://soferii.md/) & [boekestijn.md](https://b
 
 </div>
 
-> **Note**
+> [!NOTE]
 > Even though the main stable websites hosted on the soferii.md and boekestijn.md domains each have their dedicated servers, this repository is specifically linked to boekestijn.gabs.eu.org, which serves as our development environment. Here, you can preview the forthcoming version of the website, which is updated whenever there are necessary changes in progress.
 
 ## Project Overview
@@ -45,7 +45,7 @@ npm run dev
 
 ### Compile and Minify for the Stable Production
 
-As said above, for the testing page it gets compile and Minified using GitHub Actions, but for the Stable Site you should manually run the following:
+As said above, for the testing page it gets compile and Minified using GitHub Actions/Vercel, but for lunching the website on a dedicated server you should manually run the following:
 
 ```sh
 npm run build
