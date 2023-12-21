@@ -69,7 +69,7 @@
 export default {
   data() {
     return {
-      lastUpdated: new Date('2023-12-13T19:06:00'),
+      lastUpdated: new Date('2023-12-21T20:40:00'),
     };
   },
   mounted() {

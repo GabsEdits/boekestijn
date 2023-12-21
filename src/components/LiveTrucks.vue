@@ -43,3 +43,44 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+#live-trucks {
+  background-color: #161c24;
+  color: var(--white);
+  padding: 80px 0;
+  padding-top: 40px;
+  text-align: center;
+  background-image: url("/images/live-trucks.webp");
+  background-position: 50%;
+  background-size: cover;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#live-trucks h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#live-trucks p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+#myData {
+  margin: 0 auto;
+  padding: 5px 11px;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 900;
+  background-color: var(--my-data);
+  display: inline-block;
+}
+
+.content-trucks {
+  margin-right: 500px;
+}
+</style>
