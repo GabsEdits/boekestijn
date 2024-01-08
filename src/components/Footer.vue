@@ -52,7 +52,7 @@
       </p>
       <p class="footer-copyright" :title="aboutBuild">
         <router-link to="/developer">
-          &copy; 2023 Î.C.S. Boekestijn Transport Service S.R.L. All rights
+          &copy; 2023-2024 Î.C.S. Boekestijn Transport Service S.R.L. All rights
           reserved.
         </router-link>
       </p>

@@ -29,3 +29,8 @@ h2 {
   font-weight: 800;
   font-family: 'InterDisplay';
 }
+
+::selection {
+  background-color: var(--boek-green-1);
+  color: var(--white);
+}

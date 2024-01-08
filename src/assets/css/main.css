@@ -226,18 +226,8 @@ footer {
 }
 
 .hard {
-  position: relative;
-}
-
-.hard::before {
-  content: "dream";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: var(--black);
-  z-index: 0;
-  margin: 0%;
+  background-color: black;
+  border-radius: 10px;
 }
 
 .filter__link {
@@ -537,32 +527,6 @@ height: 450px;
 
 #locations {
   padding-top: 50px;
-}
-
-.slogan .hard {
-  position: relative;
-}
-
-html[lang="ru"] .slogan .hard::before {
-  content: "мечте";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: var(--black);
-  z-index: -1;
-  margin: 0%;
-}
-
-html[lang="ro"] .slogan .hard::before {
-  content: "visul";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: var(--black);
-  z-index: -1;
-  margin: 0%;
 }
 
 .overlay {
@@ -973,20 +937,7 @@ video {
 }
 
 .slide-bal {
-  top: 30rem !important;
-  right: 34rem;
-  text-align: center;
-  position: absolute;
-  width: 195px;
-  height: 250px;
-  background-color: var(--slides-background-color);
-  backdrop-filter: blur(3px);
-  border-radius: 26px;
-  padding: 20px;
-}
-
-.slide-kiv {
-  top: 20rem !important;
+  top: 10rem !important;
   right: 20rem;
   text-align: center;
   position: absolute;

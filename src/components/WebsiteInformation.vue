@@ -33,14 +33,14 @@
         <!-- Dependencies -->
         <div class="dependencies">
           <h1>Dependencies</h1>
-          <div class="dependency-item"><b>vue</b> - <code>3.3.11</code></div>
-          <div class="dependency-item"><b>vite</b> - <code>5.0.8</code></div>
+          <div class="dependency-item"><b>vue</b> - <code>3.4.5</code></div>
+          <div class="dependency-item"><b>vite</b> - <code>5.0.11</code></div>
           <div class="divider"></div>
-          <div class="dependency-item"><b>inter-font</b> - <code>4.0.0</code></div>
+          <div class="dependency-item"><b>inter-ui</b> - <code>4.0.1</code></div>
           <div class="dependency-item"><b>geist-font</b> - <code>1.0.1</code></div>
           <div class="dependency-item"><b>leaflet</b> - <code>1.9.4</code></div>
-          <div class="dependency-item"><b>axios</b> - <code>1.6.1</code></div>
-          <div class="dependency-item"><b>vue-i18n</b> - <code>9.8.0</code></div>
+          <div class="dependency-item"><b>axios</b> - <code>1.6.5</code></div>
+          <div class="dependency-item"><b>vue-i18n</b> - <code>9.9.0</code></div>
           <div class="dependency-item"><b>vue-router</b> - <code>4.2.5</code></div>
         </div>
         <!-- Aeolus Card -->
@@ -69,7 +69,7 @@
 export default {
   data() {
     return {
-      lastUpdated: new Date('2023-12-21T20:40:00'),
+      lastUpdated: new Date('2024-01-08T17:06:00+02:00'),
     };
   },
   mounted() {
