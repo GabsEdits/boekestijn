@@ -48,7 +48,7 @@
       <router-link to="/privacy">Privacy Policy</router-link>
       <p class="made-by">
         Made with <i class="fa-solid fa-heart" style="color: #dd2e44"></i> by
-        <a href="https://gabs.eu.org" class="owner-link">Gabs</a>
+        <a href="https://gabs.eu.org" class="author">Gabs</a>
       </p>
       <p class="footer-copyright" :title="aboutBuild">
         <router-link to="/developer">

@@ -1,9 +1,9 @@
 <template>
-  <section id="locations-section">
-    <h2 class="flights-title" id="locations">{{ $t("locations.title") }}</h2>
-    <p class="flights-desc">{{ $t("locations.desc") }}</p>
+  <section id="locations">
+    <h2>{{ $t("locations.title") }}</h2>
+    <p>{{ $t("locations.desc") }}</p>
     <br /><br />
-    <div class="map-container">
+    <div id="map">
       <l-map :zoom="11" :center="[46.9264883, 29.1665167]" :use-global-leaflet="false">
       <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"></l-tile-layer>
       <l-marker ref="marker" :lat-lng="[47.04696756913603, 28.765961248669072]">

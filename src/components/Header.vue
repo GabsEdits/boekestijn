@@ -89,3 +89,90 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+header.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 70px;
+  padding: 0 6%;
+  background-color: #ffffffed;
+  backdrop-filter: blur(10px);
+  border-bottom: 1.2px solid #e7e7e7;
+  z-index: 2000;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  h1 img:hover {
+    padding: 1px;
+    border-radius: 5px;
+    background-color: #bebebe84;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  li:first-child {
+    margin-left: 0;
+  }
+
+  li a {
+    transition: all 300ms;
+
+    &:hover {
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #c1c1c184;
+    }
+  }
+
+  .dropdown-content a:hover {
+    padding: 10px;
+  }
+
+  .quick-office {
+    text-align: left !important;
+    font-size: 15px;
+  }
+
+  .quick-number {
+    font-size: 12px;
+  }
+
+  .language-icon {
+    position: relative;
+  }
+
+  .language-icon::before,
+  .language-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 1px;
+    height: 20px;
+    background-color: var(--silver);
+    transform: translateY(-50%);
+  }
+
+  .language-icon::before {
+    left: -10px;
+  }
+
+  .language-icon::after {
+    right: -10px;
+  }
+}
+</style>

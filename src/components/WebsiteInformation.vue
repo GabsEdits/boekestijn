@@ -33,15 +33,17 @@
         <!-- Dependencies -->
         <div class="dependencies">
           <h1>Dependencies</h1>
-          <div class="dependency-item"><b>vue</b> - <code>3.4.5</code></div>
-          <div class="dependency-item"><b>vite</b> - <code>5.0.11</code></div>
-          <div class="divider"></div>
-          <div class="dependency-item"><b>inter-ui</b> - <code>4.0.1</code></div>
-          <div class="dependency-item"><b>geist-font</b> - <code>1.0.1</code></div>
-          <div class="dependency-item"><b>leaflet</b> - <code>1.9.4</code></div>
-          <div class="dependency-item"><b>axios</b> - <code>1.6.5</code></div>
-          <div class="dependency-item"><b>vue-i18n</b> - <code>9.9.0</code></div>
-          <div class="dependency-item"><b>vue-router</b> - <code>4.2.5</code></div>
+          <p class="dependency-item"><b>vue</b> - <code>3.4.15</code></p>
+          <p class="dependency-item"><b>vite</b> - <code>5.0.12</code></p>
+          <hr />
+          <p class="dependency-item"><b>leaflet</b> - <code>1.9.4</code></p>
+          <p class="dependency-item"><b>axios</b> - <code>1.6.7</code></p>
+          <p class="dependency-item"><b>vue-i18n</b> - <code>9.9.1</code></p>
+          <p class="dependency-item"><b>vue-router</b> - <code>4.2.5</code></p>
+          <hr />
+          <p class="dependency-item"><b>inter-ui</b> - <code>4.0.1</code></p>
+          <p class="dependency-item"><b>geist-font</b> - <code>1.0.1</code></p>
+          
         </div>
         <!-- Aeolus Card -->
         <a class="aeolus-card" href="https://gabs.eu.org/aeolus">
@@ -69,7 +71,7 @@
 export default {
   data() {
     return {
-      lastUpdated: new Date('2024-01-08T17:06:00+02:00'),
+      lastUpdated: new Date('2024-02-03T15:43:00+02:00'),
     };
   },
   mounted() {
