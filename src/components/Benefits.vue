@@ -49,9 +49,52 @@
         </li>
         <li>
           <i class="fas fa-briefcase-medical"></i>
-          <p>{{ $t("benefits.benefitbriefcasetitle") }} <br><br> {{ $t('benefits.benefitbriefcase') }}</p>
+          <p>
+            {{ $t("benefits.benefitbriefcasetitle") }} <br /><br />
+            {{ $t("benefits.benefitbriefcase") }}
+          </p>
         </li>
       </ul>
     </div>
   </section>
 </template>
+
+<style lang="scss">
+#benefits {
+  color: var(--white);
+  background-color: var(--benefits-back);
+  padding: 3.125rem 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+    color: #fff;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    flex: 0 0 33.33%;
+    padding: 1.25rem;
+
+    p {
+      font-size: 1.0625rem;
+      margin-bottom: 0.625rem;
+    }
+
+    i {
+      font-size: 3.125rem;
+      margin-bottom: 1.25rem;
+      color: var(--white);
+    }
+  }
+}
+</style>

@@ -39,3 +39,33 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+#locations {
+  h2 {
+    text-align: center;
+    font-size: 200%;
+    padding-top: 50px;
+  }
+
+  p {
+    font-size: medium;
+    text-align: center;
+    margin-top: 0.5%;
+  }
+
+  #other-address {
+    font-weight: 500;
+    font-size: 90%;
+    text-align: center;
+    margin: 0.5% 0;
+    padding: 10px 0;
+  }
+
+  #map {
+    position: relative;
+    height: 700px;
+    width: 100%;
+  }
+}
+</style>

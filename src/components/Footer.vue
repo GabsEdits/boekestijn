@@ -69,3 +69,103 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+footer {
+  background-color: var(--footer-back);
+  padding: 1rem;
+  text-align: center;
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .footer-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-social-link {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    transition: color 0.3s;
+  }
+
+  .footer-social-link:hover {
+    color: #007bff;
+  }
+
+  .footer-additional {
+    margin-top: 1rem;
+  }
+
+  .footer-additional a {
+    color: var(--hover-link-gray);
+    text-decoration: none;
+    margin: 0.5rem;
+    transition: color 0.3s;
+  }
+
+  .footer-additional a:hover {
+    color: var(--footer-social);
+  }
+
+  .footer-copyright {
+    font-size: medium;
+    margin-top: 1rem;
+  }
+
+  .footer-copyright a {
+    color: var(--copyright);
+  }
+
+  .made-by {
+    margin-top: 1.25rem;
+    text-align: center;
+    color: var(--black);
+    font-weight: 600;
+  }
+
+  .call-footer {
+    font-weight: 600;
+    font-size: 120%;
+    text-align: center;
+    margin-top: 0.5%;
+  }
+
+  #footer-special-link {
+    color: var(--hover-link-gray);
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding: 14px;
+    font-size: 17px;
+  }
+
+  #footer-special-link:hover {
+    text-decoration: underline;
+  }
+
+  .author {
+    color: var(--black) !important;
+    margin-left: 0px !important;
+    text-decoration: underline 1.5px !important;
+    transition: text-decoration 0.5s !important;
+    font-weight: 800;
+
+    &:hover {
+      text-decoration: underline green 1.5px !important;
+      color: var(--black);
+    }
+  }
+}
+</style>

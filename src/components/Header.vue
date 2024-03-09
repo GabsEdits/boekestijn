@@ -4,12 +4,18 @@
       <a onclick="scrollToTop()" href="#top"
         ><img src="/images/boekestijn-transport.svg" alt="Boekestijn Transport"
       /></a>
-      <sup class="md">🅫</sup>
+      <sup id="md">🅫</sup>
     </h1>
-    <p
-      style="margin-right: 20%"
-      class="hide-on-mobile quick-office"
-    > {{ $t("header.quickoffice") }} <br> {{ $t("header.quickofficebr") }}: <i><a href="https://goo.gl/maps/Ydmkt3j1Z1PnpCM1A?coh=178571&amp;entry=tt">{{ $t("locations.main") }}</a></i></p>
+    <small style="margin-right: 20%" class="hide-on-mobile quick-office">
+      {{ $t("header.quickoffice") }} <br />
+      {{ $t("header.quickofficebr") }}:
+      <i
+        ><a
+          href="https://goo.gl/maps/Ydmkt3j1Z1PnpCM1A?coh=178571&amp;entry=tt"
+          >{{ $t("locations.main") }}</a
+        ></i
+      ></small
+    >
     <ul>
       <li class="dropdown" @mouseleave="hideLanguageDropdown">
         <a @click="togglePhoneDropdown" id="ignore-link"
@@ -173,6 +179,95 @@ header.container {
 
   .language-icon::after {
     right: -10px;
+  }
+
+  #md {
+    font-size: 35px;
+  }
+}
+
+.dropdown {
+  position: relative;
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -13px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.25);
+    padding: 3px;
+    margin: 0;
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 0px;
+    transition: all 3s;
+
+    .divider {
+      border-top: 1px solid #ccc;
+      margin: 4px 20%;
+    }
+
+    a {
+      display: block;
+      padding: 10px;
+      color: var(--hover-link-gray);
+      text-decoration: none;
+      text-align: center;
+
+      &:last-child {
+        margin-bottom: 4px;
+      }
+
+      &:hover {
+        background-color: var(--test-drive-mobile-background-2);
+      }
+    }
+
+    h4 {
+      margin: 8px;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 800;
+    }
+  }
+
+  &:hover .dropdown-content {
+    display: block;
+  }
+}
+
+.quick-call {
+  margin-top: 500px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+
+  a {
+    color: var(--quick-call-color) !important;
+  }
+}
+
+@media screen and (min-width: 48rem) and (max-width: 79.9375rem) {
+  .quick-office {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 79.6875rem) and (max-width: 91rem) {
+  .md {
+    display: none;
+  }
+
+  header h1 {
+    margin-top: 0.625rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .quick-call {
+    margin-top: 50rem !important;
   }
 }
 </style>
