@@ -33,7 +33,7 @@
         <!-- Dependencies -->
         <div class="dependencies">
           <h1>Dependencies</h1>
-          <p class="dependency-item"><b>vue</b> - <code>3.4.15</code></p>
+          <p class="dependency-item"><b>vue</b> - <code>3.4.21</code></p>
           <p class="dependency-item"><b>vite</b> - <code>5.1.5</code></p>
           <hr />
           <p class="dependency-item"><b>leaflet</b> - <code>1.9.4</code></p>
