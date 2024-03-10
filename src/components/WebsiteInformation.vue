@@ -11,8 +11,8 @@
           <a href="https://gabs.eu.org/aeolus"><b>Aeolus</b></a> project. The
           Framework's structure follows the
           <a href="https://semantichtml.github.io">Semantic HTML Convention</a>
-          and an Component-Based Architecture. <br /><br />Furthermore, this
-          website is fully <b>open source</b>. You can access it's source code
+          and a Component-Based Architecture. <br /><br />Furthermore, this
+          website is fully <b>open source</b>. You can access its source code
           <a href="https://github.com/GabsEdits/boekestijn">here</a>.
 
           <br /><br />
@@ -24,26 +24,41 @@
           <h1>Build Number</h1>
           <p>
             This information is here in case there is an issue, or to see when
-            was this build was made. <br />
-            <br />Build from: <code>{{ formattedDate }}</code>
-            <br />Build type: <code>Next</code>
+            this build was made. <br />
+            <br />Build from: <code>{{ formattedDate }}</code> <br />Build type:
+            <code>{{ buildtype }}</code>
           </p>
         </div>
 
         <!-- Dependencies -->
         <div class="dependencies">
           <h1>Dependencies</h1>
-          <p class="dependency-item"><b>vue</b> - <code>3.4.21</code></p>
-          <p class="dependency-item"><b>vite</b> - <code>5.1.5</code></p>
+          <p class="dependency-item">
+            <b>vue</b> - <code>{{ dependency.vue }}</code>
+          </p>
+          <p class="dependency-item">
+            <b>vite</b> - <code>{{ dependency.vite }}</code>
+          </p>
           <hr />
-          <p class="dependency-item"><b>leaflet</b> - <code>1.9.4</code></p>
-          <p class="dependency-item"><b>axios</b> - <code>1.6.7</code></p>
-          <p class="dependency-item"><b>vue-i18n</b> - <code>9.9.1</code></p>
-          <p class="dependency-item"><b>vue-router</b> - <code>4.2.5</code></p>
+          <p class="dependency-item">
+            <b>leaflet</b> - <code>{{ dependency.leaflet }}</code>
+          </p>
+          <p class="dependency-item">
+            <b>axios</b> - <code>{{ dependency.axios }}</code>
+          </p>
+          <p class="dependency-item">
+            <b>vue-i18n</b> - <code>{{ dependency.vuei18n }}</code>
+          </p>
+          <p class="dependency-item">
+            <b>vue-router</b> - <code>{{ dependency.router }}</code>
+          </p>
           <hr />
-          <p class="dependency-item"><b>inter-ui</b> - <code>4.0.1</code></p>
-          <p class="dependency-item"><b>geist-font</b> - <code>1.0.1</code></p>
-          
+          <p class="dependency-item">
+            <b>inter-ui</b> - <code>{{ dependency.inter }}</code>
+          </p>
+          <p class="dependency-item">
+            <b>geist-font</b> - <code>{{ dependency.geist }}</code>
+          </p>
         </div>
         <!-- Aeolus Card -->
         <a class="aeolus-card" href="https://gabs.eu.org/aeolus">
@@ -60,47 +75,47 @@
   </div>
 </template>
 
-
 <style>
 .dependency-item code {
   font-weight: 450;
   font-size: 13px;
 }
 </style>
-<script>
-export default {
-  data() {
-    return {
-      lastUpdated: new Date('2024-02-03T15:43:00+02:00'),
-    };
-  },
-  mounted() {
-    document.addEventListener("keydown", this.handleEscKeyInfo);
-  },
 
-  beforeDestroy() {
-    document.removeEventListener("keydown", this.handleEscKeyInfo);
-  },
-  methods: {
-    closeInfoPopup() {
-      this.$router.push("/");
-    },
-    handleEscKeyInfo(event) {
-      if (event.key === "Escape") {
-        this.closeInfoPopup();
-      }
-    },
-  },
-  computed: {
-    formattedDate() {
-      return this.lastUpdated.toLocaleString('int', {
-        day: '2-digit',
-        month: '2-digit',
-        year: 'numeric',
-        hour12: false,
-        timeZoneName: 'short',
-      });
-    },
-  },
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from "vue";
+import { useRouter } from "vue-router";
+import WebsiteConfig from "../website.config.js";
+
+const { buildtype, update, dependency } = WebsiteConfig;
+const lastUpdated = ref(new Date(update));
+const $router = useRouter();
+
+onMounted(() => {
+  document.addEventListener("keydown", handleEscKeyInfo);
+});
+
+onBeforeUnmount(() => {
+  document.removeEventListener("keydown", handleEscKeyInfo);
+});
+
+const closeInfoPopup = () => {
+  $router.push("/");
 };
+
+const handleEscKeyInfo = (event) => {
+  if (event.key === "Escape") {
+    closeInfoPopup();
+  }
+};
+
+const formattedDate = lastUpdated.value.toLocaleString("int", {
+  day: "2-digit",
+  month: "long",
+  year: "numeric",
+  hour: "2-digit",
+  minute: "2-digit",
+  hour12: false,
+  timeZoneName: "short",
+});
 </script>
