@@ -114,6 +114,25 @@ header.container {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 
+  @media (max-width: 767px) {
+    flex-direction: column !important;
+    justify-content: center !important;
+    height: 7.5rem !important;
+    padding: 1.25rem !important;
+    width: 100% !important;
+    top: 0 !important;
+    position: fixed !important;
+    z-index: 2000 !important;
+
+    h1 {
+      margin-bottom: 0.625rem;
+    }
+
+    nav {
+      margin-top: 1.25rem;
+    }
+  }
+
   h1 img:hover {
     padding: 1px;
     border-radius: 5px;

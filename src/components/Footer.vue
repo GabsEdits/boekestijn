@@ -167,5 +167,33 @@ footer {
       color: var(--black);
     }
   }
+
+  .badges {
+    position: absolute;
+    margin-top: 30px;
+    right: 10px;
+    width: 500px;
+    height: 56.25px;
+    margin-top: 30px;
+
+    @media (max-width: 767px) {
+      aspect-ratio: 16/9;
+      object-fit: contain;
+      max-width: 80%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 775px) and (max-width: 1055px) {
+      right: 0;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1154px) {
+      display: none;
+    }
+  }
 }
 </style>

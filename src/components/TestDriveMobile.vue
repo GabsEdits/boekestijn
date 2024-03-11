@@ -159,4 +159,10 @@
   position: relative;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 1414px) {
+  .mobile-only {
+    display: block !important;
+  }
+}
 </style>

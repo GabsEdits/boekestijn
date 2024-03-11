@@ -80,6 +80,17 @@
   font-weight: 450;
   font-size: 13px;
 }
+
+@media screen and (max-width: 767px) {
+  .dependencies {
+    margin-left: 130% !important;
+  }
+
+  .aeolus-card {
+    margin-top: 201px !important;
+    margin-left: 125% !important;
+  }
+}
 </style>
 
 <script setup>

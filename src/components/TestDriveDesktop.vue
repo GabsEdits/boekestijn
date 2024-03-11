@@ -202,4 +202,10 @@
   text-align: center;
   font-size: 14px;
 }
+
+@media screen and (max-width: 1414px) {
+  .slider {
+    display: none !important;
+  }
+}
 </style>

@@ -106,6 +106,27 @@ export default {
 }
 }
 
+.scroll-down {
+  padding: 15px;
+  border-radius: 70px;
+  background-color: var(--scroll-down);
+  color: var(--white);
+  border: solid 2px var(--boek-green-1);
+  margin-left: 150px;
+  font-size: 16px;
+  position: absolute;
+  margin-top: 30px;
+  transition: background-color 0.5s;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+
+  &:hover {
+  color: var(--white);
+  background-color: var(--boek-green-1);
+}
+}
+
 .overlay {
   position: absolute;
   top: 0;

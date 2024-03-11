@@ -1,6 +1,6 @@
 export default {
     buildtype: 'Next',
-    update: '2024-03-10T20:04:00+02:00',
+    update: '2024-03-11T12:27:00+02:00',
     dependency: {
       vue: '3.4.21',
       vite: '5.1.5',

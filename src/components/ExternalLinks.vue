@@ -135,6 +135,10 @@
           background-color 0.3s,
           color 0.3s;
 
+        @media (max-width: 767px) {
+          min-width: 320px;
+        }
+
         &:hover {
           background-color: var(--boek-green-2);
           color: var(--white);
