@@ -7,7 +7,7 @@ export default {
       leaflet: '1.9.4',
       axios: '1.6.7',
       vuei18n: '9.9.1',
-      router: '4.2.5',
+      router: '4.3.0',
       inter: '4.0.1',
       geist: '1.0.1',
     },
