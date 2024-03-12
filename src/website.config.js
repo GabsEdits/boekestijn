@@ -1,9 +1,9 @@
 export default {
     buildtype: 'Next',
-    update: '2024-03-11T12:27:00+02:00',
+    update: '2024-03-12T15:01:00+02:00',
     dependency: {
       vue: '3.4.21',
-      vite: '5.1.5',
+      vite: '5.1.6',
       leaflet: '1.9.4',
       axios: '1.6.7',
       vuei18n: '9.9.1',
