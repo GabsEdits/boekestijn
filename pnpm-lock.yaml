@@ -12,8 +12,8 @@ dependencies:
     specifier: ^4.0.2
     version: 4.0.2
   sass:
-    specifier: ^1.70.0
-    version: 1.70.0
+    specifier: ^1.71.1
+    version: 1.71.1
   vue:
     specifier: ^3.4.21
     version: 3.4.21
@@ -39,7 +39,7 @@ devDependencies:
     version: 3.2.4
   vite:
     specifier: ^5.1.6
-    version: 5.1.6(sass@1.70.0)
+    version: 5.1.6(sass@1.71.1)
   vite-plugin-sitemap:
     specifier: ^0.5.3
     version: 0.5.3
@@ -418,7 +418,7 @@ packages:
       vite: ^4.0.0 || ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.1.6(sass@1.70.0)
+      vite: 5.1.6(sass@1.71.1)
       vue: 3.4.21
     dev: true
 
@@ -809,8 +809,8 @@ packages:
     resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==}
     dev: true
 
-  /sass@1.70.0:
-    resolution: {integrity: sha512-uUxNQ3zAHeAx5nRFskBnrWzDUJrrvpCPD5FNAoRvTi0WwremlheES3tg+56PaVtCs5QDRX5CBLxxKMDJMEa1WQ==}
+  /sass@1.71.1:
+    resolution: {integrity: sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -856,10 +856,10 @@ packages:
       vite: '>=2.x'
     dependencies:
       jszip: 3.10.1
-      vite: 5.1.6(sass@1.70.0)
+      vite: 5.1.6(sass@1.71.1)
     dev: true
 
-  /vite@5.1.6(sass@1.70.0):
+  /vite@5.1.6(sass@1.71.1):
     resolution: {integrity: sha512-yYIAZs9nVfRJ/AiOLCA91zzhjsHUgMjB+EigzFb6W2XTLO8JixBCKCjvhKZaye+NKYHCrkv3Oh50dH9EdLU2RA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -890,7 +890,7 @@ packages:
       esbuild: 0.19.12
       postcss: 8.4.35
       rollup: 4.9.6
-      sass: 1.70.0
+      sass: 1.71.1
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
