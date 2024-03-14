@@ -21,7 +21,7 @@
     "@vitejs/plugin-vue": "^4.6.2",
     "@vue-leaflet/vue-leaflet": "^0.10.1",
     "leaflet": "^1.9.4",
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "vite": "^5.1.6",
     "vite-plugin-sitemap": "^0.5.3",
     "vite-plugin-zip-pack": "^1.2.1"
