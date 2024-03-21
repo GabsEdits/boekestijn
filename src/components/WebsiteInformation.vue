@@ -25,7 +25,7 @@
           <p>
             This information is here in case there is an issue, or to see when
             this build was made. <br />
-            <br />Build from: <code>{{ formattedDate }}</code> <br />Build type:
+            <br />Build from: <code>{{ new Date().toLocaleString() }}</code> <br />Build type:
             <code>{{ buildtype }}</code>
           </p>
         </div>

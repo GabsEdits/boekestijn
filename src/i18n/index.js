@@ -4,17 +4,16 @@ const messages = {
   en: {
     header: {
       callus: "Call Us",
-      quickoffice:
-        'Our Main',
+      quickoffice: "Our Main",
       quickofficebr: "Office",
       locations: "Locations",
       language: "Language",
     },
     mainarea: {
       slogan: {
-        before: 'Follow your',
-        hard: 'dream',
-        after: 'with us'
+        before: "Follow your",
+        hard: "dream",
+        after: "with us",
       },
       intro:
         "The transport company Boekestijn was established in 1994 in Mill, the Netherlands. Initially, the company operated with a fleet of three trucks, but over time, it has experienced remarkable growth, expanding to over 900 trucks currently in operation. With a rich history spanning over 27 years, we have firmly established ourselves as a prominent player in the international transport and logistics market in Europe. Our extensive presence includes headquarters located in eight countries, supported by a dedicated team of over 1500 highly skilled professionals.",
@@ -54,9 +53,8 @@ const messages = {
       benefitgift: "Internal bonuses",
       benefitmap:
         "Our entire fleet are monitored and managed by our own TMS. Developed with the main priority to be user friendly for the customer",
-      benefitbriefcase:
-        "We provide insurance for all drivers",
-      benefitbriefcasetitle: "Insurance"
+      benefitbriefcase: "We provide insurance for all drivers",
+      benefitbriefcasetitle: "Insurance",
     },
     vacancies: {
       title: "Check out our vacancies",
@@ -127,17 +125,16 @@ const messages = {
   ro: {
     header: {
       callus: "Sună-ne",
-      quickoffice:
-        'Oficiul nostru',
-      quickofficebr: 'Central',
+      quickoffice: "Oficiul nostru",
+      quickofficebr: "Central",
       locations: "Locații",
       language: "Limbă",
     },
     mainarea: {
       slogan: {
-        before: 'Urmează-ți',
-        hard: 'visul',
-        after: 'alături de noi',
+        before: "Urmează-ți",
+        hard: "visul",
+        after: "alături de noi",
       },
       intro:
         "Compania de transport Boekestijn a fost lansat în 1994 în Mill, Olanda. În acele zile erau trei camioane Boekestijn pe drum și la moment compania a crescut cu peste 900 de camioane pe traseu. Suntem o companie cu o istorie de peste 27 de ani pe piata Internaționala de transport si logistică în Europa, cu sediul în 8 țări și cu echipă de peste 1500 de angajați.",
@@ -178,9 +175,8 @@ const messages = {
       benefitgift: "Bonusuri interne",
       benefitmap:
         "Întreaga noastră echipă este monitorizată și gestionată de propriul nostru sistem TMS, dezvoltat astfel încât să fie ușor de utilizat de către client",
-      benefitbriefcase:
-        "Oferim asigurare pentru toți șoferii",
-      benefitbriefcasetitle: 'Asigurare',
+      benefitbriefcase: "Oferim asigurare pentru toți șoferii",
+      benefitbriefcasetitle: "Asigurare",
     },
     vacancies: {
       title: "Consultați pozițiile noastre vacante",
@@ -251,17 +247,16 @@ const messages = {
   ru: {
     header: {
       callus: "Позвоните нам",
-      quickoffice:
-        'Наш главный',
-      quickofficebr: 'офис',
+      quickoffice: "Наш главный",
+      quickofficebr: "офис",
       locations: "Местонахождение",
       language: "Язык",
     },
     mainarea: {
       slogan: {
-        before: 'Следуй своей',
-        hard: 'мечте',
-        after: 'вместе с нами',
+        before: "Следуй своей",
+        hard: "мечте",
+        after: "вместе с нами",
       },
       intro:
         "Транспортная компания Boekestijn была основана в 1994 году в Милле, Нидерланды. В то время на дороге было три грузовика Boekestijn, а на данный момент компания выросла на маршруте более чем на 900 грузовиков. Мы - компания с более чем 25-летней историей на рынке международных перевозок и логистики в Европе, базирующаяся в 8 странах и имеющая команду из более чем 1500 сотрудников.",
@@ -301,8 +296,7 @@ const messages = {
       benefitgift: "Внутренние бонусы",
       benefitmap:
         "Вся наша команда контролируется и управляется нашей собственной системой TMS, разработана для удобства использования заказчиком.",
-      benefitbriefcase:
-        "Мы предлагаем страховку для всех водителей",
+      benefitbriefcase: "Мы предлагаем страховку для всех водителей",
       benefitbriefcasetitle: "Страховку",
     },
     vacancies: {

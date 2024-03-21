@@ -15,14 +15,14 @@ import Footer from "./components/Footer.vue";
   <div>
     <Header />
     <div id="main">
-    <Main />
-    <TestDriveMobile />
-    <LiveTrucks />
-    <Benefits />
-    <Vacancies />
-    <Locations />
-    <Faq />
-    <ExternalLinks />
+      <Main />
+      <TestDriveMobile />
+      <LiveTrucks />
+      <Benefits />
+      <Vacancies />
+      <Locations />
+      <Faq />
+      <ExternalLinks />
     </div>
     <Footer />
   </div>
