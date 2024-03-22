@@ -50,7 +50,7 @@
         Made with <i class="fa-solid fa-heart" style="color: #dd2e44"></i> by
         <a href="https://gabs.eu.org" class="author">Gabs</a>
       </p>
-      <p class="footer-copyright" :title="'Build build: ' + new Date().toLocaleString()">
+      <p class="footer-copyright" :title="'Build build: ' + buildFrom">
         <router-link to="/developer">
           &copy; 2023-2024 Î.C.S. Boekestijn Transport Service S.R.L. All rights
           reserved.
@@ -65,6 +65,7 @@ export default {
   data() {
     return {
       aboutBuild: "Click here for Website Information",
+      buildFrom: new Date().toLocaleString(),
     };
   },
 };

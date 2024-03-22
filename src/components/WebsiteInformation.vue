@@ -25,7 +25,7 @@
           <p>
             This information is here in case there is an issue, or to see when
             this build was made. <br />
-            <br />Build from: <code>{{ new Date().toLocaleString() }}</code> <br />Build type:
+            <br />Build from: <code>{{ buildFrom }}</code> <br />Build type:
             <code>{{ buildtype }}</code>
           </p>
         </div>
@@ -94,16 +94,21 @@
 </style>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { ref, onBeforeUnmount, onMounted, onBeforeMount } from "vue";
 import { useRouter } from "vue-router";
 import WebsiteConfig from "../website.config.js";
 
-const { buildtype, update, dependency } = WebsiteConfig;
-const lastUpdated = ref(new Date(update));
+const { buildtype, dependency } = WebsiteConfig;
 const $router = useRouter();
 
-onMounted(() => {
+const buildFrom = ref("");
+
+onBeforeMount(() => {
   document.addEventListener("keydown", handleEscKeyInfo);
+});
+
+onMounted(() => {
+  buildFrom.value = new Date().toLocaleString();
 });
 
 onBeforeUnmount(() => {
@@ -119,14 +124,4 @@ const handleEscKeyInfo = (event) => {
     closeInfoPopup();
   }
 };
-
-const formattedDate = lastUpdated.value.toLocaleString("int", {
-  day: "2-digit",
-  month: "long",
-  year: "numeric",
-  hour: "2-digit",
-  minute: "2-digit",
-  hour12: false,
-  timeZoneName: "short",
-});
 </script>
