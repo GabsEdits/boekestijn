@@ -61,7 +61,7 @@
           </p>
         </div>
         <!-- Aeolus Card -->
-        <a class="aeolus-card" href="https://gabs.eu.org/aeolus">
+        <a class="aeolus-card" href="https://gxbs.me/aeolus">
           <div class="aeolus-card-elements">
             <h1>Aeolus</h1>
             <p>
@@ -98,17 +98,11 @@ import { ref, onBeforeUnmount, onMounted, onBeforeMount } from "vue";
 import { useRouter } from "vue-router";
 import WebsiteConfig from "../website.config.js";
 
-const { buildtype, dependency } = WebsiteConfig;
+const { buildtype, dependency, buildFrom } = WebsiteConfig;
 const $router = useRouter();
-
-const buildFrom = ref("");
 
 onBeforeMount(() => {
   document.addEventListener("keydown", handleEscKeyInfo);
-});
-
-onMounted(() => {
-  buildFrom.value = new Date().toLocaleString();
 });
 
 onBeforeUnmount(() => {

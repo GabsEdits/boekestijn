@@ -60,15 +60,10 @@
   </footer>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      aboutBuild: "Click here for Website Information",
-      buildFrom: new Date().toLocaleString(),
-    };
-  },
-};
+<script setup>
+import WebsiteConfig from "../website.config.js";
+
+const { buildFrom } = WebsiteConfig;
 </script>
 
 <style lang="scss">

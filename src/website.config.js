@@ -1,5 +1,6 @@
 export default {
   buildtype: "Next",
+  buildFrom : new Date().toLocaleString(),
   dependency: {
     vue: "3.4.21",
     vite: "5.2.2",
