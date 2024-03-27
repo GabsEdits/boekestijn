@@ -4,11 +4,11 @@
       <h2>{{ $t("benefits.title") }}</h2>
       <ul>
         <li>
-          <i class="fas fa-file-contract"></i>
+          <i class="material-symbols-rounded">description</i>
           <p>{{ $t("benefits.benefitone") }}</p>
         </li>
         <li>
-          <i class="fas fa-money-bill-wave"></i>
+          <i class="material-symbols-rounded">payments</i>
           <p>{{ $t("benefits.benefitbill") }}</p>
         </li>
         <li>
