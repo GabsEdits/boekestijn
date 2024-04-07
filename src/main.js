@@ -4,5 +4,6 @@ import router from "./router";
 import i18n from "./i18n";
 import "inter-ui/inter.css";
 import "inter-ui/inter-display.css";
+import "non.geist/mono";
 
 createApp(App).use(i18n).use(router).mount("#app");
