@@ -47,8 +47,8 @@ devDependencies:
     specifier: ^0.5.3
     version: 0.5.3
   vite-plugin-zip-pack:
-    specifier: ^1.2.2
-    version: 1.2.2(vite@5.2.8)
+    specifier: ^1.2.3
+    version: 1.2.3(vite@5.2.8)
 
 packages:
 
@@ -870,8 +870,8 @@ packages:
     resolution: {integrity: sha512-DSqZLAkXaNgoJLcaxjJHrfWjIIiZRSuZIseE7ihJYUvPFG4OsvXn/+Oujmzbs+6tV7yu1dn7uhWXpV7QuiH/1g==}
     dev: true
 
-  /vite-plugin-zip-pack@1.2.2(vite@5.2.8):
-    resolution: {integrity: sha512-7TZP3NxiiZY6zTqekzaFzZ/VTEyN1xmfwStyuEy4i1E5NE5BMd6VAFvxmQ5sHUS6qZtZlgNASU3iTPkYzWTuhw==}
+  /vite-plugin-zip-pack@1.2.3(vite@5.2.8):
+    resolution: {integrity: sha512-sAKn1PBWcrwWkBf2degreaef8yV4h1UEOY9nHaWVebOhytLLvq8b5f42xsriuRR2VoQidF2JLHLtuCxhJ2oQFg==}
     peerDependencies:
       vite: '>=2.x'
     dependencies:
