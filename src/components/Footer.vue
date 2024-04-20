@@ -61,7 +61,7 @@
 </template>
 
 <script setup>
-import WebsiteConfig from "../website.config.js";
+import WebsiteConfig from "../website.config.ts";
 
 const { buildFrom } = WebsiteConfig;
 </script>

@@ -6,9 +6,7 @@
         <!-- Website Information -->
         <div class="info-title">Website Information</div>
         <div class="info-description">
-          This website has been developed using Vue.js and Vite and is an
-          integral part of the
-          <a href="https://gabs.eu.org/aeolus"><b>Aeolus</b></a> project. The
+          This website has been developed using Vue.js and Vite and it's build with <<...>>. The
           Framework's structure follows the
           <a href="https://semantichtml.github.io">Semantic HTML Convention</a>
           and a Component-Based Architecture. <br /><br />Furthermore, this
@@ -61,9 +59,9 @@
           </p>
         </div>
         <!-- Aeolus Card -->
-        <a class="aeolus-card" href="https://gxbs.me/aeolus">
+        <a class="aeolus-card" href="https://gxbs.me/wip">
           <div class="aeolus-card-elements">
-            <h1>Aeolus</h1>
+            <h1>!!!</h1>
             <p>
               Made with <span id="heart">♥</span> by
               <span id="name">Gabs</span>
@@ -96,7 +94,7 @@
 <script setup>
 import { ref, onBeforeUnmount, onMounted, onBeforeMount } from "vue";
 import { useRouter } from "vue-router";
-import WebsiteConfig from "../website.config.js";
+import WebsiteConfig from "../website.config.ts";
 
 const { buildtype, dependency, buildFrom } = WebsiteConfig;
 const $router = useRouter();

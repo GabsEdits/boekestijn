@@ -48,8 +48,10 @@
       <li>
         <a href="#above-location" style="cursor: pointer" class="locationmobile"
           >{{ $t("header.locations") }}
-          <i class="fa fa-map-marker-alt smaller-icon"></i
-        ></a>
+          <span class="material-symbols-rounded" style="font-size: 18px">
+            location_on
+          </span></a
+        >
       </li>
       <li class="dropdown" @mouseleave="hideLanguageDropdown">
         <a

@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  aploe:
+    specifier: ^0.5.1
+    version: 0.5.1
   axios:
     specifier: ^1.6.8
     version: 1.6.8
@@ -515,6 +518,14 @@ packages:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
+  /aploe@0.5.1:
+    resolution: {integrity: sha512-KziGe58g8bUrkEQCRPz+9p91DHSEMD686mSoEuixqpcnfgwVQpmx+HZMe32tpx8mqC0q362kNzywSI+O2jJY/w==}
+    dependencies:
+      inter-ui: 4.0.2
+      non.geist: 1.0.2
+      sass: 1.75.0
+    dev: false
+
   /asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: false
@@ -833,6 +844,16 @@ packages:
       chokidar: 3.5.3
       immutable: 4.3.5
       source-map-js: 1.2.0
+
+  /sass@1.75.0:
+    resolution: {integrity: sha512-ShMYi3WkrDWxExyxSZPst4/okE9ts46xZmJDSawJQrnte7M1V9fScVB+uNXOVKRBt0PggHOwoZcn8mYX4trnBw==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.3.5
+      source-map-js: 1.2.0
+    dev: false
 
   /setimmediate@1.0.5:
     resolution: {integrity: sha512-MATJdZp8sLqDl/68LfQmbP8zKPLQNV6BIZoIgrscFDQ+RsvK/BxeDQOgyxKKoh0y/8h3BqVFnCqQ/gd+reiIXA==}

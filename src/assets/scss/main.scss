@@ -1,41 +1,7 @@
-h1 {
-  margin: 0;
-  text-align: center;
-  font-family: "InterDisplay";
-
-  img {
-    height: 28px;
-    width: 157.783px;
-    transition:
-      padding 0.3s,
-      border-radius 0.3s,
-      background-color 0.3s;
-  }
-}
-
-a {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--link-gray);
-  text-decoration: none;
-  transition: color 0.2s;
-  position: relative;
-  cursor: pointer;
-
-  &:hover {
-    color: var(--hover-link-gray);
-  }
-}
-
-body {
-  background-color: var(--background-color);
-  max-width: 100% !important;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.icon {
+  font-size: 55px !important;
+  margin-bottom: 10px;
+  cursor: default;
 }
 
 /* Mobile */
@@ -206,16 +172,6 @@ video {
     max-width: 80%;
     margin-left: 10%;
   }
-}
-
-html[lang="ro"] .scroll-down {
-  margin-left: 160px;
-  width: 250px;
-}
-
-html[lang="ru"] .scroll-down {
-  margin-left: 170px;
-  width: 300px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 934px) {
@@ -472,14 +428,3 @@ html[lang="ru"] .scroll-down {
   background-color: #ffffff00;
 }
 
-.br-ru {
-  display: none;
-}
-
-html[lang="ro"] .br-ru {
-  display: block;
-}
-
-html[lang="ru"] .br-ru {
-  display: block;
-}

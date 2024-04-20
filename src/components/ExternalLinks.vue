@@ -35,9 +35,8 @@
 <style lang="scss">
 #combined-container {
   max-width: 100% !important;
-  background-color: #e6e6e6; /* Background color for the entire section */
-  padding: 20px;
   text-align: center;
+  margin-top: 2rem;
 
   .combined-content {
     display: flex;
@@ -49,7 +48,7 @@
     flex: 1;
     max-width: calc(50% - 2px); /* Adjust as needed for spacing and margin */
     width: 100%;
-    background-color: #f6f6f7;
+    background-color: rgba(242, 242, 242, 0.732);
     border: 2px solid transparent; /* Start with transparent borders */
     border-radius: 15px 0 0 15px;
     height: 321px !important;
@@ -94,7 +93,7 @@
   #external-links {
     flex: 1;
     max-width: calc(50% - 2px); /* Adjust as needed for spacing and margin */
-    background-color: #f6f6f7;
+    background-color: rgba(242, 242, 242, 0.732);
     border: 2px solid transparent; /* Start with transparent borders */
     border-radius: 0 15px 15px 0;
     padding: 50px 0;

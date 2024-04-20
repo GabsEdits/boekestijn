@@ -1,77 +1,148 @@
 <template>
-  <div class="container">
-    <h1 class="slogan animating anim--fadeIn">{{ $t('mainarea.slogan.before') }} <br><span class="hard">{{
-      $t('mainarea.slogan.hard') }}</span> {{ $t('mainarea.slogan.after') }}</h1>
-    <p class="intro animating anim--fadeIn">{{ $t('mainarea.intro') }}
-    <div class="br-ru"><br><br></div>
-    </p>
-    <router-link to="/join-us" class="join-us">{{
-      $t("mainarea.joinus")
-    }}</router-link>
-    <br /><a class="scroll-down" href="#live-trucks">{{
-      $t("mainarea.scrolldown")
-    }}</a>
-  </div>
-  <TestDriveDesktop />
-    <div class="video-wrapper">
-    <video src="/Videos/intro.mp4" loop autoplay muted poster="/images/poster.webp">
-      <track src="captions_en.vtt" kind="captions" srclang="en" label="A lot of cars driving really fast in a loop" />
-    </video>
-    <div class="overlay"></div>
-  </div>
+  <section id="main-part">
+    <div class="container">
+      <div id="text-part">
+        <h1 class="slogan">
+          {{ $t("mainarea.slogan.before") }} <br /><span class="hard">{{
+            $t("mainarea.slogan.hard")
+          }}</span>
+          {{ $t("mainarea.slogan.after") }}
+        </h1>
+        <p class="intro animating">{{ $t("mainarea.intro") }}</p>
+        <router-link to="/join-us" class="join-us"
+          ><span class="material-symbols-rounded"> rocket_launch </span>
+          {{ $t("mainarea.joinus") }}</router-link
+        >
+        <a class="scroll-down" href="#live-trucks"
+          ><span class="material-symbols-rounded"> arrow_downward </span>
+          {{ $t("mainarea.scrolldown") }}</a
+        >
+        <div class="video-wrapper animating anim--fadeIn">
+          <video
+            src="/Videos/intro.mp4"
+            loop
+            autoplay
+            muted
+            poster="/images/poster.webp"
+          >
+            <track
+              src="captions_en.vtt"
+              kind="captions"
+              srclang="en"
+              label="A lot of cars driving really fast in a loop"
+            />
+          </video>
+        </div>
+      </div>
+    </div>
+    <div id="video-grid" class="animating anim--fadeIn">
+      <TestDrive />
+    </div>
+  </section>
 </template>
 
 <script>
-import TestDriveDesktop from './TestDriveDesktop.vue';
+import TestDrive from "./TestDrive.vue";
+
 export default {
-    watch: {
-        "$i18n.locale": {
-            immediate: true,
-            handler(newLocale) {
-                document.documentElement.lang = newLocale; // Update the lang attribute
-            },
-        },
+  components: {
+    TestDrive,
+  },
+  watch: {
+    "$i18n.locale": {
+      immediate: true,
+      handler(newLocale) {
+        document.documentElement.lang = newLocale;
+      },
     },
-    components: { TestDriveDesktop }
+  },
 };
 </script>
 
 <style lang="scss">
-.video-wrapper {
-  position: right;
+#main-part {
+  display: grid;
+  grid-template-columns: 80% auto;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 1653px) {
+    grid-template-columns: 1fr;
+    margin-bottom: 0px;
+  }
+}
+
+#text-part {
+  margin-top: 30px;
   width: 100%;
-  height: 25rem;
-  margin: 0 auto;
-  margin-bottom: -37.5rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+
+  @media screen and (max-width: 1653px) {
+    margin-top: -20px;
+  }
+}
+
+.video-wrapper {
+  margin-bottom: -90.5rem;
   overflow: hidden;
 
   video {
     object-fit: cover;
     position: absolute;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 10%;
+    left: 30%;
+    transform: translate(-37%, -50%);
+    min-width: 75%;
+    border-radius: 40px;
+    max-width: 10%;
+    margin-top: 8rem;
     width: auto;
-    height: 100% !important;
+    height: 88% !important;
     z-index: -2;
     clear: both;
+
+    @media screen and (max-width: 1653px) {
+      margin-top: 150px;
+      border-radius: 0 0 40px 40px;
+      min-width: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
 .intro {
-  margin-top: 1%;
-  text-align: justify;
+  text-align: center;
+  font-size: 16.5px;
+  font-weight: 500;
+  background-color: #171717c1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1.25rem;
+  border-radius: 20px;
   color: var(--white);
-  margin-left: 2%;
-  line-height: 1.5;
-  max-width: calc(25% - 1.5625rem);
+  max-width: 55%;
+
+  @media screen and (max-width: 1653px) {
+    max-width: 100%;
+  }
+}
+
+html[lang="ru"] .intro {
+  margin: 20px;
+}
+
+html[lang="ro"] .intro {
+  margin: 20px;
 }
 
 .hard {
-  background-color: black;
+  background-color: #000000cb;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
 }
 
@@ -80,20 +151,20 @@ export default {
   margin-top: 9.2%;
   margin-left: 2%;
   font-size: 500%;
-  text-align: justify;
   font-weight: 900;
   color: var(--white);
+
+  @media screen and (max-width: 1653px) {
+    font-size: 250%;
+  }
 }
 
 .join-us {
-  display: inline-block;
   padding: 0.75rem 1.5rem;
   background-color: var(--white);
   color: var(--hover-link-gray);
   font-size: 18px;
   border: none;
-  margin-top: 30px;
-  margin-left: 10%;
   border-radius: 10px;
   transition:
     background-color 0.3s,
@@ -101,44 +172,27 @@ export default {
   cursor: pointer;
 
   &:hover {
-  background-color: var(--black);
-  color: #fff;
-}
+    background-color: var(--black);
+    color: #fff;
+  }
 }
 
 .scroll-down {
-  padding: 15px;
+  padding: 0.9375rem 2.5rem;
   border-radius: 70px;
-  background-color: var(--scroll-down);
+  background-color: #00000098;
+  backdrop-filter: blur(20px);
   color: var(--white);
   border: solid 2px var(--boek-green-1);
-  margin-left: 150px;
   font-size: 16px;
-  position: absolute;
-  margin-top: 30px;
+  text-align: center;
   transition: background-color 0.5s;
   cursor: pointer;
-  width: 200px;
-  text-align: center;
 
   &:hover {
-  color: var(--white);
-  background-color: var(--boek-green-1);
-}
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: calc(100% - 6.1875rem);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 15, 14, 0.6) 32.55%,
-    rgba(0, 35, 33, 0.1) 100%
-  );
-  z-index: -2;
+    color: var(--white);
+    background-color: var(--boek-green-1);
+  }
 }
 
 @media screen and (min-width: 48rem) and (max-width: 102.6875rem) {
@@ -158,6 +212,7 @@ export default {
       display: none;
     }
   }
+
   .intro {
     max-width: calc(60% - 60px);
     background-color: var(--intro-back);
@@ -165,33 +220,33 @@ export default {
     font-size: 0.9375rem;
     border-radius: 0.5625rem;
   }
+
   .slogan {
     max-width: calc(70% - 70px);
   }
-  .join-us {
-    margin-left: 18.75rem !important;
-  }
+
   .scroll-down {
     background-color: var(--scroll-down-back);
+    margin-left: 0;
   }
 }
-
 
 @media screen and (min-width: 48rem) {
   .video-wrapper {
     height: 50rem !important;
   }
+
   video {
     height: calc(1000% - 1000px) !important;
     width: 100%;
   }
+
   .intro {
     width: 100% !important;
   }
 }
 
-@media screen and (max-width: 47.9375rem){
-  
+/* @media screen and (max-width: 47.9375rem) {
   .container {
     width: 100%;
     max-width: 100%;
@@ -268,4 +323,5 @@ export default {
     z-index: 1;
   }
 }
+*/
 </style>

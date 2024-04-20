@@ -16,7 +16,7 @@ const messages = {
         after: "with us",
       },
       intro:
-        "The transport company Boekestijn was established in 1994 in Mill, the Netherlands. Initially, the company operated with a fleet of three trucks, but over time, it has experienced remarkable growth, expanding to over 900 trucks currently in operation. With a rich history spanning over 27 years, we have firmly established ourselves as a prominent player in the international transport and logistics market in Europe. Our extensive presence includes headquarters located in eight countries, supported by a dedicated team of over 1500 highly skilled professionals.",
+        "The transport company Boekestijn Transport was established in 1994 in Mill, the Netherlands. Initially, the company operated with a fleet of three trucks, but over time, it has experienced remarkable growth, expanding to over 1000 trucks currently in operation. With a rich history spanning over 30 years, we have firmly established ourselves as a prominent player in the international transport and logistics market in Europe. Our extensive presence includes headquarters located in eight countries, supported by a dedicated team of over 1900 highly skilled professionals.",
       joinus: "Join Us",
       scrolldown: "Please Scroll Down",
     },
@@ -137,7 +137,7 @@ const messages = {
         after: "alături de noi",
       },
       intro:
-        "Compania de transport Boekestijn a fost lansat în 1994 în Mill, Olanda. În acele zile erau trei camioane Boekestijn pe drum și la moment compania a crescut cu peste 900 de camioane pe traseu. Suntem o companie cu o istorie de peste 27 de ani pe piata Internaționala de transport si logistică în Europa, cu sediul în 8 țări și cu echipă de peste 1500 de angajați.",
+        "Compania de transport Boekestijn Transport a fost lansat în 1994 în Mill, Olanda. În acele zile erau trei camioane Boekestijn pe drum și la moment compania a crescut cu peste 1000 de camioane pe traseu. Suntem o companie cu o istorie de peste 30 de ani pe piata Internaționala de transport si logistică în Europa, cu sediul în 8 țări și cu echipă de peste 1900 de angajați.",
       joinus: "Alătură-te nouă",
       scrolldown: "Vă rugăm derulați în jos",
     },
@@ -259,7 +259,7 @@ const messages = {
         after: "вместе с нами",
       },
       intro:
-        "Транспортная компания Boekestijn была основана в 1994 году в Милле, Нидерланды. В то время на дороге было три грузовика Boekestijn, а на данный момент компания выросла на маршруте более чем на 900 грузовиков. Мы - компания с более чем 25-летней историей на рынке международных перевозок и логистики в Европе, базирующаяся в 8 странах и имеющая команду из более чем 1500 сотрудников.",
+        "Транспортная компания Boekestijn Transport была основана в 1994 году в Милле, Нидерланды. В то время на дороге было три грузовика Boekestijn, а на данный момент компания выросла на маршруте более чем на 1000 грузовиков. Мы - компания с более чем 30-летней историей на рынке международных перевозок и логистики в Европе, базирующаяся в 8 странах и имеющая команду из более чем 1900 сотрудников.",
       joinus: "Присоединяйтесь к нам",
       scrolldown: "Пожалуйста, прокрутите вниз",
     },
