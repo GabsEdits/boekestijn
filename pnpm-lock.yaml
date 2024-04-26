@@ -12,8 +12,8 @@ dependencies:
     specifier: ^4.0.2
     version: 4.0.2
   non.geist:
-    specifier: ^1.0.2
-    version: 1.0.2
+    specifier: ^1.0.3
+    version: 1.0.3
   sass:
     specifier: ^1.75.0
     version: 1.75.0
@@ -729,8 +729,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  /non.geist@1.0.2:
-    resolution: {integrity: sha512-oGCfo7Ub5bJmCOAt4CMAsCrVal/JXkQtxgBcpXzdU3lQib9c5hHdr62I8vI6TtdlsLcaYAPD/HRfZNdBUobwFg==}
+  /non.geist@1.0.3:
+    resolution: {integrity: sha512-KTT38rJKUTijUZtwqZR38OJeHDupfTkl1JoVNVVoQ0vV41Zjax/BMULWFyXtsK5YCd1SU2ofFSJooD8nWClXcA==}
     dev: false
 
   /normalize-path@3.0.0:
