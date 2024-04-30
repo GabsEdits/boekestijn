@@ -9,6 +9,6 @@ export default {
     vuei18n: "9.12.0",
     router: "4.3.2",
     inter: "4.0.1",
-    geist: "1.0.1",
+    geist: "1.0.3",
   },
 };
