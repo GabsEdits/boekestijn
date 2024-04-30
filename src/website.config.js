@@ -3,7 +3,7 @@ export default {
   buildFrom : new Date().toLocaleString(),
   dependency: {
     vue: "3.4.24",
-    vite: "5.2.9",
+    vite: "5.2.10",
     leaflet: "1.9.4",
     axios: "1.6.7",
     vuei18n: "9.12.0",
