@@ -14,7 +14,7 @@ The Source Code to [soferii.md](https://soferii.md/) & [boekestijn.md](https://b
 
 ### Introduction: The Idea behind it
 
-Welcome to the documentation for the new driver recruitment website tailored to the Moldovan audience. This project was conceived with a singular goal: to provide an efficient and user-friendly platform for hiring drivers, where a substantial portion of the company's driver workforce originates. It's apart of the [Aeolus](https://gabs.eu.org/aeolus) customers.
+Welcome to the documentation for the new driver recruitment website tailored to the Moldovan audience. This project was conceived with a singular goal: to provide an efficient and user-friendly platform for hiring drivers, where a substantial portion of the company's driver workforce originates. Build with [Aplóe](https://aploe.gxbs.me).
 
 ### Key Features and Highlights
 
@@ -31,7 +31,7 @@ Designed exclusively for driver recruitment, this new website boasts a range of 
 
 ## Development: The Power behind it
 
-This website has been developed using Vue.js and Vite and is an integral part of the <a href="https://gabs.eu.org/aeolus"><b>Aeolus</b></a> project. The Framework's structure follows the <a href="https://semantichtml.github.io">Semantic HTML Convention</a> and an Component-Based Architecture. If you want to contribute to it and clone it to your local mashine, then just run the following:
+This website has been developed using Vue.js, Vite and [**Aplóe**](https://aploe.gxbs.me). The Framework's structure follows the [Semantic HTML Documentation](https://semantichtml.github.io) and an Component-Based Architecture. If you want to contribute to it and clone it to your local mashine, then just run the following:
 
 ```sh
 pnpm install
