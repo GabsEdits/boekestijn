@@ -13,7 +13,7 @@
           ><span class="material-symbols-rounded"> rocket_launch </span>
           {{ $t("mainarea.joinus") }}</router-link
         >
-        <a class="scroll-down" href="#live-trucks"
+        <a class="scroll-down" href="#data"
           ><span class="material-symbols-rounded"> arrow_downward </span>
           {{ $t("mainarea.scrolldown") }}</a
         >

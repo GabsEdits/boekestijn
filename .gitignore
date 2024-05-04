@@ -33,13 +33,5 @@ dist/*
 node_modules
 node_modules/*
 
-src/components/Benefits.vue
-src/components/Facebook.vue
-src/components/TestDriveMobile.vue
-src/components/TestDrive.vue
-src/components/Vacancies.vue
-src/components/Faq.vue
-src/components/Header.vue
-src/components/JoinUsForm.vue
-src/components/LiveTrucks.vue
-src/components/TestDriveDesktop.vue
+src/old-components/*
+src/old-components

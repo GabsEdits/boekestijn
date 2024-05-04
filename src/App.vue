@@ -1,19 +1,85 @@
 <script setup>
-import Header from "aploe/Header.vue";
 import Main from "./components/Main.vue";
-import TruckData from "aploe/Data.vue";
-import Benefits from "aploe/Features.vue";
-import Vacancies from "aploe/ExternalLink.vue";
-import Locations from "aploe/Map.vue";
-import Faq from "aploe/Faq.vue";
-import ExternalLinks from "aploe/Links.vue";
-import Footer from "./components/Footer.vue";
-import Benefit from "aploe/Benefit.vue";
+import ExternalLinks from "./components/ExternalLinks.vue";
+
+/* Aploe components */
+
+import Footer from "./aploe/Footer.vue";
+
+import Header from "aploe/components/Header.vue";
+import ExtraInfo from "aploe/components/ExtraInfo.vue";
+import TruckData from "aploe/components/Data.vue";
+import Benefits from "aploe/components/Features.vue";
+import Vacancies from "aploe/components/ExternalLink.vue";
+import Locations from "aploe/components/Map.vue";
+import Faq from "aploe/components/Faq.vue";
+import Benefit from "aploe/components/Benefit.vue";
 </script>
 
 <template>
   <div>
-    <Header logo="/images/boekestijn-transport.svg" />
+    <Header
+      logo="/images/boekestijn-transport.svg"
+      logo-alt="Boekestijn Transport"
+      :dropdownItems="[
+        {
+          type: 'dropdown',
+          slotName: 'dropdownOne',
+        },
+        {
+          type: 'link',
+          slotName: 'linkTwo',
+          href: '#above-locations',
+        },
+      ]"
+    >
+      <template #extraLogo><sup id="md">🅫</sup></template>
+      <template #extraInfo
+        ><ExtraInfo>
+          {{ $t("header.quickoffice") }} <br />
+          {{ $t("header.quickofficebr") }}:
+          <i
+            ><a
+              href="https://goo.gl/maps/Ydmkt3j1Z1PnpCM1A?coh=178571&amp;entry=tt"
+              >{{ $t("locations.main") }}</a
+            ></i
+          ></ExtraInfo
+        ></template
+      >
+      <template #dropdownOne>
+        {{ $t("header.callus") }} <br class="quick-number" /><span
+          class="quick-number"
+          >14114</span
+        >
+      </template>
+      <template #linkTwo>
+        {{ $t("header.locations") }}
+        <span class="material-symbols-rounded" style="font-size: 18px">
+          location_on
+        </span>
+      </template>
+      <template #dropdownOneContent>
+        <h4>{{ $t("footer.call") }}</h4>
+        <a href="tel:+37378830142">{{ $t("footer.special") }} 14114</a>
+        <div class="divider"></div>
+        <a href="tel:+37378830142"
+          >{{ $t("footer.chisinau") }} +373 78 830 142</a
+        >
+        <div class="divider"></div>
+        <a href="tel:+37378848000">{{ $t("footer.balti") }} +373 78 848 000</a>
+        <div class="divider"></div>
+        <a href="tel:+37377799783"
+          >{{ $t("footer.varnita") }} +373 77 799 783</a
+        >
+      </template>
+      <template #languages>
+        <a href="/" @click.prevent="$i18n.locale = 'ru'">Русский</a>
+        <div class="divider"></div>
+        <a href="/" @click.prevent="$i18n.locale = 'ro'">Română</a>
+        <div class="divider"></div>
+        <a href="/" @click.prevent="$i18n.locale = 'en'">English</a>
+      </template>
+    </Header>
     <main>
       <Main />
       <TruckData
@@ -43,7 +109,9 @@ import Benefit from "aploe/Benefit.vue";
           {{ $t("benefits.benefitvan") }}</Benefit
         >
         <Benefit icon="globe"> {{ $t("benefits.benefitglobe") }}</Benefit>
-        <Benefit icon="language"> {{ $t("benefits.benefitlanguage") }}</Benefit>
+        <Benefit icon="translate">
+          {{ $t("benefits.benefitlanguage") }}</Benefit
+        >
         <Benefit icon="book"> {{ $t("benefits.benefitbook") }}</Benefit>
         <Benefit icon="school"> {{ $t("benefits.benefitcap") }}</Benefit>
         <Benefit icon="featured_seasonal_and_gifts">
@@ -69,6 +137,7 @@ import Benefit from "aploe/Benefit.vue";
         background="#F3F8F2"
         link-color="#CFE3C9"
       />
+      <div style="height: 1px" id="above-locations"></div>
       <Locations
         title="locations.title"
         description="locations.desc"
@@ -113,8 +182,33 @@ import Benefit from "aploe/Benefit.vue";
           <summary>{{ $t("faq.answereight") }}</summary>
         </article>
       </Faq>
+      <ExternalLinks />
+      <br />
     </main>
-    <Footer />
+    <Footer
+      badges="/images/badges-3x.svg?size=200h300w&format=svg"
+      badges-alt="Our Awards"
+      special-link="tel: 14114"
+      first-link="tel:+37378830142"
+      second-link="tel:+37378848000"
+      third-link="tel:+37377799783"
+      facebook="https://www.facebook.com/boekestijntransportmoldova"
+      linkedin="https://md.linkedin.com/company/boekestijn-transport-service"
+      instagram="https://www.instagram.com/boekestijntransport/"
+      github="https://github.com/GabsEdits/boekestijn"
+      copyright="2023-2024 Î.C.S. Boekestijn Transport Service S.R.L. All rights reserved."
+      author="Gabs"
+      author-link="https://gabs.eu.org/"
+    >
+      <template #special>{{ $t("footer.special") }} 14114</template>
+      <template #first-link
+        >{{ $t("footer.chisinau") }} +373 78 830 142</template
+      >
+      <template #second-link>{{ $t("footer.balti") }} +373 78 848 000</template>
+      <template #third-link
+        >{{ $t("footer.varnita") }} +373 77 799 783</template
+      >
+    </Footer>
   </div>
   <router-view></router-view>
 </template>

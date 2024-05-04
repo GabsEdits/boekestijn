@@ -8,6 +8,6 @@ export default {
     axios: "1.6.7",
     vuei18n: "9.11.0",
     router: "4.3.0",
-    aploe: "0.5.0",
+    aploe: "0.6.0",
   },
 };
