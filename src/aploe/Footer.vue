@@ -1,46 +1,46 @@
 <template>
   <footer id="footer">
-    <img
-      src="/images/badges-3x.svg?size=200h300w&format=svg"
-      class="badges"
-      alt="our awards"
-    />
+    <img v-if="badges" :src="badges" class="badges" :alt="badgesAlt" />
     <p class="call-footer">{{ $t("footer.call") }}</p>
-    <a href="tel: 14114" id="footer-special-link" class="footer-links"
-      >{{ $t("footer.special") }} 14114</a
-    >
+    <a v-if="specialLink" :href="specialLink" id="footer-special-link" class="footer-links"
+      ><slot name="special"></slot
+    ></a>
     <div class="footer-links">
-      <a href="tel:+37378830142" class="touch-space"
-        >{{ $t("footer.chisinau") }} +373 78 830 142</a
-      >
-      <a href="tel:+37378848000" class="touch-space"
-        >{{ $t("footer.balti") }} +373 78 848 000</a
-      >
-      <a href="tel:+37377799783" class="touch-space"
-        >{{ $t("footer.varnita") }} +373 77 799 783</a
-      >
+      <a :href="firstLink" class="touch-space"
+        ><slot name="first-link"></slot
+      ></a>
+      <a :href="secondLink" class="touch-space"
+        ><slot name="second-link"></slot
+      ></a>
+      <a :href="thirdLink" class="touch-space"
+        ><slot name="third-link"></slot
+      ></a>
     </div>
     <div class="footer-additional">
       <a
-        href="https://www.facebook.com/boekestijntransportmoldova"
+        :href="facebook"
+        v-if="facebook"
         class="footer-social-link"
         aria-label="Check out the Facebook Page"
         ><i class="fab fa-facebook"></i
       ></a>
       <a
-        href="https://md.linkedin.com/company/boekestijn-transport-service"
+        :href="linkedin"
+        v-if="linkedin"
         class="footer-social-link"
         aria-label="Check out our LinkedIn Page"
         ><i class="fab fa-linkedin"></i
       ></a>
       <a
-        href="https://github.com/GabsEdits/boekestijn"
+        :href="github"
+        v-if="github"
         class="footer-social-link"
         aria-label="Check out the source code"
         ><i class="fab fa-github"></i
       ></a>
       <a
-        href="https://www.instagram.com/boekestijntransport/"
+        :href="instagram"
+        v-if="instagram"
         class="footer-social-link"
         aria-label="Check out our Instagram Page"
         ><i class="fab fa-instagram"></i
@@ -48,22 +48,35 @@
       <router-link to="/privacy">Privacy Policy</router-link>
       <p class="made-by">
         Made with <i class="fa-solid fa-heart" style="color: #dd2e44"></i> by
-        <a href="https://gabs.eu.org" class="author">Gabs</a>
+        <a :href="authorLink" class="author">{{ author }}</a>
       </p>
       <p class="footer-copyright" :title="'Build build: ' + buildFrom">
-        <router-link to="/developer">
-          &copy; 2023-2024 Î.C.S. Boekestijn Transport Service S.R.L. All rights
-          reserved.
-        </router-link>
+        <router-link to="/developer"> &copy; {{ copyright }} </router-link>
       </p>
     </div>
   </footer>
 </template>
 
 <script setup>
-import WebsiteConfig from "../website.config.js";
+import WebsiteConfig from "../website.config";
 
 const { buildFrom } = WebsiteConfig;
+
+defineProps({
+  badges: String,
+  badgesAlt: String,
+  specialLink: String,
+  firstLink: String,
+  secondLink: String,
+  thirdLink: String,
+  facebook: String,
+  linkedin: String,
+  github: String,
+  instagram: String,
+  copyright: String,
+  author: String,
+  authorLink: String,
+});
 </script>
 
 <style lang="scss">

@@ -6,10 +6,9 @@
         <!-- Website Information -->
         <div class="info-title">Website Information</div>
         <div class="info-description">
-          This website has been developed using Vue.js and Vite and is an
-          integral part of the
-          <a href="https://gabs.eu.org/aeolus"><b>Aeolus</b></a> project. The
-          Framework's structure follows the
+          This website has been developed using Vue.js and Vite and it's build
+          with <a href="https://aploe.gxbs.me">Aplóe</a>. The Framework's
+          structure follows the
           <a href="https://semantichtml.github.io">Semantic HTML Convention</a>
           and a Component-Based Architecture. <br /><br />Furthermore, this
           website is fully <b>open source</b>. You can access its source code
@@ -39,6 +38,9 @@
           <p class="dependency-item">
             <b>vite</b> - <code>{{ dependency.vite }}</code>
           </p>
+          <p class="dependency-item">
+            <b>aploe</b> - <code>{{ dependency.aploe }}</code>
+          </p>
           <hr />
           <p class="dependency-item">
             <b>leaflet</b> - <code>{{ dependency.leaflet }}</code>
@@ -52,18 +54,11 @@
           <p class="dependency-item">
             <b>vue-router</b> - <code>{{ dependency.router }}</code>
           </p>
-          <hr />
-          <p class="dependency-item">
-            <b>inter-ui</b> - <code>{{ dependency.inter }}</code>
-          </p>
-          <p class="dependency-item">
-            <b>geist-font</b> - <code>{{ dependency.geist }}</code>
-          </p>
         </div>
         <!-- Aeolus Card -->
-        <a class="aeolus-card" href="https://gxbs.me/aeolus">
+        <a class="aeolus-card" href="https://aploe.gxbs.me">
           <div class="aeolus-card-elements">
-            <h1>Aeolus</h1>
+            <h1>Aplóe</h1>
             <p>
               Made with <span id="heart">♥</span> by
               <span id="name">Gabs</span>
@@ -96,7 +91,7 @@
 <script setup>
 import { ref, onBeforeUnmount, onMounted, onBeforeMount } from "vue";
 import { useRouter } from "vue-router";
-import WebsiteConfig from "../website.config.js";
+import WebsiteConfig from "../website.config.ts";
 
 const { buildtype, dependency, buildFrom } = WebsiteConfig;
 const $router = useRouter();

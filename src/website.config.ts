@@ -2,13 +2,12 @@ export default {
   buildtype: "Next",
   buildFrom : new Date().toLocaleString(),
   dependency: {
-    vue: "3.4.24",
-    vite: "5.2.10",
+    vue: "3.4.26",
+    vite: "5.2.11",
     leaflet: "1.9.4",
-    axios: "1.6.7",
-    vuei18n: "9.12.0",
+    axios: "1.6.8",
+    vuei18n: "9.13.1",
     router: "4.3.2",
-    inter: "4.0.1",
-    geist: "1.0.3",
+    aploe: "0.6.1",
   },
 };
