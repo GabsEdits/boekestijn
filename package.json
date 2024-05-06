@@ -1,6 +1,6 @@
 {
   "name": "boekestijn-moldova",
-  "version": "2.1.0testing",
+  "version": "2.2.0-rc",
   "type": "module",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "format": "prettier -c -w"
   },
   "dependencies": {
-    "aploe": "^0.6.1",
+    "aploe": "^0.6.2",
     "axios": "^1.6.8",
     "inter-ui": "^4.0.2",
     "non.geist": "^1.0.3",
