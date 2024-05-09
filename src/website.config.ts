@@ -1,6 +1,6 @@
 export default {
-  buildtype: "Release Candidate",
-  buildFrom : "07/05/2024, 15:20 UTC+3",
+  buildtype: "Production",
+  buildFrom: "09/05/2024, 17:06 UTC+3",
   dependency: {
     vue: "3.4.27",
     vite: "5.2.11",

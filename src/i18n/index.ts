@@ -71,7 +71,8 @@ const messages = {
     faq: {
       title: "Questions and Answers",
       qone: "Are there crews in pairs?",
-      answerone: "Mostly there are single crews.",
+      answerone:
+        "Most are single-crew, but there are also crews that work in pairs.",
       qtwo: "Is there an exchange of pallets?",
       answertwo:
         "Depending on the logistics. Mostly when working with a refrigerator.",
@@ -193,7 +194,8 @@ const messages = {
     faq: {
       title: "Întrebări și răspunsuri",
       qone: "Există echipaje în pereche?",
-      answerone: "În cea mai mare parte, sunt echipaje de unul singur.",
+      answerone:
+        "Majoritatea sunt formate dintr-un singur membru, dar există și echipaje care lucrează în perechi.",
       qtwo: "Există schimb de paleți?",
       answertwo:
         "În dependență de logistică. În mare parte atunci când lucrați cu refrigerator.",
@@ -314,7 +316,8 @@ const messages = {
     faq: {
       title: "Вопросы и ответы",
       qone: "Есть парные екипажи?",
-      answerone: "В основном есть одиночные экипажи.",
+      answerone:
+        "Большинство из них одиночные, но есть и экипажи, работающие парами.",
       qtwo: "Есть обмен палетов?",
       answertwo:
         "В зависимости от логистики. В основном при работе с холодильником.",
