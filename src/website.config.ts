@@ -4,7 +4,7 @@ export default {
   dependency: {
     vue: "3.4.27",
     vite: "5.2.11",
-    aploe: "0.6.2",
+    aploe: "0.9.0",
     leaflet: "1.9.4",
     axios: "1.6.8",
     vuei18n: "9.13.1",

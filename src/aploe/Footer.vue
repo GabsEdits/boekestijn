@@ -81,9 +81,11 @@ defineProps({
 
 <style lang="scss">
 footer {
-  background-color: var(--footer-back);
+  background-color:#f5f5f5;
+  border-top: 1.5px solid var(--boek-green-1);
   padding: 1rem;
   text-align: center;
+  border-radius: 1.9rem 1.9rem 0 0;
 
   .footer-links {
     display: flex;
