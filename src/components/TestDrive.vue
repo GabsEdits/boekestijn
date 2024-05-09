@@ -1,7 +1,9 @@
 <template>
   <div id="test-drive-grid">
     <article v-for="item in testDriveData" :key="item.id">
-      <span class="material-symbols-rounded main-icon"> swap_driving_apps </span>
+      <span class="material-symbols-rounded main-icon">
+        swap_driving_apps
+      </span>
       <h2>Test Drive</h2>
       <ul>
         <li>
@@ -74,12 +76,31 @@ export default {
   gap: 1rem;
 
   @media screen and (max-width: 1653px) {
-    margin-top: 350px;
-    margin: 350px 20px 0 20px;
+    margin: 120px 20px 0 20px;
+    max-height: 380px;
+  }
+
+  @media screen and (max-width: 762px) {
+    margin: 250px 20px 0 20px;
+    max-height: 850px;
   }
 
   @media screen and (min-width: 806px) and (max-width: 1653px) {
     grid-template-columns: 1fr 1fr;
+
+    article ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+
+      li {
+        width: 100%;
+        margin: 0;
+        height: 65px;
+      }
+    }
   }
 
   article {
