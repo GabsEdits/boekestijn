@@ -11,6 +11,7 @@ import ExtraInfo from "aploe/components/ExtraInfo.vue";
 import TruckData from "aploe/components/Data.vue";
 import Benefits from "aploe/components/Features.vue";
 import Vacancies from "aploe/components/ExternalLink.vue";
+import TellAFriend from "aploe/components/ExternalLink.vue";
 import Locations from "aploe/components/Map.vue";
 import Faq from "aploe/components/Faq.vue";
 import Benefit from "aploe/components/Benefit.vue";
@@ -127,16 +128,29 @@ import Benefit from "aploe/components/Benefit.vue";
           {{ $t("benefits.benefitbriefcase") }}
         </Benefit>
       </Benefits>
-      <Vacancies
-        title="vacancies.title"
-        description="vacancies.title"
-        link="https://www.rabota.md/ro/companies/boekestijn-transport-service"
-        link-text="vacancies.link"
-        icon="work"
-        icon-color="var(--boek-green-2)"
-        background="#F3F8F2"
-        link-color="#CFE3C9"
-      />
+      <section class="combinations-v-t">
+        <Vacancies
+          title="vacancies.title"
+          description="vacancies.desc"
+          link="https://www.rabota.md/ro/companies/boekestijn-transport-service"
+          link-text="vacancies.link"
+          icon="work"
+          icon-color="var(--boek-green-2)"
+          background="#F3F8F2"
+          link-color="#CFE3C9"
+        />
+        <TellAFriend
+          title="tellFriend.title"
+          description="tellFriend.desc"
+          link="/tell-a-friend"
+          link-text="tellFriend.link"
+          icon="group"
+          icon-color="var(--boek-green-2)"
+          background="#FBF6EF"
+          link-color="#EAD1AE"
+          is-router-link="true"
+        />
+      </section>
       <div style="height: 1px" id="above-locations"></div>
       <Locations
         title="locations.title"

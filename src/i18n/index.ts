@@ -61,6 +61,11 @@ const messages = {
       desc: "We have exciting career opportunities for you",
       link: "View vacancies on Rabota.md",
     },
+    tellFriend: {
+      title: "Tell a Friend",
+      desc: "Do you know someone perfect for a truck driving position with us? Refer a friend today and receive up to €300!",
+      link: "Contact Us",
+    },
     locations: {
       title: "Location",
       desc: "Find our offices around the country",
@@ -184,6 +189,11 @@ const messages = {
       desc: "Avem oportunități interesante pentru cariera ta",
       link: "Vezi posturile vacante pe Rabota.md",
     },
+    tellFriend: {
+      title: "Spune unui prieten",
+      desc: "Cunoașteți pe cineva perfect pentru o poziție de șofer de camion cu noi? Recomandă un prieten astăzi și primește până la 300 €!",
+      link: "Contactează-ne",
+    },
     locations: {
       title: "Locație",
       desc: "Găsiți birourile noastre pe teritoriul Republicii Moldova",
@@ -305,6 +315,11 @@ const messages = {
       title: "Ознакомьтесь с нашими вакансиями",
       desc: "У нас есть интересные возможности для вашей карьеры",
       link: "Смотрите вакансии на Rabota.md",
+    },
+    tellFriend: {
+      title: "Расскажи другу",
+      desc: "Знаете ли вы кого-нибудь, кто идеально подойдет на должность водителя грузовика у нас? Рекомендуйте друга сегодня и получите до 300€!",
+      link: "Связаться с нами",
     },
     locations: {
       title: "Расположение",

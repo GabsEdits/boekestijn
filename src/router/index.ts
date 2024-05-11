@@ -9,6 +9,11 @@ const router = createRouter({
       component: () => import("../components/JoinForm.vue"),
     },
     {
+      path: "/tell-a-friend",
+      name: "tell",
+      component: () => import("../components/TellAFriend.vue"),
+    },
+    {
       path: "/privacy",
       name: "privacy",
       component: () => import("../components/PrivacyPolicy.vue"),

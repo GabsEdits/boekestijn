@@ -107,12 +107,13 @@ export default {
         const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
         const message = `
-          <b>Заявка с сайта soferii.md</b>
-          <b>Sender:</b> ${this.name}
-          <b>GSM:</b> ${this.tel}
-          <b>Email:</b> ${this.email}
-          <b>Experience:</b> ${this.exp}
-          <b>About me:</b> ${this.self}
+          <b>Join Us Form (soferii.md)</b>
+          <b>Sender's Information:</b>
+            - <b>Name:</b> ${this.name}
+            - <b>Phone Number:</b> ${this.tel}
+            - <b>Email:</b> ${this.email}
+            - <b>Experience:</b> ${this.exp}
+            - <b>About me:</b> ${this.self}
         `;
 
         const response = await axios.post(URI_API, {

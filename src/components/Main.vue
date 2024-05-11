@@ -1,4 +1,20 @@
 <template>
+  <div id="video-cell">
+    <video
+      src="/Videos/intro.mp4"
+      loop
+      autoplay
+      muted
+      poster="/images/poster.webp"
+    >
+      <track
+        src="captions_en.vtt"
+        kind="captions"
+        srclang="en"
+        label="A lot of cars driving really fast in a loop"
+      />
+    </video>
+  </div>
   <section id="main-part">
     <div class="container">
       <div id="text-part">
@@ -17,22 +33,6 @@
           ><span class="material-symbols-rounded"> arrow_downward </span>
           {{ $t("mainarea.scrolldown") }}</a
         >
-        <div class="video-wrapper animating anim--fadeIn">
-          <video
-            src="/Videos/intro.mp4"
-            loop
-            autoplay
-            muted
-            poster="/images/poster.webp"
-          >
-            <track
-              src="captions_en.vtt"
-              kind="captions"
-              srclang="en"
-              label="A lot of cars driving really fast in a loop"
-            />
-          </video>
-        </div>
       </div>
     </div>
     <div id="video-grid" class="animating anim--fadeIn">
@@ -63,7 +63,7 @@ export default {
 #main-part {
   display: grid;
   grid-template-columns: 80% auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 
   @media screen and (max-width: 1653px) {
     grid-template-columns: 1fr;
@@ -85,31 +85,49 @@ export default {
   }
 }
 
-.video-wrapper {
-  margin-bottom: -90.5rem;
-  overflow: hidden;
+#video-cell {
+  float: left;
+  margin-top: 100px;
+  width: 1478px;
+  height: 184.5px;
+
+  @media screen and (min-width: 1653px) {
+    height: 845.566px;
+  }
+
+  z-index: -5;
+  position: absolute;
+
+  @media screen and (max-width: 1858px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 1653px) {
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: 50%;
+
+    video {
+      border-radius: 0 0 40px 40px;
+    }
+
+    @media screen and (max-width: 814px) {
+      margin-top: 0;
+    }
+  }
 
   video {
-    object-fit: cover;
-    position: absolute;
-    top: 40%;
-    left: 30%;
-    transform: translate(-37%, -50%);
-    min-width: 75%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 40px;
-    max-width: 10%;
-    margin-top: 8rem;
-    width: auto;
-    height: 88% !important;
-    z-index: -2;
-    clear: both;
+    object-fit: cover;
 
-    @media screen and (max-width: 1653px) {
-      margin-top: 150px;
-      border-radius: 0 0 40px 40px;
-      min-width: 100%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    @media screen and (max-width: 814px) {
+      height: calc(1000% - 1020px);
     }
   }
 }
@@ -195,24 +213,7 @@ html[lang="ro"] .intro {
   }
 }
 
-@media screen and (min-width: 48rem) and (max-width: 102.6875rem) {
-  .video-wrapper {
-    height: 0.0625rem !important;
-    margin: -18.75rem !important;
-    overflow: hidden;
-
-    video {
-      object-fit: cover;
-      width: 100%;
-      height: 140% !important;
-      margin-top: -4.375rem;
-    }
-
-    .overlay {
-      display: none;
-    }
-  }
-
+@media screen and (min-width: 48rem) and (max-width: 1643px) {
   .intro {
     max-width: calc(60% - 60px);
     background-color: var(--intro-back);
@@ -231,13 +232,9 @@ html[lang="ro"] .intro {
   }
 }
 
-@media screen and (min-width: 48rem) {
-  .video-wrapper {
-    height: 50rem !important;
-  }
-
+@media screen and (min-width: 48rem) and (max-width: 1653px) {
   video {
-    height: calc(1000% - 1000px) !important;
+    height: calc(1000% - 1200px) !important;
     width: 100%;
   }
 
