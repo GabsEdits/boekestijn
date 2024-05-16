@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   aploe:
-    specifier: ^0.9.1
-    version: 0.9.4
+    specifier: ^0.9.6
+    version: 0.9.6
   axios:
     specifier: ^1.6.8
     version: 1.6.8
@@ -545,8 +545,8 @@ packages:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  /aploe@0.9.4:
-    resolution: {integrity: sha512-ShVZMx2pu66kUcDLN49yJgGAEyE2WSC+xbh1xUtoqWxdUp0QOha+Wf4IPDRUeXE2obS0UF4x3V2rf0uWS5ROnQ==}
+  /aploe@0.9.6:
+    resolution: {integrity: sha512-FUjVDL5Pb+ySHRCn8jnUek5uyz4f0s6GOC1HGqeJZQC1lkv2BWrHAuif6gwA8Ycdf4eSgjrqwYDjIjReE7kgQQ==}
     dependencies:
       inter-ui: 4.0.2
       non.geist: 1.0.3
