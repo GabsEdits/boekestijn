@@ -6,15 +6,11 @@
       ><slot name="special"></slot
     ></a>
     <div class="footer-links">
-      <a :href="firstLink" class="touch-space"
-        ><slot name="first-link"></slot
-      ></a>
-      <a :href="secondLink" class="touch-space"
-        ><slot name="second-link"></slot
-      ></a>
-      <a :href="thirdLink" class="touch-space"
-        ><slot name="third-link"></slot
-      ></a>
+      <template v-for="item in links">
+        <a :href="item.href">
+          <slot :name="item.slotName"></slot>
+        </a>
+      </template>
     </div>
     <div class="footer-additional">
       <a
@@ -66,9 +62,6 @@ defineProps({
   badges: String,
   badgesAlt: String,
   specialLink: String,
-  firstLink: String,
-  secondLink: String,
-  thirdLink: String,
   facebook: String,
   linkedin: String,
   github: String,
@@ -76,6 +69,7 @@ defineProps({
   copyright: String,
   author: String,
   authorLink: String,
+  links: Array,
 });
 </script>
 

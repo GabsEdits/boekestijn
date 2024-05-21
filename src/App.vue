@@ -67,8 +67,6 @@ import Benefit from "aploe/components/Benefit.vue";
           >{{ $t("footer.chisinau") }} +373 78 830 142</a
         >
         <div class="divider"></div>
-        <a href="tel:+37378848000">{{ $t("footer.balti") }} +373 78 848 000</a>
-        <div class="divider"></div>
         <a href="tel:+37377799783"
           >{{ $t("footer.varnita") }} +373 77 799 783</a
         >
@@ -203,9 +201,6 @@ import Benefit from "aploe/components/Benefit.vue";
       badges="/images/badges-3x.svg?size=200h300w&format=svg"
       badges-alt="Our Awards"
       special-link="tel: 14114"
-      first-link="tel:+37378830142"
-      second-link="tel:+37378848000"
-      third-link="tel:+37377799783"
       facebook="https://www.facebook.com/boekestijntransportmoldova"
       linkedin="https://md.linkedin.com/company/boekestijn-transport-service"
       instagram="https://www.instagram.com/boekestijntransport/"
@@ -213,13 +208,16 @@ import Benefit from "aploe/components/Benefit.vue";
       copyright="2023-2024 Î.C.S. Boekestijn Transport Service S.R.L. All rights reserved."
       author="Gabs"
       author-link="https://gabs.eu.org/"
+      :links="[
+        { slotName: 'chisinau-link', href: 'tel:+37378830142' },
+        { slotName: 'varnita-link', href: 'tel:+37377799783' },
+      ]"
     >
       <template #special>{{ $t("footer.special") }} 14114</template>
-      <template #first-link
+      <template #chisinau-link
         >{{ $t("footer.chisinau") }} +373 78 830 142</template
       >
-      <template #second-link>{{ $t("footer.balti") }} +373 78 848 000</template>
-      <template #third-link
+      <template #varnita-link
         >{{ $t("footer.varnita") }} +373 77 799 783</template
       >
     </Footer>

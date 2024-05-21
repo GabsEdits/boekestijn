@@ -7,7 +7,7 @@
         <a @click="closePopup" class="close-button">×</a>
         <form class="forms-container" @submit.prevent="sendMessageToTelegram">
           <section>
-            <h3>Friend's Information</h3>
+            <h3>{{ $t("tellFriend.friend") }}</h3>
             <div class="form-field">
               <label for="friend-name" class="form-label"
                 >{{ $t("form.name") }} *</label
@@ -37,13 +37,13 @@
               />
             </div>
             <div class="form-field">
-              <label for="friend-comment" class="form-label">Comment</label>
+              <label for="friend-comment" class="form-label">{{ $t("tellFriend.comment") }}</label>
               <textarea id="friend-comment" v-model="friendComment"></textarea>
             </div>
           </section>
 
           <section>
-            <h3>Your Information</h3>
+            <h3>{{ $t("tellFriend.own") }}</h3>
             <div class="form-field">
               <label for="your-name">{{ $t("form.name") }} *</label>
               <input type="text" id="your-name" required v-model="yourName" />
@@ -61,7 +61,7 @@
               <input type="tel" required id="your-phone" v-model="yourPhone" />
             </div>
             <div class="form-field">
-              <label for="your-comment" class="form-label">Comment</label>
+              <label for="your-comment" class="form-label">{{ $t("tellFriend.comment") }}</label>
               <textarea id="your-comment" v-model="yourComment"></textarea>
             </div>
           </section>
@@ -114,9 +114,9 @@
       margin-bottom: 1rem;
 
       label {
-        font-weight: 700;
+        font-weight: 600;
         margin-top: 0.5rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
 
       input,

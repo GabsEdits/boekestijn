@@ -13,8 +13,8 @@
             <p id="form-desc">{{ $t("form.desc") }}</p>
             <br />
             <p>
-              <sup id="form-sup"
-                ><b>{{ $t("form.note") }} *</b></sup
+              <small id="form-sup"
+                ><b>{{ $t("form.note") }} *</b></small
               >
             </p>
           </div>

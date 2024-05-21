@@ -28,9 +28,6 @@ const messages = {
       varnita: "Varnița",
       daysvarnita: "Tuesday and Thu.",
       addressvarnita: "Str. Tighina, 66",
-      balti: "Bălți",
-      daysbalti: "Friday",
-      addressbalti: "Str. Ștefan cel Mare, 195",
     },
     livetrucks: {
       title: "24/7 Monitoring of trucks",
@@ -65,6 +62,9 @@ const messages = {
       title: "Tell a Friend",
       desc: "Do you know someone perfect for a truck driving position with us? Refer a friend today and receive up to €300!",
       link: "Contact Us",
+      friend: "Friend's Information",
+      own: "Your Information",
+      comment: "Comment",
     },
     locations: {
       title: "Location",
@@ -115,7 +115,6 @@ const messages = {
       call: "Call Us",
       special: "Main:",
       chisinau: "Chișinău:",
-      balti: "Balți:",
       varnita: "Varnița:",
     },
     form: {
@@ -155,9 +154,6 @@ const messages = {
       varnita: "Varnița",
       daysvarnita: "Marți și Joi",
       addressvarnita: "Str. Tighina, 66",
-      balti: "Bălți",
-      daysbalti: "Vineri",
-      addressbalti: "Str. Ștefan cel Mare, 195",
     },
     livetrucks: {
       title: "24/7 Monitorizarea camioanelor online",
@@ -191,8 +187,11 @@ const messages = {
     },
     tellFriend: {
       title: "Spune unui prieten",
+      friend: "Informațiile prietenului",
+      own: "Informațiile tale",
       desc: "Cunoașteți pe cineva perfect pentru o poziție de șofer de camion cu noi? Recomandă un prieten astăzi și primește până la 300 €!",
       link: "Contactează-ne",
+      comment: "Comentariu",
     },
     locations: {
       title: "Locație",
@@ -243,8 +242,7 @@ const messages = {
       call: "Sună-ne",
       special: "Principal:",
       chisinau: "Chișinău:",
-      balti: "Balți:",
-      varnita: "Varn,ița:",
+      varnita: "Varnița:",
     },
     form: {
       desc: "Completați acest formular pentru a lua legătura",
@@ -283,9 +281,6 @@ const messages = {
       varnita: "Варница",
       daysvarnita: "Вторник и Четверг",
       addressvarnita: "ул. Тигина 66",
-      balti: "Бэлць",
-      daysbalti: "Пятница",
-      addressbalti: "ул. Штефан чел Маре 195",
     },
     livetrucks: {
       title: "24/7 Онлайн отслеживание грузовиков",
@@ -318,8 +313,11 @@ const messages = {
     },
     tellFriend: {
       title: "Расскажи другу",
+      friend: "Информация друга",
+      own: "Ваша информация",
       desc: "Знаете ли вы кого-нибудь, кто идеально подойдет на должность водителя грузовика у нас? Рекомендуйте друга сегодня и получите до 300€!",
       link: "Связаться с нами",
+      comment: "Комментарий",
     },
     locations: {
       title: "Расположение",
@@ -369,7 +367,6 @@ const messages = {
       call: "Позвоните нам",
       special: "Основной:",
       chisinau: "Кишинэу:",
-      balti: "Бэлць:",
       varnita: "Варница:",
     },
     form: {

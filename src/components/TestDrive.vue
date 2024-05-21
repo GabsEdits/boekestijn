@@ -76,17 +76,17 @@ export default {
   gap: 1rem;
 
   @media screen and (max-width: 1653px) {
-    margin: 120px 20px 0 20px;
+    margin: 120px 0 0 20px;
     max-height: 380px;
   }
 
   @media screen and (max-height: 1620px) {
-    margin: 100px 20px 0 20px;
+    margin: 100px 0 0 20px;
     max-height: 400px;
   }
 
   @media screen and (max-width: 762px) {
-    margin: 250px 20px 0 20px;
+    margin: 250px 0 0 20px;
     max-height: 850px;
   }
 
