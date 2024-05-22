@@ -12,7 +12,7 @@ import TruckData from "aploe/components/Data.vue";
 import Benefits from "aploe/components/Features.vue";
 import Vacancies from "aploe/components/ExternalLink.vue";
 import TellAFriend from "aploe/components/ExternalLink.vue";
-import Locations from "aploe/components/Map.vue";
+import Locations from "./content/Locations.vue";
 import Faq from "aploe/components/Faq.vue";
 import Benefit from "aploe/components/Benefit.vue";
 </script>
@@ -150,12 +150,7 @@ import Benefit from "aploe/components/Benefit.vue";
         />
       </section>
       <div style="height: 1px" id="above-locations"></div>
-      <Locations
-        title="locations.title"
-        description="locations.desc"
-        icon="map"
-        icon-color="var(--boek-green-2)"
-      />
+      <Locations />
       <Faq title="faq.title">
         <article>
           <h3>{{ $t("faq.qone") }}</h3>

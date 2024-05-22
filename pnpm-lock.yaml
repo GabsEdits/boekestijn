@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       aploe:
-        specifier: ^0.9.6
-        version: 0.9.6
+        specifier: ^0.9.7
+        version: 0.9.7
       axios:
         specifier: ^1.7.1
         version: 1.7.1
@@ -365,8 +365,8 @@ packages:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
 
-  aploe@0.9.6:
-    resolution: {integrity: sha512-FUjVDL5Pb+ySHRCn8jnUek5uyz4f0s6GOC1HGqeJZQC1lkv2BWrHAuif6gwA8Ycdf4eSgjrqwYDjIjReE7kgQQ==}
+  aploe@0.9.7:
+    resolution: {integrity: sha512-mHmKq4qiFPr1GM68AgZ8D+Y+SPLJDkX3ewVMX786NdvPcKJZ5yxyMPNuk96aWW9pai25lDSHYgm/eTqXzqcdYA==}
 
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
@@ -849,7 +849,7 @@ snapshots:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  aploe@0.9.6:
+  aploe@0.9.7:
     dependencies:
       inter-ui: 4.0.2
       non.geist: 1.0.3
