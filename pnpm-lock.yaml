@@ -50,8 +50,8 @@ devDependencies:
     specifier: ^5.2.11
     version: 5.2.11(sass@1.77.2)
   vite-plugin-sitemap:
-    specifier: ^0.5.3
-    version: 0.5.3
+    specifier: ^0.6.2
+    version: 0.6.2
   vite-plugin-zip-pack:
     specifier: ^1.2.3
     version: 1.2.3(vite@5.2.11)
@@ -898,8 +898,8 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite-plugin-sitemap@0.5.3:
-    resolution: {integrity: sha512-DSqZLAkXaNgoJLcaxjJHrfWjIIiZRSuZIseE7ihJYUvPFG4OsvXn/+Oujmzbs+6tV7yu1dn7uhWXpV7QuiH/1g==}
+  /vite-plugin-sitemap@0.6.2:
+    resolution: {integrity: sha512-tvqxNnkWEKPKCWnYPUSfTJC/Yjg+HrdrBIBTtGVfgKzvqX/EQr9aqk4UDr3qN+3hD0Z/yMKVfSpa8TjdGoWsJg==}
     dev: true
 
   /vite-plugin-zip-pack@1.2.3(vite@5.2.11):
