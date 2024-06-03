@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "format": "prettier -c -w"
+    "format": "prettier -w ."
   },
   "dependencies": {
     "aploe": "^0.9.7",

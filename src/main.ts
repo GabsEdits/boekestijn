@@ -7,7 +7,4 @@ import "aploe/base.scss";
 import "./assets/scss/main.scss";
 import "./assets/scss/color.scss";
 
-createApp(App)
-    .use(i18n)
-    .use(router)
-    .mount("#app");
+createApp(App).use(i18n).use(router).mount("#app");

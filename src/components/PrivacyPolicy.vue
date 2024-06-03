@@ -23,10 +23,10 @@
 
         <h4>Forms</h4>
         <p>
-          If you choose to contact us through the contact/tell a friend form, the information
-          you provide will be sent to us via Telegram. We will only use this
-          information to respond to your inquiry and will not share it with any
-          third parties.
+          If you choose to contact us through the contact/tell a friend form,
+          the information you provide will be sent to us via Telegram. We will
+          only use this information to respond to your inquiry and will not
+          share it with any third parties.
         </p>
 
         <h3>Third-Party Services</h3>

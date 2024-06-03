@@ -2,7 +2,11 @@
   <footer id="footer">
     <img v-if="badges" :src="badges" class="badges" :alt="badgesAlt" />
     <p class="call-footer">{{ $t("footer.call") }}</p>
-    <a v-if="specialLink" :href="specialLink" id="footer-special-link" class="footer-links"
+    <a
+      v-if="specialLink"
+      :href="specialLink"
+      id="footer-special-link"
+      class="footer-links"
       ><slot name="special"></slot
     ></a>
     <div class="footer-links">
@@ -75,7 +79,7 @@ defineProps({
 
 <style lang="scss">
 footer {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
   border-top: 1.5px solid var(--boek-green-1);
   padding: 1rem;
   text-align: center;

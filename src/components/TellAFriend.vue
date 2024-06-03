@@ -37,7 +37,9 @@
               />
             </div>
             <div class="form-field">
-              <label for="friend-comment" class="form-label">{{ $t("tellFriend.comment") }}</label>
+              <label for="friend-comment" class="form-label">{{
+                $t("tellFriend.comment")
+              }}</label>
               <textarea id="friend-comment" v-model="friendComment"></textarea>
             </div>
           </section>
@@ -61,7 +63,9 @@
               <input type="tel" required id="your-phone" v-model="yourPhone" />
             </div>
             <div class="form-field">
-              <label for="your-comment" class="form-label">{{ $t("tellFriend.comment") }}</label>
+              <label for="your-comment" class="form-label">{{
+                $t("tellFriend.comment")
+              }}</label>
               <textarea id="your-comment" v-model="yourComment"></textarea>
             </div>
           </section>

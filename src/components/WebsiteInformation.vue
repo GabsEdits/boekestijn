@@ -68,7 +68,8 @@
 
 <style lang="scss">
 #developer {
-  width: 700px;  margin: 2.1875rem;
+  width: 700px;
+  margin: 2.1875rem;
 
   margin: 2.1875rem;
   height: max-content;
