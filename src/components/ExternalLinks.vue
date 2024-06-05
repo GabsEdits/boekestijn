@@ -1,8 +1,8 @@
 <template>
-  <div id="combined-container" class="container">
+  <div id="combined-container">
     <div class="combined-content">
       <section id="facebook">
-        <div class="container">
+        <div>
           <i class="fab fa-facebook external-links-icon"></i>
           <h2>{{ $t("facebook.title") }}</h2>
           <p>{{ $t("facebook.desc") }}</p>

@@ -126,7 +126,7 @@ import Benefit from "aploe/components/Benefit.vue";
           {{ $t("benefits.benefitbriefcase") }}
         </Benefit>
       </Benefits>
-      <section class="combinations-v-t">
+      <section class="two-column">
         <Vacancies
           title="vacancies.title"
           description="vacancies.desc"

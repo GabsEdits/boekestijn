@@ -16,7 +16,7 @@
     </video>
   </div>
   <section id="main-part">
-    <div class="container">
+    <div>
       <div id="text-part">
         <h1 class="slogan">
           {{ $t("mainarea.slogan.before") }} <br /><span class="hard">{{
