@@ -10,7 +10,7 @@
     "format": "prettier -w ."
   },
   "dependencies": {
-    "aploe": "^0.9.8",
+    "aploe": "^0.9.9",
     "axios": "^1.7.2",
     "inter-ui": "^4.0.2",
     "non.geist": "^1.0.3",

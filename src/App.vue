@@ -12,6 +12,8 @@ import TruckData from "aploe/components/Data.vue";
 import Benefits from "aploe/components/Features.vue";
 import Vacancies from "aploe/components/ExternalLink.vue";
 import TellAFriend from "aploe/components/ExternalLink.vue";
+import International from "aploe/components/ExternalLink.vue";
+import Facebook from "aploe/components/ExternalLink.vue";
 import Locations from "./content/Locations.vue";
 import Faq from "aploe/components/Faq.vue";
 import Benefit from "aploe/components/Benefit.vue";
@@ -189,7 +191,27 @@ import Benefit from "aploe/components/Benefit.vue";
           <summary>{{ $t("faq.answereight") }}</summary>
         </article>
       </Faq>
-      <ExternalLinks />
+      <section class="two-column">
+        <Facebook
+          title="facebook.title"
+          description="facebook.desc"
+          link="https://www.facebook.com/boekestijntransportmoldova"
+          link-text="facebook.link"
+          icon="groups"
+          icon-color="#344F83"
+          background="#F0F3F9"
+          link-color="#7C96CB"
+        />
+        <International
+          title="externallinks.title"
+          link="https://www.boekestijntransport.com/?moldova"
+          link-text="externallinks.link"
+          icon="public"
+          icon-color="#8B7218"
+          background="#FCF9EE"
+          link-color="#E3C863"
+        />
+      </section>
       <br />
     </main>
     <Footer

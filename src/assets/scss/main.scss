@@ -239,9 +239,9 @@ video {
 
 .form-control {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 0.625rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.25rem;
   transition: border-color 0.2s ease-in-out;
   resize: none;
   font-family: "Inter", sans-serif;
@@ -255,9 +255,9 @@ video {
 .btn-primary {
   background-color: var(--boek-green-1);
   color: var(--black);
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   cursor: pointer;
   transition:
     color 0.2s,
@@ -270,16 +270,17 @@ video {
 }
 
 #ignore-link:hover {
-  padding: 0px;
+  padding: 0;
   background-color: #ffffff00;
 }
 
 .two-column {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  gap: 0.625rem;
+  margin-top: 1rem;
 
-  @media screen and (max-width: 914px) {
+  @media screen and (max-width: 57.125rem) {
     grid-template-columns: 1fr;
   }
 }
