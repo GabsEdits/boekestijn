@@ -36,7 +36,7 @@ dependencies:
 devDependencies:
   '@vitejs/plugin-vue':
     specifier: ^5.0.4
-    version: 5.0.5(vite@5.2.12)(vue@3.4.27)
+    version: 5.0.5(vite@5.2.13)(vue@3.4.27)
   '@vue-leaflet/vue-leaflet':
     specifier: ^0.10.1
     version: 0.10.1(leaflet@1.9.4)(typescript@5.4.5)
@@ -47,14 +47,14 @@ devDependencies:
     specifier: ^3.3.1
     version: 3.3.1
   vite:
-    specifier: ^5.2.12
-    version: 5.2.12(sass@1.77.4)
+    specifier: ^5.2.13
+    version: 5.2.13(sass@1.77.4)
   vite-plugin-sitemap:
     specifier: ^0.6.2
     version: 0.6.2
   vite-plugin-zip-pack:
     specifier: ^1.2.3
-    version: 1.2.3(vite@5.2.12)
+    version: 1.2.3(vite@5.2.13)
 
 packages:
 
@@ -444,14 +444,14 @@ packages:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
     dev: true
 
-  /@vitejs/plugin-vue@5.0.5(vite@5.2.12)(vue@3.4.27):
+  /@vitejs/plugin-vue@5.0.5(vite@5.2.13)(vue@3.4.27):
     resolution: {integrity: sha512-LOjm7XeIimLBZyzinBQ6OSm3UBCNVCpLkxGC0oWmm2YPzVZoxMsdvNVimLTBzpAnR9hl/yn1SHGuRfe6/Td9rQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.2.12(sass@1.77.4)
+      vite: 5.2.13(sass@1.77.4)
       vue: 3.4.27(typescript@5.4.5)
     dev: true
 
@@ -902,17 +902,17 @@ packages:
     resolution: {integrity: sha512-tvqxNnkWEKPKCWnYPUSfTJC/Yjg+HrdrBIBTtGVfgKzvqX/EQr9aqk4UDr3qN+3hD0Z/yMKVfSpa8TjdGoWsJg==}
     dev: true
 
-  /vite-plugin-zip-pack@1.2.3(vite@5.2.12):
+  /vite-plugin-zip-pack@1.2.3(vite@5.2.13):
     resolution: {integrity: sha512-sAKn1PBWcrwWkBf2degreaef8yV4h1UEOY9nHaWVebOhytLLvq8b5f42xsriuRR2VoQidF2JLHLtuCxhJ2oQFg==}
     peerDependencies:
       vite: '>=2.x'
     dependencies:
       jszip: 3.10.1
-      vite: 5.2.12(sass@1.77.4)
+      vite: 5.2.13(sass@1.77.4)
     dev: true
 
-  /vite@5.2.12(sass@1.77.4):
-    resolution: {integrity: sha512-/gC8GxzxMK5ntBwb48pR32GGhENnjtY30G4A0jemunsBkiEZFw60s8InGpN8gkhHEkjnRK1aSAxeQgwvFhUHAA==}
+  /vite@5.2.13(sass@1.77.4):
+    resolution: {integrity: sha512-SSq1noJfY9pR3I1TUENL3rQYDQCFqgD+lM6fTRAM8Nv6Lsg5hDLaXkjETVeBt+7vZBCMoibD+6IWnT2mJ+Zb/A==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
