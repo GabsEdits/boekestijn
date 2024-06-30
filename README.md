@@ -8,7 +8,7 @@ The Source Code to [soferii.md](https://soferii.md/) & [boekestijn.md](https://b
 </div>
 
 > [!NOTE]
-> Even though the main stable websites hosted on the soferii.md and boekestijn.md domains each have their dedicated servers, this repository is specifically linked to boekestijn.gabs.eu.org, which serves as our development environment. Here, you can preview the forthcoming version of the website, which is updated whenever there are necessary changes in progress.
+> Even though the main stable websites hosted on the soferii.md domain has it's own dedicated server, this repository is specifically linked to boekestijn.gxbs.me, which serves as our development environment. Here, you can preview the forthcoming version of the website, which is updated whenever there are necessary changes in progress.
 
 ## Project Overview
 
@@ -31,7 +31,7 @@ Designed exclusively for driver recruitment, this new website boasts a range of 
 
 ## Development: The Power behind it
 
-This website has been developed using Vue.js, Vite and [**Aplóe**](https://aploe.gxbs.me). The Framework's structure follows the [Semantic HTML Documentation](https://semantichtml.github.io) and an Component-Based Architecture. If you want to contribute to it and clone it to your local mashine, then just run the following:
+This website has been developed using Vue.js, Vite and [**Aplóe**](https://aploe.gxbs.me). The Framework's structure follows the [Semantic HTML](https://semantichtml.github.io) and Component-Based Architecture. If you want to contribute to it and clone it to your local mashine, then just run the following:
 
 ```sh
 pnpm install

@@ -8,11 +8,11 @@
           <h2>Website Information</h2>
           This website has been developed using Vue.js and Vite and it's build
           with <a href="https://aploe.gxbs.me">Aplóe</a>. The Framework's
-          structure follows the
-          <a href="https://semantichtml.github.io">Semantic HTML Convention</a>
-          and a Component-Based Architecture. <br /><br />Furthermore, this
+          structure follows an
+          <a href="https://semantichtml.github.io">Semantic HTML</a>
+          and Component-Based Architecture. <br /><br />Furthermore, this
           website is fully <b>open source</b>. You can access its source code
-          <a href="https://github.com/GabsEdits/boekestijn">here</a>.
+          <a href="https://github.com/GabsEdits/boekestijn">on GitHub</a>.
         </section>
 
         <!-- Dependencies -->
