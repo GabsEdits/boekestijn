@@ -21,7 +21,7 @@
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.1.0",
+    "@vitejs/plugin-vue": "^5.1.1",
     "@vue-leaflet/vue-leaflet": "^0.10.1",
     "leaflet": "^1.9.4",
     "prettier": "^3.3.3",
