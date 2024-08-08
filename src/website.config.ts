@@ -6,7 +6,7 @@ export default {
     vite: "5.3.5",
     aploe: "0.9.6",
     leaflet: "1.9.4",
-    axios: "1.7.2",
+    axios: "1.7.3",
     vuei18n: "9.13.1",
     router: "4.4.2",
   },
