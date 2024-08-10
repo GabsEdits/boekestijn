@@ -2,7 +2,7 @@ export default {
   buildtype: "Development",
   buildFrom: "03/07/2024, 13:14 UTC+3",
   dependency: {
-    vue: "3.4.36",
+    vue: "3.4.37",
     vite: "5.4.0",
     aploe: "0.9.6",
     leaflet: "1.9.4",
