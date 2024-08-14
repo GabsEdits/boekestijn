@@ -108,6 +108,10 @@
     border-radius: 0.75rem;
     padding: 1.5rem;
 
+    @media (prefers-color-scheme: dark) {
+      border: 2px solid #374151;
+    }
+
     h3 {
       font-size: 1.125rem;
       margin-bottom: 0.625rem;
@@ -133,6 +137,11 @@
         font-size: 0.875rem;
         line-height: 1.25rem;
         resize: none;
+
+        @media (prefers-color-scheme: dark) {
+          border: 0.0625rem solid #374151;
+          background-color: #1a1a1a;
+        }
       }
     }
   }
@@ -145,6 +154,10 @@
     margin: 0 auto;
     margin-bottom: 1rem;
     color: #202020;
+
+    @media (prefers-color-scheme: dark) {
+      color: #d1d5db;
+    }
   }
 
   button[type="submit"] {

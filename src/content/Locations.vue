@@ -3,7 +3,11 @@
     title="locations.title"
     description="locations.desc"
     icon="map"
+    background="#e8ffdda6"
+    background-dark="#273521a6"
     icon-color="var(--boek-green-2)"
+    icon-color-dark="var(--boek-green-1)"
+    translatable="true"
   >
     <div id="map">
       <l-map
@@ -52,5 +56,18 @@ import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet";
   border-radius: 0 0 20px 20px;
   width: 100%;
   margin-bottom: 25px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .leaflet-layer,
+    .leaflet-control-zoom-in,
+    .leaflet-control-zoom-out,
+    .leaflet-control-attribution {
+      filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+    }
+
+    .leaflet-attribution-flag {
+        filter: invert(100%) hue-rotate(180deg) brightness(100%) contrast(100%);
+    }
 }
 </style>

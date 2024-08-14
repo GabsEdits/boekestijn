@@ -23,7 +23,9 @@ import Benefit from "aploe/components/Benefit.vue";
   <div>
     <Header
       logo="/images/boekestijn-transport.svg"
+      logo-dark="/images/boekestijn-transport-dark.svg"
       logo-alt="Boekestijn Transport"
+      translatable="true"
       :dropdownItems="[
         {
           type: 'dropdown',
@@ -90,13 +92,19 @@ import Benefit from "aploe/components/Benefit.vue";
         api="https://api.boekestijntransport.com:50125/api/get_trucks"
         fallback="1000"
         background="#c0e2de83"
-        iconColor="var(--boek-green-2)"
+        background-dark="#33706983"
+        icon-color="var(--boek-green-2)"
+        icon-color-dark="var(--boek-green-1)"
+        translatable="true"
       />
       <Benefits
         title="benefits.title"
         icon="loyalty"
         background="#c0e2de83"
-        iconColor="var(--boek-green-2)"
+        background-dark="#20465A83"
+        icon-color="var(--boek-green-2)"
+        icon-color-dark="var(--boek-green-1)"
+        translatable="true"
       >
         <Benefit icon="description"> {{ $t("benefits.benefitone") }}</Benefit>
         <Benefit icon="payments"> {{ $t("benefits.benefitbill") }}</Benefit>
@@ -136,8 +144,12 @@ import Benefit from "aploe/components/Benefit.vue";
           link-text="vacancies.link"
           icon="work"
           icon-color="var(--boek-green-2)"
+          icon-color-dark="var(--boek-green-1)"
           background="#F3F8F2"
+          background-dark="#182815"
           link-color="#CFE3C9"
+          link-color-dark="#20465A83"
+          translatable="true"
         />
         <TellAFriend
           title="tellFriend.title"
@@ -146,14 +158,18 @@ import Benefit from "aploe/components/Benefit.vue";
           link-text="tellFriend.link"
           icon="group"
           icon-color="var(--boek-green-2)"
+          icon-color-dark="var(--boek-green-1)"
           background="#FBF6EF"
+            background-dark="#3D2D1D"
           link-color="#EAD1AE"
+            link-color-dark="#724E1D"
           is-router-link="true"
+          translatable="true"
         />
       </section>
       <div style="height: 1px" id="above-locations"></div>
       <Locations />
-      <Faq title="faq.title">
+      <Faq title="faq.title" translatable="true">
         <article>
           <h3>{{ $t("faq.qone") }}</h3>
           <summary>{{ $t("faq.answerone") }}</summary>
@@ -199,8 +215,12 @@ import Benefit from "aploe/components/Benefit.vue";
           link-text="facebook.link"
           icon="groups"
           icon-color="#344F83"
+          icon-color-dark="#5F80BF"
           background="#F0F3F9"
+          background-dark="#1A2A3F"
           link-color="#7C96CB"
+          link-color-dark="#344F83"
+          translatable="true"
         />
         <International
           title="externallinks.title"
@@ -208,8 +228,12 @@ import Benefit from "aploe/components/Benefit.vue";
           link-text="externallinks.link"
           icon="public"
           icon-color="#8B7218"
+            icon-color-dark="#D3B25A"
           background="#FCF9EE"
+            background-dark="#3D2D1D"
           link-color="#E3C863"
+            link-color-dark="#724E1D"
+          translatable="true"
         />
       </section>
       <br />

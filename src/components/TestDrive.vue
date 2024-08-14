@@ -114,6 +114,10 @@ export default {
     padding: 0.75rem;
     border-radius: 10px;
 
+    @media (prefers-color-scheme: dark) {
+      background-color: #333;
+    }
+
     .main-icon {
       color: var(--boek-green-1);
       font-size: 2.5rem;
@@ -131,6 +135,10 @@ export default {
       border-radius: 10px;
       width: max-content;
       background-color: #e6e6e6;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: #444;
+      }
     }
 
     h2 {

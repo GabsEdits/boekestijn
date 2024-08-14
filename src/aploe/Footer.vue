@@ -85,6 +85,10 @@ footer {
   text-align: center;
   border-radius: 1.9rem 1.9rem 0 0;
 
+  @media (prefers-color-scheme: dark) {
+    background-color: #333;
+  }
+
   .footer-links {
     display: flex;
     flex-wrap: wrap;
@@ -97,6 +101,10 @@ footer {
     text-decoration: none;
     padding: 0.5rem;
     margin: 0.5rem;
+
+    @media (prefers-color-scheme: dark) {
+      color: #f5f5f5;
+    }
   }
 
   .footer-links a:hover {
@@ -108,10 +116,18 @@ footer {
     font-size: 1.5rem;
     margin: 0.5rem;
     transition: color 0.3s;
-  }
 
-  .footer-social-link:hover {
-    color: #007bff;
+    @media (prefers-color-scheme: dark) {
+      color: #f5f5f5;
+    }
+
+    &:hover {
+      color: #007bff;
+
+      @media (prefers-color-scheme: dark) {
+        color: #f5f5f5;
+      }
+    }
   }
 
   .footer-additional {
@@ -123,6 +139,10 @@ footer {
     text-decoration: none;
     margin: 0.5rem;
     transition: color 0.3s;
+
+    @media (prefers-color-scheme: dark) {
+      color: #f5f5f5;
+    }
   }
 
   .footer-additional a:hover {
@@ -136,6 +156,10 @@ footer {
 
   .footer-copyright a {
     color: var(--copyright);
+
+    @media (prefers-color-scheme: dark) {
+      color: #999;
+    }
   }
 
   .made-by {
@@ -143,6 +167,10 @@ footer {
     text-align: center;
     color: var(--black);
     font-weight: 600;
+
+    @media (prefers-color-scheme: dark) {
+      color: #f5f5f5;
+    }
   }
 
   .call-footer {
@@ -158,6 +186,10 @@ footer {
     margin-bottom: 0;
     padding: 14px;
     font-size: 17px;
+
+    @media (prefers-color-scheme: dark) {
+      color: #f5f5f5;
+    }
   }
 
   #footer-special-link:hover {
@@ -171,9 +203,17 @@ footer {
     transition: text-decoration 0.5s !important;
     font-weight: 800;
 
+    @media (prefers-color-scheme: dark) {
+      color: #f5f5f5 !important;
+    }
+
     &:hover {
       text-decoration: underline green 1.5px !important;
       color: var(--black);
+
+      @media (prefers-color-scheme: dark) {
+        color: #f5f5f5 !important;
+      }
     }
   }
 
