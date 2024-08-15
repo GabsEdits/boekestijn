@@ -100,11 +100,19 @@
     font-size: 20px;
     font-weight: 900;
     margin-bottom: 10px;
-    color: var(--black);
+    color: black;
+
+    @media (prefers-color-scheme: dark) {
+      color: white;
+    }
 
     p {
       font-size: 16px;
-      color: var(--black);
+      color: black;
+
+      @media (prefers-color-scheme: dark) {
+        color: white;
+      }
     }
   }
 }
@@ -144,13 +152,24 @@
   margin-left: auto;
   margin-right: auto;
   background-color: #e9e9e9;
-  color: var(--black);
+  color: black;
   border-radius: 5%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #333;
+    color: white;
+
+    &:hover {
+      background-color: #444;
+      color: white;
+    }
+  }
 
   h1 {
     font-weight: 900;
