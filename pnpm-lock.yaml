@@ -55,8 +55,8 @@ importers:
         specifier: ^0.7.1
         version: 0.7.1
       vite-plugin-zip-pack:
-        specifier: ^1.2.3
-        version: 1.2.3(vite@5.4.2(sass@1.77.8))
+        specifier: ^1.2.4
+        version: 1.2.4(vite@5.4.2(sass@1.77.8))
 
 packages:
 
@@ -580,8 +580,8 @@ packages:
   vite-plugin-sitemap@0.7.1:
     resolution: {integrity: sha512-4NRTkiWytLuAmcikckrLcLl9iYA20+5v6l8XshcOrzxH1WR8H0O3S6sTQYfjMrE8su/LG6Y0cTodvOdcOIxaLw==}
 
-  vite-plugin-zip-pack@1.2.3:
-    resolution: {integrity: sha512-sAKn1PBWcrwWkBf2degreaef8yV4h1UEOY9nHaWVebOhytLLvq8b5f42xsriuRR2VoQidF2JLHLtuCxhJ2oQFg==}
+  vite-plugin-zip-pack@1.2.4:
+    resolution: {integrity: sha512-QgZEeiWayE2ZvMbkvcqWf94p/Z5YeNHZlkwXWIkkoISjePiWVXKRX2xCGmsURe9acGVdkobZ31dFJuCp3j1hMg==}
     peerDependencies:
       vite: '>=2.x'
 
@@ -1090,7 +1090,7 @@ snapshots:
 
   vite-plugin-sitemap@0.7.1: {}
 
-  vite-plugin-zip-pack@1.2.3(vite@5.4.2(sass@1.77.8)):
+  vite-plugin-zip-pack@1.2.4(vite@5.4.2(sass@1.77.8)):
     dependencies:
       jszip: 3.10.1
       vite: 5.4.2(sass@1.77.8)
