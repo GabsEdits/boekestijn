@@ -8,6 +8,6 @@ export default {
     leaflet: "1.9.4",
     axios: "1.7.7",
     vuei18n: "10.0.1",
-    router: "4.4.3",
+    router: "4.4.5",
   },
 };
