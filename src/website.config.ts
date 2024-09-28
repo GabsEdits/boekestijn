@@ -7,7 +7,7 @@ export default {
     aploe: "1.0.0-rc.0",
     leaflet: "1.9.4",
     axios: "1.7.7",
-    vuei18n: "10.0.1",
+    vuei18n: "10.0.3",
     router: "4.4.5",
   },
 };
