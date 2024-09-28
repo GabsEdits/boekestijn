@@ -113,6 +113,7 @@ const messages = {
     },
     footer: {
       call: "Call Us",
+      findus: "Find Us",
       special: "Main:",
       chisinau: "Chișinău:",
       varnita: "Varnița:",
@@ -240,6 +241,7 @@ const messages = {
     },
     footer: {
       call: "Sună-ne",
+      findus: "Găsește-ne",
       special: "Principal:",
       chisinau: "Chișinău:",
       varnita: "Varnița:",
@@ -365,6 +367,7 @@ const messages = {
     },
     footer: {
       call: "Позвоните нам",
+      findus: "Найдите нас",
       special: "Основной:",
       chisinau: "Кишинэу:",
       varnita: "Варница:",

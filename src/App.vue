@@ -52,10 +52,12 @@ import Benefit from "aploe/components/Benefit.vue";
         ></template
       >
       <template #dropdownOne>
-        {{ $t("header.callus") }} <br class="quick-number" /><span
-          class="quick-number"
-          >14114</span
-        >
+        <div>
+          {{ $t("header.callus") }} <br class="quick-number" /><span
+            class="quick-number"
+            >14114</span
+          >
+        </div>
       </template>
       <template #linkTwo>
         {{ $t("header.locations") }}
@@ -160,9 +162,9 @@ import Benefit from "aploe/components/Benefit.vue";
           icon-color="var(--boek-green-2)"
           icon-color-dark="var(--boek-green-1)"
           background="#FBF6EF"
-            background-dark="#3D2D1D"
+          background-dark="#3D2D1D"
           link-color="#EAD1AE"
-            link-color-dark="#724E1D"
+          link-color-dark="#724E1D"
           is-router-link="true"
           translatable="true"
         />
@@ -228,30 +230,59 @@ import Benefit from "aploe/components/Benefit.vue";
           link-text="externallinks.link"
           icon="public"
           icon-color="#8B7218"
-            icon-color-dark="#D3B25A"
+          icon-color-dark="#D3B25A"
           background="#FCF9EE"
-            background-dark="#3D2D1D"
+          background-dark="#3D2D1D"
           link-color="#E3C863"
-            link-color-dark="#724E1D"
+          link-color-dark="#724E1D"
           translatable="true"
         />
       </section>
       <br />
     </main>
     <Footer
-      badges="/images/badges-3x.svg?size=200h300w&format=svg"
+      icon="/images/boekestijn-icon.svg"
+      badges="/images/badges.svg"
       badges-alt="Our Awards"
-      special-link="tel: 14114"
-      facebook="https://www.facebook.com/boekestijntransportmoldova"
-      linkedin="https://md.linkedin.com/company/boekestijn-transport-service"
-      instagram="https://www.instagram.com/boekestijntransport/"
-      github="https://github.com/GabsEdits/boekestijn"
-      copyright="2023-2024 Î.C.S. Boekestijn Transport Service S.R.L. All rights reserved."
       author="Gabs"
-      author-link="https://gabs.eu.org/"
+      authorLink="https://www.gxbs.me"
+      translatable="true"
+      copyright="2023-2024 Î.C.S. Boekestijn Transport Service S.R.L. All rights reserved."
       :links="[
-        { slotName: 'chisinau-link', href: 'tel:+37378830142' },
-        { slotName: 'varnita-link', href: 'tel:+37377799783' },
+        {
+          sectionTitle: 'header.callus',
+          items: [
+            { text: 'footer.special', href: 'tel:14114', info: '14114' },
+            {
+              text: 'footer.chisinau',
+              href: 'tel:+37378830142',
+              info: '+373 78 830 142',
+            },
+            {
+              text: 'footer.varnita',
+              href: 'tel:+37377799783',
+              info: '+373 77 799 783',
+            },
+          ],
+        },
+        {
+          sectionTitle: 'footer.findus',
+          items: [
+            { text: 'Facebook', href: 'https://www.facebook.com/boekestijntransportmoldova' },
+            { text: 'LinkedIn', href: 'https://md.linkedin.com/company/boekestijn-transport-service' },
+            { text: 'Instagram', href: 'https://www.instagram.com/boekestijntransport/' },
+            { text: 'Source Code', href: 'https://github.com/GabsEdits/boekestijn' },
+          ],
+        },
+        {
+          sectionTitle: 'mainarea.joinus',
+          items: [
+            { text: 'vacancies.title', href: '/' },
+            { text: 'tellFriend.title', href: '/tell-a-friend' },
+            { text: 'mainarea.joinus', href: '/join-us' },
+            { text: 'Privacy Policy', href: '/privacy' },
+          ],
+        },
       ]"
     >
       <template #special>{{ $t("footer.special") }} 14114</template>

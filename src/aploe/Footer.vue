@@ -1,248 +1,91 @@
 <template>
-  <footer id="footer">
-    <img v-if="badges" :src="badges" class="badges" :alt="badgesAlt" />
-    <p class="call-footer">{{ $t("footer.call") }}</p>
-    <a
-      v-if="specialLink"
-      :href="specialLink"
-      id="footer-special-link"
-      class="footer-links"
-      ><slot name="special"></slot
-    ></a>
-    <div class="footer-links">
-      <template v-for="item in links">
-        <a :href="item.href">
-          <slot :name="item.slotName"></slot>
-        </a>
-      </template>
+  <footer class="bg-[#101010] text-white py-10">
+    <div
+      class="flex flex-col gap-8 justify-center items-center px-4 sm:px-10 lg:px-20"
+    >
+      <div
+        class="flex flex-col sm:flex-row flex-wrap gap-6 justify-center items-center pb-10 sm:px-10 border-b border-[#333836]"
+        v-if="badges"
+      >
+        <img
+          :src="badges"
+          :alt="badgesAlt"
+          class="mt-4 sm:mt-0 grayscale hover:grayscale-0 transition"
+        />
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-10 lg:gap-48">
+        <div
+          v-for="(section, index) in links"
+          :key="index"
+          class="flex flex-col gap-2"
+        >
+          <h3 class="text-white text-opacity-70 text-base font-semibold">
+            {{ translatable ? $t(section.sectionTitle) : section.sectionTitle }}
+          </h3>
+          <component
+            v-for="(link, idx) in section.items"
+            :key="idx"
+            :is="link.isRouterLink ? 'router-link' : 'a'"
+            :to="link.isRouterLink ? link.href : null"
+            :href="!link.isRouterLink ? link.href : null"
+            class="text-white text-opacity-40"
+          >
+            {{ translatable ? $t(link.text) : link.text }}
+            <span v-if="link.info">{{ link.info }}</span>
+          </component>
+        </div>
+      </div>
     </div>
-    <div class="footer-additional">
-      <a
-        :href="facebook"
-        v-if="facebook"
-        class="footer-social-link"
-        aria-label="Check out the Facebook Page"
-        ><i class="fab fa-facebook"></i
-      ></a>
-      <a
-        :href="linkedin"
-        v-if="linkedin"
-        class="footer-social-link"
-        aria-label="Check out our LinkedIn Page"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-      <a
-        :href="github"
-        v-if="github"
-        class="footer-social-link"
-        aria-label="Check out the source code"
-        ><i class="fab fa-github"></i
-      ></a>
-      <a
-        :href="instagram"
-        v-if="instagram"
-        class="footer-social-link"
-        aria-label="Check out our Instagram Page"
-        ><i class="fab fa-instagram"></i
-      ></a>
-      <router-link to="/privacy">Privacy Policy</router-link>
-      <p class="made-by">
-        Made with <i class="fa-solid fa-heart" style="color: #dd2e44"></i> by
-        <a :href="authorLink" class="author">{{ author }}</a>
-      </p>
-      <p class="footer-copyright" :title="'Build build: ' + buildFrom">
-        <router-link to="/developer"> &copy; {{ copyright }} </router-link>
-      </p>
+
+    <div
+      class="flex flex-col sm:flex-row flex-wrap justify-between items-center pt-10 px-4 sm:px-10 lg:px-20 gap-6 sm:gap-0"
+    >
+      <div class="flex flex-col sm:flex-row flex-wrap gap-5 items-center">
+        <img :src="icon" alt="Logo" class="w-10 hover:animate-spin delay-100" />
+        <div class="flex flex-col gap-2 text-center sm:text-left text-sm">
+          <p class="text-white text-opacity-40">
+            All trademarks and logos are the property of their respective
+            owners.
+          </p>
+          <router-link class="text-white text-opacity-40" to="/developer">
+            © {{ copyright }}
+          </router-link>
+        </div>
+      </div>
+      <div class="flex flex-col gap-1 text-center sm:text-right">
+        <p class="text-white text-opacity-40">
+          Made with ❤️ by
+          <a class="text-[var(--boek-green-1)]" :href="authorLink">{{
+            author
+          }}</a>
+        </p>
+        <p class="text-white text-opacity-40">
+          Build with the foundation of
+          <a class="text-[var(--boek-green-1)]" href="https://aploe.gxbs.dev"
+            >Aplóe</a
+          >
+        </p>
+      </div>
     </div>
   </footer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import WebsiteConfig from "../website.config";
 
 const { buildFrom } = WebsiteConfig;
 
 defineProps({
   badges: String,
+  translatable: Boolean,
   badgesAlt: String,
+  icon: String,
   specialLink: String,
-  facebook: String,
-  linkedin: String,
-  github: String,
-  instagram: String,
+  links: Array,
   copyright: String,
   author: String,
   authorLink: String,
-  links: Array,
 });
+
 </script>
-
-<style lang="scss">
-footer {
-  background-color: #f5f5f5;
-  border-top: 1.5px solid var(--boek-green-1);
-  padding: 1rem;
-  text-align: center;
-  border-radius: 1.9rem 1.9rem 0 0;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #333;
-  }
-
-  .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-
-  .footer-links a {
-    color: #333;
-    text-decoration: none;
-    padding: 0.5rem;
-    margin: 0.5rem;
-
-    @media (prefers-color-scheme: dark) {
-      color: #f5f5f5;
-    }
-  }
-
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
-
-  .footer-social-link {
-    color: #333;
-    font-size: 1.5rem;
-    margin: 0.5rem;
-    transition: color 0.3s;
-
-    @media (prefers-color-scheme: dark) {
-      color: #f5f5f5;
-    }
-
-    &:hover {
-      color: #007bff;
-
-      @media (prefers-color-scheme: dark) {
-        color: #f5f5f5;
-      }
-    }
-  }
-
-  .footer-additional {
-    margin-top: 1rem;
-  }
-
-  .footer-additional a {
-    color: var(--hover-link-gray);
-    text-decoration: none;
-    margin: 0.5rem;
-    transition: color 0.3s;
-
-    @media (prefers-color-scheme: dark) {
-      color: #f5f5f5;
-    }
-  }
-
-  .footer-additional a:hover {
-    color: var(--footer-social);
-  }
-
-  .footer-copyright {
-    font-size: medium;
-    margin-top: 1rem;
-  }
-
-  .footer-copyright a {
-    color: var(--copyright);
-
-    @media (prefers-color-scheme: dark) {
-      color: #999;
-    }
-  }
-
-  .made-by {
-    margin-top: 1.25rem;
-    text-align: center;
-    color: var(--black);
-    font-weight: 600;
-
-    @media (prefers-color-scheme: dark) {
-      color: #f5f5f5;
-    }
-  }
-
-  .call-footer {
-    font-weight: 600;
-    font-size: 120%;
-    text-align: center;
-    margin-top: 0.5%;
-  }
-
-  #footer-special-link {
-    color: var(--hover-link-gray);
-    margin-top: 25px;
-    margin-bottom: 0;
-    padding: 14px;
-    font-size: 17px;
-
-    @media (prefers-color-scheme: dark) {
-      color: #f5f5f5;
-    }
-  }
-
-  #footer-special-link:hover {
-    text-decoration: underline;
-  }
-
-  .author {
-    color: var(--black) !important;
-    margin-left: 0px !important;
-    text-decoration: underline 1.5px !important;
-    transition: text-decoration 0.5s !important;
-    font-weight: 800;
-
-    @media (prefers-color-scheme: dark) {
-      color: #f5f5f5 !important;
-    }
-
-    &:hover {
-      text-decoration: underline green 1.5px !important;
-      color: var(--black);
-
-      @media (prefers-color-scheme: dark) {
-        color: #f5f5f5 !important;
-      }
-    }
-  }
-
-  .badges {
-    position: absolute;
-    margin-top: 30px;
-    right: 10px;
-    width: 500px;
-    height: 56.25px;
-    margin-top: 30px;
-
-    @media (max-width: 767px) {
-      aspect-ratio: 16/9;
-      object-fit: contain;
-      max-width: 80%;
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-      position: relative;
-      margin-bottom: 20px;
-    }
-
-    @media screen and (min-width: 775px) and (max-width: 1055px) {
-      right: 0;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1154px) {
-      display: none;
-    }
-  }
-}
-</style>
