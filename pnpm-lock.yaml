@@ -55,8 +55,8 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
       tailwindcss:
-        specifier: ^3.4.10
-        version: 3.4.10
+        specifier: ^3.4.13
+        version: 3.4.13
       vite:
         specifier: ^5.4.3
         version: 5.4.3(sass@1.79.1)
@@ -255,9 +255,6 @@ packages:
   '@jridgewell/set-array@1.2.1':
     resolution: {integrity: sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A==}
     engines: {node: '>=6.0.0'}
-
-  '@jridgewell/sourcemap-codec@1.4.15':
-    resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
@@ -932,8 +929,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  tailwindcss@3.4.10:
-    resolution: {integrity: sha512-KWZkVPm7yJRhdu4SRSl9d4AK2wM3a50UsvgHZO7xY77NQr2V+fIrEuoDGQcbvswWvFGbS2f6e+jC/6WJm1Dl0w==}
+  tailwindcss@3.4.13:
+    resolution: {integrity: sha512-KqjHOJKogOUt5Bs752ykCeiwvi0fKVkr5oqsFNt/8px/tA8scFPIlkygsf6jXrfCqGHz7VflA6+yytWuM+XhFw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -1156,21 +1153,19 @@ snapshots:
   '@jridgewell/gen-mapping@0.3.5':
     dependencies:
       '@jridgewell/set-array': 1.2.1
-      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/sourcemap-codec': 1.5.0
       '@jridgewell/trace-mapping': 0.3.25
 
   '@jridgewell/resolve-uri@3.1.2': {}
 
   '@jridgewell/set-array@1.2.1': {}
 
-  '@jridgewell/sourcemap-codec@1.4.15': {}
-
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
   '@jridgewell/trace-mapping@0.3.25':
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
-      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/sourcemap-codec': 1.5.0
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -1255,7 +1250,7 @@ snapshots:
       '@vue/shared': 3.5.6
       entities: 4.5.0
       estree-walker: 2.0.2
-      source-map-js: 1.2.0
+      source-map-js: 1.2.1
 
   '@vue/compiler-dom@3.5.6':
     dependencies:
@@ -1648,28 +1643,28 @@ snapshots:
 
   pirates@4.0.6: {}
 
-  postcss-import@15.1.0(postcss@8.4.41):
+  postcss-import@15.1.0(postcss@8.4.47):
     dependencies:
-      postcss: 8.4.41
+      postcss: 8.4.47
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.8
 
-  postcss-js@4.0.1(postcss@8.4.41):
+  postcss-js@4.0.1(postcss@8.4.47):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.4.41
+      postcss: 8.4.47
 
-  postcss-load-config@4.0.2(postcss@8.4.41):
+  postcss-load-config@4.0.2(postcss@8.4.47):
     dependencies:
       lilconfig: 3.1.2
       yaml: 2.5.0
     optionalDependencies:
-      postcss: 8.4.41
+      postcss: 8.4.47
 
-  postcss-nested@6.2.0(postcss@8.4.41):
+  postcss-nested@6.2.0(postcss@8.4.47):
     dependencies:
-      postcss: 8.4.41
+      postcss: 8.4.47
       postcss-selector-parser: 6.1.2
 
   postcss-selector-parser@6.1.2:
@@ -1688,7 +1683,7 @@ snapshots:
   postcss@8.4.44:
     dependencies:
       nanoid: 3.3.7
-      picocolors: 1.0.1
+      picocolors: 1.1.0
       source-map-js: 1.2.0
 
   postcss@8.4.47:
@@ -1817,7 +1812,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  tailwindcss@3.4.10:
+  tailwindcss@3.4.13:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -1832,12 +1827,12 @@ snapshots:
       micromatch: 4.0.7
       normalize-path: 3.0.0
       object-hash: 3.0.0
-      picocolors: 1.0.1
-      postcss: 8.4.41
-      postcss-import: 15.1.0(postcss@8.4.41)
-      postcss-js: 4.0.1(postcss@8.4.41)
-      postcss-load-config: 4.0.2(postcss@8.4.41)
-      postcss-nested: 6.2.0(postcss@8.4.41)
+      picocolors: 1.1.0
+      postcss: 8.4.47
+      postcss-import: 15.1.0(postcss@8.4.47)
+      postcss-js: 4.0.1(postcss@8.4.47)
+      postcss-load-config: 4.0.2(postcss@8.4.47)
+      postcss-nested: 6.2.0(postcss@8.4.47)
       postcss-selector-parser: 6.1.2
       resolve: 1.22.8
       sucrase: 3.35.0
@@ -1866,7 +1861,7 @@ snapshots:
     dependencies:
       browserslist: 4.23.3
       escalade: 3.1.2
-      picocolors: 1.0.1
+      picocolors: 1.1.0
 
   util-deprecate@1.0.2: {}
 
