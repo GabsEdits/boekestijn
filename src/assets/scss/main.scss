@@ -92,12 +92,6 @@ video {
   font-size: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  header li {
-    margin-top: 10px;
-  }
-}
-
 @media screen and (min-width: 974px) {
   #test-drive-mobile section {
     border-color: var(--boek-green-1);
