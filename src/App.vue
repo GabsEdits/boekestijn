@@ -4,8 +4,7 @@ import ExternalLinks from "./components/ExternalLinks.vue";
 
 /* Aploe components */
 
-import Footer from "./aploe/Footer.vue";
-
+import Footer from "aploe/components/Footer.vue";
 import Header from "aploe/components/Header.vue";
 import ExtraInfo from "aploe/components/ExtraInfo.vue";
 import TruckData from "aploe/components/Data.vue";
@@ -247,7 +246,11 @@ import Benefit from "aploe/components/Benefit.vue";
       author="Gabs"
       authorLink="https://www.gxbs.me"
       translatable="true"
-      copyright="2023-2024 Î.C.S. Boekestijn Transport Service S.R.L. All rights reserved."
+      :copyright="{
+        text: '2023-2024 Î.C.S. Boekestijn Transport Service S.R.L. All rights reserved.',
+        href: '/developer',
+        isRouter: true,
+      }"
       :links="[
         {
           sectionTitle: 'header.callus',
