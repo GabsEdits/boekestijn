@@ -1,6 +1,6 @@
 export default {
   buildtype: "Development",
-  buildFrom: "05/10/2024, 20:31 UTC+3",
+  buildFrom: "06/10/2024, 12:25 UTC+3",
   dependency: {
     vue: "3.5.11",
     vite: "5.4.8",
