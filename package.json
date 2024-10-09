@@ -15,7 +15,7 @@
     "inter-ui": "^4.0.2",
     "non.geist": "^1.0.3",
     "sass": "^1.79.1",
-    "typescript": "^5.5.4",
+    "typescript": "^5.6.3",
     "vue": "^3.5.11",
     "vue-i18n": "^10.0.3",
     "vue-router": "^4.4.5"
