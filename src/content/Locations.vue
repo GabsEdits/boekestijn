@@ -59,15 +59,15 @@ import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet";
 }
 
 @media (prefers-color-scheme: dark) {
-    .leaflet-layer,
-    .leaflet-control-zoom-in,
-    .leaflet-control-zoom-out,
-    .leaflet-control-attribution {
-      filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
-    }
+  .leaflet-layer,
+  .leaflet-control-zoom-in,
+  .leaflet-control-zoom-out,
+  .leaflet-control-attribution {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+  }
 
-    .leaflet-attribution-flag {
-        filter: invert(100%) hue-rotate(180deg) brightness(100%) contrast(100%);
-    }
+  .leaflet-attribution-flag {
+    filter: invert(100%) hue-rotate(180deg) brightness(100%) contrast(100%);
+  }
 }
 </style>
