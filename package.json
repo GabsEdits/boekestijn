@@ -13,7 +13,7 @@
     "aploe": "1.0.0-rc.4",
     "axios": "^1.7.7",
     "inter-ui": "^4.0.2",
-    "non.geist": "^1.0.3",
+    "non.geist": "^1.0.4",
     "sass": "^1.79.1",
     "typescript": "^5.5.4",
     "vue": "^3.5.11",

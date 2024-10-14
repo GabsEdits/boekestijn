@@ -18,8 +18,8 @@ importers:
         specifier: ^4.0.2
         version: 4.0.2
       non.geist:
-        specifier: ^1.0.3
-        version: 1.0.3
+        specifier: ^1.0.4
+        version: 1.0.4
       sass:
         specifier: ^1.79.1
         version: 1.79.1
@@ -494,8 +494,8 @@ packages:
   node-releases@2.0.18:
     resolution: {integrity: sha512-d9VeXT4SJ7ZeOqGX6R5EM022wpL+eWPooLI+5UpWn2jCT1aosUQEhQP214x33Wkwx3JQMvIm+tIoVOdodFS40g==}
 
-  non.geist@1.0.3:
-    resolution: {integrity: sha512-KTT38rJKUTijUZtwqZR38OJeHDupfTkl1JoVNVVoQ0vV41Zjax/BMULWFyXtsK5YCd1SU2ofFSJooD8nWClXcA==}
+  non.geist@1.0.4:
+    resolution: {integrity: sha512-2spmLTgz5ipZrFGLiI1YkiHb8Yit0yFySPvWzal3wCwCFilMFQQ/Jwwz4lcEatwIKUpOeMYwyFwP8MJ8EVKqGA==}
 
   normalize-range@0.1.2:
     resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==}
@@ -859,7 +859,7 @@ snapshots:
     dependencies:
       dotenv: 16.4.5
       inter-ui: 4.0.2
-      non.geist: 1.0.3
+      non.geist: 1.0.4
       prettier: 3.3.3
       sass: 1.79.1
       vue: 3.5.11(typescript@5.5.4)
@@ -995,7 +995,7 @@ snapshots:
 
   node-releases@2.0.18: {}
 
-  non.geist@1.0.3: {}
+  non.geist@1.0.4: {}
 
   normalize-range@0.1.2: {}
 
