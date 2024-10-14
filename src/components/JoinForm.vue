@@ -3,17 +3,13 @@
     <div class="popup-overlay">
       <div class="popup-content">
         <a @click="closePopup" class="close-button">×</a>
-        <form
-          ref="myForm"
-          @submit.prevent="sendMessageToTelegram"
-          class="form-container"
-        >
-          <h1 class="form-title">{{ $t("mainarea.joinus") }}</h1>
+        <form ref="myForm" @submit.prevent="sendMessageToTelegram">
+          <h1>{{ $t("mainarea.joinus") }}</h1>
           <div class="form-label">
             <p id="form-desc">{{ $t("form.desc") }}</p>
             <br />
             <p>
-              <small id="form-sup"
+              <small id="note"
                 ><b>{{ $t("form.note") }} *</b></small
               >
             </p>
@@ -23,10 +19,9 @@
             <input
               type="text"
               id="name"
-              class="form-control"
               required
               v-model="name"
-              placeholder="Сергей Петров"
+              :placeholder="$t('form.name')"
             />
           </div>
           <div class="form-group">
@@ -34,7 +29,6 @@
             <input
               type="tel"
               id="tel"
-              class="form-control"
               required
               v-model="tel"
               placeholder="+373xxxxxxxx"
@@ -45,7 +39,6 @@
             <input
               type="email"
               id="email"
-              class="form-control"
               required
               v-model="email"
               placeholder="example@example.com"
@@ -56,7 +49,6 @@
             <input
               type="text"
               id="exp"
-              class="form-control"
               required
               v-model="exp"
               placeholder="0, 1, 2..."
@@ -64,20 +56,140 @@
           </div>
           <div class="form-group">
             <label for="self">{{ $t("form.about") }}</label>
-            <textarea
-              id="self"
-              class="form-control"
-              rows="3"
-              v-model="self"
-            ></textarea>
+            <textarea id="self" rows="3" v-model="self"></textarea>
           </div>
           <div id="success" class="alert alert-success mt-3" role="alert"></div>
-          <button type="submit" class="btn btn-primary mt-4">Submit</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
   </div>
 </template>
+
+<style lang="scss">
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--pop-up-overlay);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+
+  @media screen and (max-width: 500px) {
+    display: block;
+  }
+
+  .popup-content {
+    background-color: var(--white);
+    padding: 5px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: #1a1a1a;
+    }
+
+    @media (max-width: 500px) {
+      max-width: 95%;
+    }
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--link-gray);
+  }
+
+  form {
+    max-width: 500px;
+    min-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .form-label {
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  #form-desc {
+    margin-bottom: -15px;
+  }
+
+  #note {
+    margin-top: 0 !important;
+    font-size: 12px;
+  }
+
+  input:not([type="submit"]),
+  textarea {
+    width: 100%;
+    padding: 0.625rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.25rem;
+    transition: border-color 0.2s ease-in-out;
+    resize: none;
+    font-family: "Inter", sans-serif;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: #1a1a1a;
+      color: var(--white);
+      border-color: #333;
+    }
+  }
+
+  .form-control:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+
+  button[type="submit"] {
+    background-color: var(--boek-green-1);
+    color: var(--black);
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition:
+      color 0.2s,
+      background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--boek-green-2);
+      color: var(--white);
+    }
+  }
+}
+</style>
 
 <script>
 import axios from "axios";
